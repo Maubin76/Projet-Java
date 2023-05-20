@@ -1,3 +1,4 @@
+import java.io.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -55,7 +56,8 @@ public class ConnexionInterface extends JFrame {
         constraints.gridwidth = 2; // Étend le composant sur deux colonnes
         constraints.anchor = GridBagConstraints.CENTER; // Centre le composant
         panel.add(loginButton, constraints); // Ajoute le bouton de connexion au panneau
-            // Ajout du gestionnaire d'événements pour le bouton de connexion
+
+        // Ajout du gestionnaire d'événements pour le bouton de connexion
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -63,7 +65,7 @@ public class ConnexionInterface extends JFrame {
                 String password = new String(passwordField.getPassword()); // Récupère le contenu du champ de texte du mot de passe
 
                 // Vérification des informations de connexion
-                if (username.equals("admin") && password.equals("admin")) {
+                if (verifierIdentifiants(username, password)) {
                     JOptionPane.showMessageDialog(ConnexionInterface.this, "Connexion réussie !"); // Affiche un message de connexion réussie
                 } else {
                     JOptionPane.showMessageDialog(ConnexionInterface.this, "Identifiant ou mot de passe incorrect !"); // Affiche un message d'erreur d'identifiant ou de mot de passe incorrect
@@ -74,5 +76,20 @@ public class ConnexionInterface extends JFrame {
         // Ajout du panneau à la fenêtre
         add(panel); // Ajoute le panneau à la fenêtre
     }
-}
 
+    private boolean verifierIdentifiants(String nomUtilisateur, String motDePasse) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) {
+            String ligne;
+            while ((ligne = reader.readLine()) != null) {
+                String[] attributs = ligne.split(",");
+                if (attributs.length == 2 && attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
+                    return true; // Identifiants valides
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return false; // Identifiants invalides
+    }
+}
