@@ -1,5 +1,5 @@
 public enum Niveau {
-    Facile;
-    Normal;
+    Facile,
+    Normal,
     Difficile;
 }

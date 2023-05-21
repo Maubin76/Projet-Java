@@ -1,14 +1,16 @@
+import java.util.Scanner;
+
 public class Question{
 
     private String enonce;
     private byte difficulte;
     private Theme theme;
-    private String choix[]= String[4];
+    private String choix[];
     private String reponse;
     private Boolean dejaposée = false;
 
     //constructeur
-    public Question(int difficulte, Theme theme){
+    public Question(byte difficulte, Theme theme){
         this.difficulte=difficulte;
         this.theme=theme;
         try (Scanner scanner=new Scanner(System.in)){
