@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                ConnexionInterface interfaceConnexion = new ConnexionInterface();
-                interfaceConnexion.setVisible(true);
+                ConnexionInterface connexion = new ConnexionInterface();
+                connexion.setVisible(true);
             }
         });
+        
     }
 }

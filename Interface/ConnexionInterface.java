@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 public class ConnexionInterface extends JFrame {
     private JTextField usernameField; // Champ de texte pour le nom d'utilisateur
     private JPasswordField passwordField; // Champ de texte pour le mot de passe
+    private boolean connexionReussie=false;
 
     public ConnexionInterface() {
         // Configuration de la fenêtre
@@ -72,8 +73,6 @@ public class ConnexionInterface extends JFrame {
                 }
             }
         });
-
-        // Ajout du panneau à la fenêtre
         add(panel); // Ajoute le panneau à la fenêtre
     }
 
@@ -89,7 +88,6 @@ public class ConnexionInterface extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return false; // Identifiants invalides
     }
 }
