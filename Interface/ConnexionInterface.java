@@ -80,20 +80,26 @@ public class ConnexionInterface extends JFrame {
         });
         add(panel); // Ajoute le panneau à la fenêtre
 
-        signinButton.addActionListener(new ActionListener() {
+        signinButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
             @Override
             public void actionPerformed(ActionEvent e){
-                new Enregistrement();
+                new Enregistrement(); // Lance le constructeur de la classe Enregistrement
             }
         });
     }
 
-    private boolean verifierIdentifiants(String nomUtilisateur, String motDePasse) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) {
+    private boolean verifierIdentifiants(String nomUtilisateur, String motDePasse) { // Vérifie dans connexion.csv si la combinaison identifiant/mdp est valide
+        try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) { // Ouvre le fichier de logs
             String ligne;
-            while ((ligne = reader.readLine()) != null) {
-                String[] attributs = ligne.split(",");
+            while ((ligne = reader.readLine()) != null) { // Parcours le document ligne par ligne
+                String[] attributs = ligne.split(","); // Range le contenu de la ligne du document dans un tableau de String
                 if (attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
+                    if (attributs[2]=="true"){ // Intanciation dans le cas d'un administrateur
+                        Utilisateur personne1 = new Utilisateur(attributs[0], attributs[1], true);
+                    }
+                    else { // Intanciation dans le cas d'un simple utilisateur
+                        Utilisateur personne1 = new Utilisateur(attributs[0], attributs[1], false);
+                    }
                     return true; // Identifiants valides
                 }
             }

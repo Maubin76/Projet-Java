@@ -1,5 +1,8 @@
 import java.io.Serializable;
 
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
 public class Utilisateur implements Serializable{
     private String id;
     private String mdp;
@@ -8,6 +11,12 @@ public class Utilisateur implements Serializable{
     public Utilisateur(String id, String mdp, boolean admin){
         this.id = id;
         this.mdp = mdp;
+        this.admin = admin;
+    }
+
+    public Utilisateur(JTextField id, JPasswordField mdp, boolean admin){
+        this.id = id.getText();
+        this.mdp = new String(mdp.getPassword());
         this.admin = admin;
     }
 
