@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 public class ConnexionInterface extends JFrame {
     private JTextField usernameField; // Champ de texte pour le nom d'utilisateur
     private JPasswordField passwordField; // Champ de texte pour le mot de passe
-    private boolean connexionReussie=false;
 
     public ConnexionInterface() {
         // Configuration de la fenêtre
@@ -23,6 +22,8 @@ public class ConnexionInterface extends JFrame {
         usernameField = new JTextField(20); // Champ de texte pour le nom d'utilisateur avec une longueur initiale de 20 caractères
         passwordField = new JPasswordField(20); // Champ de texte pour le mot de passe avec une longueur initiale de 20 caractères
         JButton loginButton = new JButton("Se connecter"); // Bouton de connexion
+        JButton signinButton = new JButton("S'inscrire"); // Bouton d'inscription
+
 
         // Définir la taille personnalisée pour les champs de texte
         Dimension fieldSize = new Dimension(200, 30); // Définit la taille personnalisée pour les champs de texte (largeur, hauteur)
@@ -54,9 +55,13 @@ public class ConnexionInterface extends JFrame {
         constraints.gridy = 2; // Passe à la troisième ligne
         constraints.ipady = 1; // Largeur de la case de saisie de mot de passe
         constraints.ipadx = 1; // Longueur de la case de saisie de mot de passe
-        constraints.gridwidth = 2; // Étend le composant sur deux colonnes
+        constraints.gridwidth = 1; // Étend le composant sur deux colonnes
         constraints.anchor = GridBagConstraints.CENTER; // Centre le composant
         panel.add(loginButton, constraints); // Ajoute le bouton de connexion au panneau
+        constraints.gridx = 1; // Passe à deuxième colonne
+        panel.add(signinButton, constraints); // Ajoute le bouton d'inscription au panneau
+
+        setVisible(true); // Rends la fenêtre visible
 
         // Ajout du gestionnaire d'événements pour le bouton de connexion
         loginButton.addActionListener(new ActionListener() {
@@ -74,6 +79,13 @@ public class ConnexionInterface extends JFrame {
             }
         });
         add(panel); // Ajoute le panneau à la fenêtre
+
+        signinButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                new Enregistrement();
+            }
+        });
     }
 
     private boolean verifierIdentifiants(String nomUtilisateur, String motDePasse) {
@@ -81,7 +93,7 @@ public class ConnexionInterface extends JFrame {
             String ligne;
             while ((ligne = reader.readLine()) != null) {
                 String[] attributs = ligne.split(",");
-                if (attributs.length == 2 && attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
+                if (attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
                     return true; // Identifiants valides
                 }
             }

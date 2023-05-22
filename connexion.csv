@@ -1,3 +1,4 @@
-emile,mdp1
-mathieu,mdp2
-admin,admin
+emile,mdp1,true
+mathieu,mdp2,true
+admin,admin,true
+joueur,joueur,false

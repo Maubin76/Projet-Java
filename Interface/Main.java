@@ -1,15 +1,9 @@
-import javax.swing.*;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                ConnexionInterface connexion = new ConnexionInterface();
-                connexion.setVisible(true);
-            }
-        });
+        ArrayList<String[]> tableauLogs = new ArrayList<>();
         
+        new ConnexionInterface();  
     }
 }
-
-// Test
