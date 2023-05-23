@@ -27,7 +27,7 @@ public class Enregistrement extends JFrame{
         constraints.ipady = 1; // Largeur de la case
         constraints.ipadx = 1; // Longueur de la case
         constraints.gridwidth = 1; // Étend pas le composant sur plusieurs colonnes
-        constraints.anchor = GridBagConstraints.WEST; // Centre le composant
+        constraints.anchor = GridBagConstraints.WEST; // Aligne le composant à gauche de sa case
         constraints.insets = new Insets(5, 5, 5, 5); // Espacement entre les composants
         panel.add(id, constraints); // Ajoute le bouton de connexion au panneau
 

@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 public class ConnexionInterface extends JFrame {
     private JTextField usernameField; // Champ de texte pour le nom d'utilisateur
     private JPasswordField passwordField; // Champ de texte pour le mot de passe
+    private Utilisateur personne1;
 
     public ConnexionInterface() {
         // Configuration de la fenêtre
@@ -73,6 +74,8 @@ public class ConnexionInterface extends JFrame {
                 // Vérification des informations de connexion
                 if (verifierIdentifiants(username, password)) {
                     JOptionPane.showMessageDialog(ConnexionInterface.this, "Connexion réussie !"); // Affiche un message de connexion réussie
+                    dispose();
+                    new ModeDeJeu(personne1);
                 } else {
                     JOptionPane.showMessageDialog(ConnexionInterface.this, "Identifiant ou mot de passe incorrect !"); // Affiche un message d'erreur d'identifiant ou de mot de passe incorrect
                 }
@@ -94,11 +97,11 @@ public class ConnexionInterface extends JFrame {
             while ((ligne = reader.readLine()) != null) { // Parcours le document ligne par ligne
                 String[] attributs = ligne.split(","); // Range le contenu de la ligne du document dans un tableau de String
                 if (attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
-                    if (attributs[2]=="true"){ // Intanciation dans le cas d'un administrateur
-                        Utilisateur personne1 = new Utilisateur(attributs[0], attributs[1], true);
+                    if (attributs[2].equals("true")){ // Intanciation dans le cas d'un administrateur
+                        personne1 = new Utilisateur(attributs[0], attributs[1], true);
                     }
                     else { // Intanciation dans le cas d'un simple utilisateur
-                        Utilisateur personne1 = new Utilisateur(attributs[0], attributs[1], false);
+                        personne1 = new Utilisateur(attributs[0], attributs[1], false);
                     }
                     return true; // Identifiants valides
                 }
@@ -107,5 +110,10 @@ public class ConnexionInterface extends JFrame {
             e.printStackTrace();
         }
         return false; // Identifiants invalides
+    }
+
+    // Getters qui permet de savoir quel compte est connecté
+    public Utilisateur getPersonne1() {
+        return personne1;
     }
 }
