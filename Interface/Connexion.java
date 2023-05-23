@@ -1,15 +1,14 @@
 import java.io.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
-public class ConnexionInterface extends JFrame {
+public class Connexion extends JFrame {
     private JTextField usernameField; // Champ de texte pour le nom d'utilisateur
     private JPasswordField passwordField; // Champ de texte pour le mot de passe
-    private Utilisateur personne1;
+    private Utilisateur personne1; 
 
-    public ConnexionInterface() {
+    public Connexion() {
         // Configuration de la fenêtre
         setTitle("Connexion"); // Définit le titre de la fenêtre
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Définit l'action de fermeture de la fenêtre
@@ -65,7 +64,8 @@ public class ConnexionInterface extends JFrame {
         setVisible(true); // Rends la fenêtre visible
 
         // Ajout du gestionnaire d'événements pour le bouton de connexion
-        loginButton.addActionListener(new ActionListener() {
+        // Objectif : autoriser la connexion et lancer la suite ssi les informations entrées sont valides
+        loginButton.addActionListener(new ActionListener() { // Déclenchement du bouton "se connecter"
             @Override
             public void actionPerformed(ActionEvent e) {
                 String username = usernameField.getText(); // Récupère le contenu du champ de texte du nom d'utilisateur
@@ -73,14 +73,15 @@ public class ConnexionInterface extends JFrame {
 
                 // Vérification des informations de connexion
                 if (verifierIdentifiants(username, password)) {
-                    JOptionPane.showMessageDialog(ConnexionInterface.this, "Connexion réussie !"); // Affiche un message de connexion réussie
-                    dispose();
-                    new ModeDeJeu(personne1);
+                    JOptionPane.showMessageDialog(Connexion.this, "Connexion réussie !"); // Affiche un message de connexion réussie
+                    dispose(); // Ferme la fenêtre de connexion pour passer au jeu
+                    new ModeDeJeu(personne1); // Lance la prochaine fenêtre qui consiste à chosir le mode de jeu (ou le mode administration)
                 }
             }
         });
         add(panel); // Ajoute le panneau à la fenêtre
 
+        // Lance la fenêtre d'inscription
         signinButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
             @Override
             public void actionPerformed(ActionEvent e){
@@ -89,15 +90,16 @@ public class ConnexionInterface extends JFrame {
         });
     }
 
+    // Vérifie la validité des informations saisies : compte existant, compte banni
     private boolean verifierIdentifiants(String nomUtilisateur, String motDePasse) { // Vérifie dans connexion.csv si la combinaison identifiant/mdp est valide
         try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) { // Ouvre le fichier de logs
             String ligne;
             while ((ligne = reader.readLine()) != null) { // Parcours le document ligne par ligne
                 String[] attributs = ligne.split(","); // Range le contenu de la ligne du document dans un tableau de String
-                if (attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
-                    if (attributs[3].equals("true")) {
-                        JOptionPane.showMessageDialog(ConnexionInterface.this, "Compte banni !");
-                        return false;
+                if (attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) { // Cas où on trouve l'utilisateur dans les joueurs inscrits
+                    if (attributs[3].equals("true")) { // Cas où le compte est banni
+                        JOptionPane.showMessageDialog(Connexion.this, "Compte banni !"); // Message d'avertissement
+                        return false; // Connexion non autorisée
                     }
                     else if (attributs[2].equals("true")){ // Intanciation dans le cas d'un administrateur
                         personne1 = new Utilisateur(attributs[0], attributs[1], true, false);
@@ -105,17 +107,17 @@ public class ConnexionInterface extends JFrame {
                     else { // Intanciation dans le cas d'un simple utilisateur
                         personne1 = new Utilisateur(attributs[0], attributs[1], false, false);
                     }
-                    return true; // Identifiants valides
+                    return true; // Identifiants valides, connexion autorisée
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        JOptionPane.showMessageDialog(ConnexionInterface.this, "Identifiant ou mot de passe incorrect !"); // Affiche un message d'erreur d'identifiant ou de mot de passe incorrect
+        JOptionPane.showMessageDialog(Connexion.this, "Identifiant ou mot de passe incorrect !"); // Affiche un message d'erreur d'identifiant ou de mot de passe incorrect
         return false; // Identifiants invalides
     }
 
-    // Getters qui permet de savoir quel compte est connecté
+    // Getter qui renvoie le compte actuellement connecté
     public Utilisateur getPersonne1() {
         return personne1;
     }

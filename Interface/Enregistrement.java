@@ -1,16 +1,13 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-
+import java.util.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class Enregistrement extends JFrame{
 
-    private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau
-    private String identifiant;
+    private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau qui va servir à désérialiser le fichier contenant les logs
+    private String identifiant; // Identifiant du compte en cours de création
 
     public Enregistrement() {
 
@@ -33,47 +30,47 @@ public class Enregistrement extends JFrame{
         constraints.gridwidth = 1; // Étend pas le composant sur plusieurs colonnes
         constraints.anchor = GridBagConstraints.WEST; // Aligne le composant à gauche de sa case
         constraints.insets = new Insets(5, 5, 5, 5); // Espacement entre les composants
-        panel.add(id, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(id, constraints); // Ajoute le texte au panneau
 
-        JTextField idField = new JTextField(20);
+        JTextField idField = new JTextField(20); // Composant pour saisir l'identifiant
         constraints.gridx = 1; // Deuxième colonne
-        panel.add(idField, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(idField, constraints); // Ajoute la zone de saisie au panneau
 
         JLabel mdp = new JLabel("Mot de passe : "); // Composant qui demande le mot de passe
         constraints.gridx = 0; // Première colonne
         constraints.gridy = 1; // Deuxième ligne
-        panel.add(mdp, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(mdp, constraints); // Ajoute le texte au panneau
 
-        JPasswordField passwordField = new JPasswordField(20);
+        JPasswordField passwordField = new JPasswordField(20); // Composant pour saisir le mot de passe
         constraints.gridx = 1; // Deuxième colonne
-        panel.add(passwordField, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(passwordField, constraints); // Ajoute la zone de saisie au panneau
 
-        JLabel mdpConfirmation = new JLabel("Confirmation du mot de passe : "); // Composant qui demande le mot de passe
+        JLabel mdpConfirmation = new JLabel("Confirmation du mot de passe : "); // Composant qui demande la confirmation de mot de passe
         constraints.gridx = 0; // Première colonne
         constraints.gridy = 2; // Troisième ligne
-        panel.add(mdpConfirmation, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(mdpConfirmation, constraints); // Ajoute le texte au panneau
 
-        JPasswordField passwordFieldConfirmation = new JPasswordField(20);
+        JPasswordField passwordFieldConfirmation = new JPasswordField(20); // Composant de saisie de la confirmation de mot de passe
         constraints.gridx = 1; // Deuxième colonne
-        panel.add(passwordFieldConfirmation, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(passwordFieldConfirmation, constraints); // Ajoute la zone de saisie au panneau
 
-        JLabel code = new JLabel("Code administrateur : "); // Composant qui demande le mot de passe
+        JLabel code = new JLabel("Code administrateur : "); // Composant qui demande le code nécessaire pour s'inscrire en tant qu'administrateur
         constraints.gridx = 0; // Première colonne
         constraints.gridy = 3; // Quatrième ligne
-        panel.add(code, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(code, constraints); // Ajoute le texte au panneau
 
-        JTextField codeField = new JTextField(20);
+        JTextField codeField = new JTextField(20); // Composant de saisie du code d'administrateur
         constraints.gridx = 1; // Deuxième colonne
-        panel.add(codeField, constraints); // Ajoute le bouton de connexion au panneau
+        panel.add(codeField, constraints); // Ajoute la zone de saisie au panneau
 
-        JButton annulerButton = new JButton("Annuler");
+        JButton annulerButton = new JButton("Annuler"); // Bouton d'annulation d'inscription
         constraints.gridx = 0; // Première colonne
         constraints.gridy = 4; // Cinquième ligne
-        panel.add(annulerButton, constraints);
+        panel.add(annulerButton, constraints); // Ajoute le bouton au panneau
 
-        JButton enregistrerButton = new JButton("Enregistrer");
+        JButton enregistrerButton = new JButton("Enregistrer"); // Bouton d'enregistrement des informations pour créer le compte
         constraints.gridx = 1; // Deuxième colonne
-        panel.add(enregistrerButton, constraints);
+        panel.add(enregistrerButton, constraints); //  Ajoute le bouton au panneau
 
         add(panel); // Ajoute le panneau
         setVisible(true); // Rend la fenêtre visible
@@ -89,6 +86,7 @@ public class Enregistrement extends JFrame{
             e1.printStackTrace();
         }
 
+        // Retour à la page de connexion
         annulerButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Annuler'
             @Override
             public void actionPerformed(ActionEvent e){
@@ -96,6 +94,10 @@ public class Enregistrement extends JFrame{
             }
         });
 
+        /* Ajout du gestionnaire d'événements pour le bouton d'enregistrement
+        Objectif : vérifier que les informations saisies sont valides pour le compte soit créé (mdp assez long, identifiant inexistant),
+                            la qualité d'administrateur du compte
+                    Il faut ensuite créer le compte : l'ajouter au fichier .csv qui contient les logs */
         enregistrerButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Enregistrer'
             @Override
             public void actionPerformed(ActionEvent e){
@@ -139,6 +141,7 @@ public class Enregistrement extends JFrame{
         });
     }
 
+    // Méthode qui vérifie si un identifiant est déjà existant ou pas
     public boolean identifiantExistant(){
         for (String[] ligneTableau : tableauLogs){
             if (ligneTableau[0].equals(identifiant)){
