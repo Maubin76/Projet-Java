@@ -1,6 +1,14 @@
 # Projet-Java
-# objectif : créer un quizz en java par binome
-
 java version "19.0.2" 2023-01-17
-Java(TM) SE Runtime Environment (build 19.0.2+7-44)
-Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+
+# Faits :
+ - connexion
+ - inscription
+ - (dé)bannissement
+ - suppression
+
+# A faire prochainement :
+ - création de question par admin
+ - choix du mode de jeu et des paramètres de la partie par l'utilisateur
+ - jeu en mode solo avec : timer, sauvegarde du meilleur score global et par utilisateur
+
