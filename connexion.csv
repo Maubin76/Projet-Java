@@ -1,7 +1,5 @@
-emile,mdp1,true
-mathieu,mdp2,true
-admin,admin,true
-joueur,joueur,false
-,,false
- , ,true
-charlopheno,charlo,true
+emile,mdp1,true,false
+mathieu,mdp2,true,false
+admin,admin,true,false
+charlopheno,charlo,false,false
+joueur,joueur,false,false

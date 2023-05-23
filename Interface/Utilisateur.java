@@ -7,17 +7,20 @@ public class Utilisateur implements Serializable{
     private String id;
     private String mdp;
     private boolean admin;
+    private boolean banni;
 
-    public Utilisateur(String id, String mdp, boolean admin){
+    public Utilisateur(String id, String mdp, boolean admin, boolean banni){
         this.id = id;
         this.mdp = mdp;
         this.admin = admin;
+        this.banni = banni;
     }
 
-    public Utilisateur(JTextField id, JPasswordField mdp, boolean admin){
+    public Utilisateur(JTextField id, JPasswordField mdp, boolean admin, boolean banni){
         this.id = id.getText();
         this.mdp = new String(mdp.getPassword());
         this.admin = admin;
+        this.banni = banni;
     }
 
     public String getId() {
@@ -42,6 +45,14 @@ public class Utilisateur implements Serializable{
 
     public void setAdmin(boolean admin) {
         this.admin = admin;
+    }
+
+    public boolean isBanni() {
+        return banni;
+    }
+
+    public void setBanni(boolean banni) {
+        this.banni = banni;
     }
 
     

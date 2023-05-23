@@ -76,8 +76,6 @@ public class ConnexionInterface extends JFrame {
                     JOptionPane.showMessageDialog(ConnexionInterface.this, "Connexion réussie !"); // Affiche un message de connexion réussie
                     dispose();
                     new ModeDeJeu(personne1);
-                } else {
-                    JOptionPane.showMessageDialog(ConnexionInterface.this, "Identifiant ou mot de passe incorrect !"); // Affiche un message d'erreur d'identifiant ou de mot de passe incorrect
                 }
             }
         });
@@ -97,11 +95,15 @@ public class ConnexionInterface extends JFrame {
             while ((ligne = reader.readLine()) != null) { // Parcours le document ligne par ligne
                 String[] attributs = ligne.split(","); // Range le contenu de la ligne du document dans un tableau de String
                 if (attributs[0].equals(nomUtilisateur) && attributs[1].equals(motDePasse)) {
-                    if (attributs[2].equals("true")){ // Intanciation dans le cas d'un administrateur
-                        personne1 = new Utilisateur(attributs[0], attributs[1], true);
+                    if (attributs[3].equals("true")) {
+                        JOptionPane.showMessageDialog(ConnexionInterface.this, "Compte banni !");
+                        return false;
+                    }
+                    else if (attributs[2].equals("true")){ // Intanciation dans le cas d'un administrateur
+                        personne1 = new Utilisateur(attributs[0], attributs[1], true, false);
                     }
                     else { // Intanciation dans le cas d'un simple utilisateur
-                        personne1 = new Utilisateur(attributs[0], attributs[1], false);
+                        personne1 = new Utilisateur(attributs[0], attributs[1], false, false);
                     }
                     return true; // Identifiants valides
                 }
@@ -109,6 +111,7 @@ public class ConnexionInterface extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        JOptionPane.showMessageDialog(ConnexionInterface.this, "Identifiant ou mot de passe incorrect !"); // Affiche un message d'erreur d'identifiant ou de mot de passe incorrect
         return false; // Identifiants invalides
     }
 

@@ -9,7 +9,11 @@ import java.awt.event.ActionListener;
 
 public class Enregistrement extends JFrame{
 
+    private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau
+    private String identifiant;
+
     public Enregistrement() {
+
         dispose();
         // Configuration de la fenêtre
         setTitle("Inscription"); // Définit le titre de la fenêtre
@@ -74,6 +78,17 @@ public class Enregistrement extends JFrame{
         add(panel); // Ajoute le panneau
         setVisible(true); // Rend la fenêtre visible
 
+        // Désérialisation : On stocke toutes les données des utilisateurs dans un arrayList de String[]
+        try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) { // Ouverture fichier qui contient les logs
+            String ligne; // Ligne du document qui est en train d'être parcourue
+            while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
+                String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
+                tableauLogs.add(ligneTableau); // Ajoute une ligne au tableau de String[]
+            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
         annulerButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Annuler'
             @Override
             public void actionPerformed(ActionEvent e){
@@ -84,28 +99,22 @@ public class Enregistrement extends JFrame{
         enregistrerButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Enregistrer'
             @Override
             public void actionPerformed(ActionEvent e){
-
-                if (Arrays.equals(passwordFieldConfirmation.getPassword(), passwordField.getPassword())) { // Vérification de la concordance des mots de passe saisis
-
-                    // Désérialisation : On stocke toutes les données des utilisateurs dans un arrayList de String[]
-                    ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau
-                    try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) { // Ouverture fichier qui contient les logs
-                        String ligne; // Ligne du document qui est en train d'être parcourue
-                        while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
-                            String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
-                            tableauLogs.add(ligneTableau); // Ajoute une ligne au tableau de String[]
-                        }
-                    } catch (IOException e1) {
-                        e1.printStackTrace();
-                        JOptionPane.showMessageDialog(Enregistrement.this, "Erreur de la lecture !");
-                    }
-                    String[] nouveauCompte = new String[3]; // Tableau de String pour les données en cours d'enregistrement
+                identifiant = idField.getText();
+                if (identifiantExistant()) {
+                    JOptionPane.showMessageDialog(Enregistrement.this, "Cet identifiant existe déja");
+                }
+                else if (passwordField.getPassword().length<3){
+                    JOptionPane.showMessageDialog(Enregistrement.this, "Mot de passe trop court");
+                }
+                else if (Arrays.equals(passwordFieldConfirmation.getPassword(), passwordField.getPassword()) && !identifiantExistant() && !(passwordField.getPassword().length<3)) { // Vérification de la concordance des mots de passe saisis
+                    String[] nouveauCompte = new String[4]; // Tableau de String pour les données en cours d'enregistrement
                     nouveauCompte[0] = idField.getText(); // Case 1 : identifiant
                     nouveauCompte[1] = new String(passwordField.getPassword()); // Case 2 : Mot de passe
                     if (codeField.getText().equals("AdminQUIZZ")){ // Code pour pouvoir créer un compte administrateur
                         nouveauCompte[2] = "true";} // Case 3 : administrateur
                     else {
                         nouveauCompte[2] = "false";} // Case 3 : pas administrateur 
+                    nouveauCompte[3] = "false";
                     tableauLogs.add(nouveauCompte); // Ajout du nouveau compte dans le tableau dynamique de String[]
 
                     // Sérialisation : On réécrit tout le tableau dynamique dans le fichier connexion.csv en écrasant les données déjà présentes
@@ -128,5 +137,14 @@ public class Enregistrement extends JFrame{
                 }
             }
         });
+    }
+
+    public boolean identifiantExistant(){
+        for (String[] ligneTableau : tableauLogs){
+            if (ligneTableau[0].equals(identifiant)){
+                return true;
+            }
+        }
+        return false;
     }
 }

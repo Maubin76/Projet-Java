@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class ModeAdmin extends JFrame{
     
@@ -76,5 +77,54 @@ public class ModeAdmin extends JFrame{
         add(panel); // Ajoute le panneau
         setVisible(true); // Rend la fenêtre visible
 
+        retour.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                dispose(); // Ferme la page pour revenir à la précédente
+            }
+        });
+        
+        ajQuestion.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                new CreationQuestion();
+            }
+        });
+
+        suppButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                try {
+                    GestionCompte supp = new GestionCompte(suppField);
+                    supp.suppCompte();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+
+        banButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                try {
+                    GestionCompte ban = new GestionCompte(banField);
+                    ban.banCompte();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+
+        debanButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                try {
+                    GestionCompte deban = new GestionCompte(debanField);
+                    deban.debanCompte();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
     }
 }
