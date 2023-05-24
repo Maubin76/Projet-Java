@@ -1,0 +1,125 @@
+Quelle est la capitale de la France?,Paris,Lyon,Marseille,Lille,1,geo
+Quelle est la capitale de l'Espagne?,Madrid,Barcelone,Séville,Valence,2,geo
+Quelle est la capitale des États-Unis?,Washington,New York,Las Vegas,Boston,2,geo
+Quelle est la capitale de l'Australie?,Canberra,Sydney,Melbourne,Brisbane,2,geo
+Quelle est la capitale de la Suède?,Stockholm,Oslo,Helsinki,Copenhague,Stockholm,4,geo
+Quelle est la plus grande île du monde?,Groenland,Madagascar,Japon,Nouvelle-Zélande,1,geo
+Quel est le plus long fleuve du monde?,Amazone,Nil,Congo,Mississippi,4,geo
+Quelle est la plus haute montagne du monde?,Mont Everest,Kilimandjaro,Mont Blanc,Matchu Picchu,1,geo
+Quel est le plus grand océan de la planète?,Océan Pacifique,Océan Atlantique,Océan Indien,Océan Arctique,2,geo
+Quelle est la plus grande ville des États-Unis?,New York,Los Angeles,Chicago,Miami,1,geo
+Quel est le plus grand désert chaud du monde?,Sahara,Atacama,Gobi,Kalahari,1,geo
+Quelle est la plus grande chaîne de montagnes du monde?,Himalaya,Andes,Alaska,Alpes,1,geo
+Quel est le plus grand lac d'Afrique?,Victoria,Tanganyika,Malawi,Turkana,10,geo
+Quelle est la plus grande île de la Méditerranée?,Sicile,Sardaigne,Créte,Chypre,4,geo
+Quelle est la plus haute cascade du monde?,Angel,Victoria,Iguazu,Niagara,10,geo
+Quel est le pays le plus peuplé du monde?,Chine,Inde,États-Unis,Russie,1,geo
+Quel pays ne se situe pas à la fois en Asie et en Europe?,Ukraine,Russie,Géorgie,Turquie,7,geo
+Dans quel pays se trouve la ville de Cuzco, ancienne capitale de l'empire inca?,Pérou,Équateur,Colombie,Bolivie,8,geo
+Quel pays est traversé par le fleuve Amazone?,Brésil,Argentine,Colombie,Équateur,2,geo
+
+Quel événement a marqué le début de la Première Guerre mondiale ?,Assassinat de l'archiduc François-Ferdinand,Incendie du Reichstag,Attaque de Pearl Harbor,Bataille de Stalingrad,4,histoire
+Dans quelle ville a eu lieu la Révolution française ?,Paris,Versailles,Lille,Lutèce,3,histoire
+Quel empereur romain a construit le Colisée ?,Vespasien,Auguste,Néron,Caligula,10,histoire
+Quelle est la date de la signature de la Déclaration d'indépendance des États-Unis ?,4 juillet 1776,14 juillet 1789,1er janvier 1804,3 septembre 1939,8,histoire
+Quel est le nom de la première femme à remporter le prix Nobel de la paix ?,Bertha von Suttner,Marie Curie,Rigoberta Menchú,Emily Dickinson,10,histoire
+Quelle bataille a mis fin à la guerre de Cent Ans ?,Bataille de Castillon,Bataille de Crécy,Bataille de Poitiers,Bataille d'Azincourt,9,histoire
+Quel pays a été le premier à explorer et coloniser le Brésil ?,Portugal,Espagne,France,Angleterre,4,histoire
+Quel est le nom du traité qui a mis fin à la Première Guerre mondiale ?,Traité de Versailles,Traité de Tordesillas,Traité de Westphalie,Traité de Paris,2,histoire
+Quel est le nom du dernier pharaon d'Égypte ?,Cléopâtre,Ramsès II,Néfertiti,Toutânkhamon,7,histoire
+Dans quelle ville se trouve la célèbre statue du Christ Rédempteur ?,Rio de Janeiro,Sao Paulo,Brasilia,Buenos Aires,4,histoire
+Quelle bataille a marqué la fin de l'Empire romain d'Occident ?,Actium,Gergovie,Carthage,Alesia,10,histoire
+Qui était le roi de France pendant la Révolution française ?,Louis XVI,Charles X,Louis XIV,Henri IV,5,histoire
+Quel pays a colonisé l'Inde pendant plusieurs siècles ?,Grande-Bretagne,Espagne,Portugal,France,3,histoire
+Quel était le nom du navire sur lequel Christophe Colomb a entrepris son premier voyage vers le Nouveau Monde ?,Santa Maria,Endeavour,Nina,Mayflower,2,histoire
+Quelle était la capitale de l'Empire inca ?,Cusco,Lima,Machu Picchu,Bogota,7,histoire
+Quel pays a lancé les premières explorations maritimes à grande échelle au 15e siècle ?,Portugal,Espagne,Angleterre,France,8,histoire
+Quel était le nom du dictateur allemand pendant la Seconde Guerre mondiale ?,Hitler,Mussolini,Staline,Lenine,1,histoire
+Quelle était la capitale de l'Empire ottoman ?,Istanbul,Constantinople,Ankara,Le Caire,3,histoire
+Quelle bataille a marqué la fin de Napoléon Bonaparte ?,Bataille de Waterloo,Bataille de Leipzig,Bataille d'Austerlitz,Bataille de Trafalgar,7,histoire
+Quel pays a été le premier à envoyer un homme dans l'espace ?,L'Union soviétique,Les États-Unis,L'Allemagne,Le Royaume-Uni,6,histoire
+Qui a découvert l'Amérique ?,Christophe Colomb,Marco Polo,Vasco de Gama,Amerigo Vespucci,1,histoire
+Quelle était la capitale de l'Empire romain ?,Rome,Athènes,Alexandrie,Lutèce,1,histoire
+Quelle est la période connue sous le nom de "Guerre froide" ?,1947-1991,1914-1918,1939-1945,1789-1799,1,histoire
+Quel empire a conquis une grande partie de l'Europe, de l'Asie et de l'Afrique au 13e siècle ?,L'Empire mongol,L'Empire byzantin,L'Empire ottoman,L'Empire romain,9,histoire
+Quel événement a marqué le début de la Seconde Guerre mondiale ?,L'invasion de la Pologne par l'Allemagne,L'attaque de Pearl Harbor,La ligne Maginot,La Révolution russe,2,histoire
+
+Qui a peint "La Joconde" ?,da Vinci,Michel-Ange,Raphael,Picasso,1,art
+Quel mouvement artistique a été caractérisé par des formes géométriques et des couleurs vives ?,Le cubisme,Le surréalisme,L'impressionnisme,Le réalisme,1,art
+Quel sculpteur a créé la statue de David ?,Michel-Ange,Donatello,Rodin,Bernini,8,art
+Quel artiste est connu pour ses tableaux de moustaches surréalistes ?,Salvador Dalí,Pablo Picasso,Vincent van Gogh,Henri Matisse,4,art
+Quel mouvement artistique a été inspiré par la culture et l'art africains ?,Le cubisme,L'art moderne,Le futurisme,L'art nouveau,3,art
+Qui a peint la Nuit étoilée ?,Vincent van Gogh,Claude Monet,Edvard Munch,Leonardo da Vinci,6,art
+Quel artiste a créé la sculpture du Penseur ?,Rodin,Giacometti,Brancusi,Michel-Ange,7,art
+Quel courant artistique était caractérisé par des scènes de la vie quotidienne et des jeux de lumière ?,L'impressionnisme,Le réalisme,Le surréalisme,L'art abstrait,7,art
+Qui a peint "Les Tournesols" ?,van Gogh,Picasso,Monet,Warhol,2,art
+Quel artiste est connu pour ses peintures de boîtes de soupe Campbell ?,Warhol,Pollock,Lichtenstein,Mondrian,9,art
+Quel artiste est connu pour ses peintures de la série "Les Nymphéas" ?,Monet,van Gogh,Picasso,Klimt,5,art
+Qui a peint "La Persistance de la mémoire" avec des montres molles ?,Dalí,Mondrian,Matisse,Cézanne,8,art
+Quel artiste est connu pour ses collages de motifs découpés dans du papier coloré ?,Henri Matisse,Pablo Picasso,Georgia O'Keeffe,Andy Warhol,2,art
+Quel mouvement artistique a été caractérisé par des formes géométriques et des couleurs primaires ?,Le suprématisme,Le néo-expressionnisme,L'art cinétique,Le cubisme,6,art
+Qui a peint "La Jeune Fille à la perle" ?,Johannes Vermeer,Leonardo da Vinci,Rembrandt Harmenszoon van Rijn,Raphael,3,art
+Quel artiste est connu pour ses installations artistiques avec des emballages et des objets du quotidien ?,Christo,Jean-Michel Basquiat,Marcel Duchamp,Banksy,6,art
+Quel artiste est considéré comme le père de l'art moderne ?,Édouard Manet,Pierre-Auguste Renoir,Claude Monet,Gustave Courbet,8,art
+Quel mouvement artistique est associé à Salvador Dalí et René Magritte ?,Le surréalisme,L'impressionnisme,Le cubisme,L'art abstrait,3,art
+Qui a peint "La Guernica" ?,Picasso,Rivera,Dalí,Matisse,4,art
+Quel artiste a créé la sculpture "Le Baiser" ?,Auguste Rodin,Michel-Ange,Donatello,Alberto Giacometti,9,art
+Quel courant artistique est associé à Wassily Kandinsky ?,L'art abstrait,Le fauvisme,Le réalisme,Le néo-classicisme,10,art
+Quel mouvement artistique est associé à Jackson Pollock et Mark Rothko ?,L'expressionnisme abstrait,Le pop art,Le réalisme,L'art cinétique,10,art
+Quel artiste est connu pour ses sculptures en acier inoxydable ?,Jeff Koons,Anish Kapoor,Damien Hirst,Yayoi Kusama,10,art
+Quel mouvement artistique est associé à Andy Warhol et Roy Lichtenstein ?,Le pop art,L'impressionnisme,Le surréalisme,Le cubisme,9,art
+Quel artiste est connu pour ses peintures de fleurs et de nature morte ?,Georgia O'Keeffe,Frida Kahlo,Yoko Ono,Artemisia Gentileschi,8,art
+
+Quel est le personnage principal de la série de jeux vidéo "The Legend of Zelda"?,Link,Mario,Zelda,Ganon,1,jeuVideo
+Dans quel jeu vidéo peut-on retrouver les personnages Ryu et Ken?,Street Fighter,Mortal Kombat,Tekken,Super Smash Bros,4,jeuVideo
+Quel est le nom du hérisson bleu emblématique de Sega?,Sonic,Lucario,Yoshi,Mario,1,jeuVideo
+Quelle console de jeu vidéo est produite par Sony?,PlayStation,Xbox,Switch,Wii,2,jeuVideo
+Quel jeu vidéo est sorti en premier : "Call of Duty" ou "Battlefield"?,Call of Duty,Battlefield,Les deux sont sortis en même temps,42,2,jeuVideo
+Quelle est la date de sortie initiale du jeu vidéo "Minecraft"?,2009,2010,2011,2012,2009,7,jeuVideo
+Quel est le nom de l'entreprise qui a développé le jeu vidéo "Fortnite"?,Epic Games,Ubisoft,Activision,Blizzard,Epic Games,3,jeuVideo
+Quelle est la première console de jeu vidéo domestique sortie sur le marché?,Magnavox Odyssey,Atari 2600,Super Nintendo Entertainment System (SNES),Nintendo 64,10,jeuVideo
+Quelle est la devise de la série de jeux vidéo "Assassin's Creed"?,Rien n'est vrai. Tout est permis,La paix par la force,Pour la Horde!,Le pouvoir réside dans les poings,9,jeuVideo
+Quel est le nom de l'androïde protagoniste du jeu vidéo "Detroit: Become Human"?,Connor,Adam,Jensen,Markus,8,jeuVideo
+Dans quel jeu vidéo peut-on incarner le personnage de Geralt de Riv?,The Witcher,Final Fantasy VII,Dark Souls,World of Warcraft,The Witcher,4,jeuVideo
+Quel est le nom du protagoniste du jeu vidéo "Half-Life"?,Gordon Freeman,John Marston,Ezio Auditore,Master Chief,10,jeuVideo
+Quel est le jeu vidéo le plus vendu de tous les temps?,Minecraft,Tetris,Grand Theft Auto V,Call of Duty: Modern Warfare,7,jeuVideo
+Quelle est la capacité maximale de stockage de la console de jeu PlayStation 5?,825 Go,500 Go,1 To,2 To,7,jeuVideo
+Quel est le nom du robot compagnon dans le jeu vidéo "Portal"?,Wheatley,GLaDOS,Claptrap,Cortana,10,jeuVideo
+Quel est le personnage principal de la série de jeux vidéo "Super Mario"?,Mario,Luigi,Yoshi,Donkey Kong,1,jeuVideo
+Dans quel jeu vidéo peut-on incarner le personnage de Lara Croft?,Tomb Raider,Uncharted,Metal Gear Solid,Resident Evil,2,jeuVideo
+Quelle est la console de jeu vidéo la plus vendue de tous les temps?,PlayStation 2,Nintendo DS,Game Boy,PlayStation 4,9,jeuVideo
+Quel est le nom du célèbre plombier dans le jeu vidéo "Super Mario Bros"?,Mario,Luigi,Wario,Waluigi,1,jeuVideo
+Quel est le nom du vaisseau spatial emblématique dans le jeu vidéo "Star Fox"?,Arwing,X-wing,TIE Fighter,Millennium Falcon,10,jeuVideo
+Quel est le nom du protagoniste dans le jeu vidéo "Metal Gear Solid"?,Solid Snake,Big Boss,Raiden,Liquid Snake,4,jeuVideo
+Quelle est la première console de jeu vidéo portable sortie sur le marché?,Game Boy,Atari Lynx,Nintendo DS,Sega Game Gear,5,jeuVideo
+Quel est le nom du protagoniste du jeu vidéo "Assassin's Creed"?,Altaïr Ibn-La'Ahad,Ezio Auditore,Edward Kenway,Connor Kenway,4,jeuVideo
+Dans quel jeu vidéo peut-on incarner le personnage de Kratos?,God of War,Devil May Cry,Bayonetta,Dark Souls,6,jeuVideo
+Quelle est la première console de jeu vidéo produite par Microsoft?,Xbox,Xbox 360,Xbox One,CodyCross,4,jeuVideo
+Quel est le nom du studio de développement responsable de la série de jeux vidéo "The Elder Scrolls"?,Bethesda Game Studios,Bioware,Ubisoft,Rockstar Games,9,jeuVideo
+Quel est le nom du monde ouvert dans le jeu vidéo "The Legend of Zelda: Breath of the Wild"?,Hyrule,Skyrim,Azeroth,Gotham,3,jeuVideo
+Quel est le nom du personnage emblématique du jeu vidéo "Pokémon"?,Pikachu,Dracaufeu,Rondoudou,Mewtwo,1,jeuVideo
+Quel est le nom du protagoniste dans le jeu vidéo "Uncharted"?,Nathan Drake,Joel,Ellie,Kratos,9,jeuVideo
+Quel est le nom de l'antagoniste principal dans la série de jeux vidéo "Final Fantasy"?,Sephiroth,Kefka Palazzo,Golbez,Ultimecia,10,jeuVideo
+Quel est le nom du protagoniste dans le jeu vidéo "Red Dead Redemption 2"?,Arthur Morgan,John Marston,Dutch van der Linde,Micah Bell,7,jeuVideo
+Quel est le nom du monde virtuel dans le jeu vidéo "World of Warcraft"?,Azeroth,Midgar,Tamriel,Pandora,5,jeuVideo
+Quelle est la capacité de stockage maximale de la console de jeu Xbox Series X?,1 To,500 Go,2 To,512 Go,7,jeuVideo
+Quel est le nom du personnage principal dans le jeu vidéo "BioShock"?,Jack,Booker DeWitt,Elizabeth,Sander Cohen,Jack,10,jeuVideo
+
+Quel pays a remporté le plus grand nombre de Coupes du Monde de football?,Brésil,Allemagne,Italie,Argentine,2,sport
+Quel pays a remporté la Coupe du Monde de football 2018?,France,Brésil,Allemagne,Italie,1,sport
+Quel joueur de basketball est souvent surnommé "King James"?,LeBron James,Kobe Bryant,Michael Jordan,Stephen Curry,1,sport
+Quel est le nom du joueur de tennis suisse qui a remporté 20 titres du Grand Chelem?,Roger Federer,Rafael Nadal,Novak Djokovic,Andy Murray,4,sport
+Dans quel sport peut-on marquer un "touchdown"?,Football américain,Basketball,Rugby,Tennis,2,sport
+Quelle équipe de basketball de la NBA a remporté le plus de championnats?,Boston Celtics,Los Angeles Lakers,Chicago Bulls,Golden State Warriors,Boston Celtics,8,sport
+Quelle est la distance (en kilomètres) d'un marathon?,42,37,45,50 kilomètres,5,sport
+Quel joueur de football a remporté le Ballon d'Or en 2020?,Messi,Ronaldo,Neymar,Mbappé,3,sport
+Quel est le nom du tournoi de tennis qui se déroule à Wimbledon?,The Championships,Big Open,UK Open,The ChampionsCup,9,sport
+Quel est le nom du célèbre boxeur américain qui a affronté Muhammad Ali lors du "Rumble in the Jungle"?,George Foreman,Joe Frazier,Mike Tyson,Manny Pacquiao,6,sport
+Quel est le nom du skieur alpin autrichien qui a remporté 8 médailles d'or aux Jeux Olympiques d'hiver?,Marcel Hirscher,Hermann Maier,Bode Miller,Franz Klammer,10,sport
+Quel est le nom du stade de football de Barcelone?,Camp Nou,Santiago Bernabeu,Old Trafford,Anfield,10,sport
+Quel est le nom du célèbre golfeur américain qui a remporté 15 tournois du Grand Chelem?,Tiger Woods,Phil Mickelson,Rory McIlroy,Jordan Spieth,5,sport
+Quelle équipe de baseball a remporté le plus de Séries Mondiales?,New York Yankees,St. Louis Cardinals,Boston Red Sox,Los Angeles Dodgers,10,sport
+Quel est le nom du joueur de basketball qui détient le record du plus grand nombre de points marqués en un seul match de la NBA (100 points)?,Wilt Chamberlain,Kobe Bryant,Michael Jordan,LeBron James,10,sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'été de 2021?,États-Unis,Chine,Japon,Australie,9,sport
+Dans quel sport le terme "grand chelem" désigne-t-il le fait de remporter les quatre tournois majeurs la même année?,Tennis,Golf,Rugby,Cricket,7,sport
+Quel est le nom du célèbre athlète jamaïcain surnommé "Lightning Bolt"?,Usain Bolt,Carl Lewis,Michael Johnson,Mo Farah,1,sport
