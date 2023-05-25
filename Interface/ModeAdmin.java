@@ -90,7 +90,7 @@ public class ModeAdmin extends JFrame{
         ajQuestion.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Ajouter des questions'
         @Override
             public void actionPerformed(ActionEvent e){
-                new CreationQuestion(); // Lancement du constructeur qui permet d'ouvrir la fenêtre de création de questions
+                new AjouterQuestion(); // Lancement du constructeur qui permet d'ouvrir la fenêtre de création de questions
             }
         });
 
@@ -101,7 +101,7 @@ public class ModeAdmin extends JFrame{
             public void actionPerformed(ActionEvent e){
                 try {
                     GestionCompte supp = new GestionCompte(suppField); // Intanciation qui appelle le constructeur
-                    supp.suppCompte(); // appel de la méthode qui supprime le compte saisi
+                    supp.suppCompte(); // Appel de la méthode qui supprime le compte saisi
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
