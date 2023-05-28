@@ -3,6 +3,7 @@ Quelle est la capitale de l'Espagne?,Madrid,Barcelone,Séville,Valence,2,Géogra
 Quelle est la capitale des États-Unis?,Washington,New York,Las Vegas,Boston,2,Géographie
 Quelle est la capitale de l'Australie?,Canberra,Sydney,Melbourne,Brisbane,2,Géographie
 Quelle est la capitale de la Suède?,Stockholm,Oslo,Helsinki,Copenhague,Stockholm,4,Géographie
+Quelle est la capitale du Canade ?,Ottawa,Toronto,Calgary,Montreal,3,Géographie
 Quelle est la plus grande île du monde?,Groenland,Madagascar,Japon,Nouvelle-Zélande,1,Géographie
 Quel est le plus long fleuve du monde?,Amazone,Nil,Congo,Mississippi,4,Géographie
 Quelle est la plus haute montagne du monde?,Mont Everest,Kilimandjaro,Mont Blanc,Matchu Picchu,1,Géographie
@@ -143,3 +144,48 @@ Quel est le nom du groupe de rock britannique formé par Mick Jagger et Keith Ri
 Quelle chanteuse américaine est connue pour son album "Back to Black" et des chansons comme "Rehab" et "Valerie"?,Amy Winehouse,Adele,Taylor Swift,Beyoncé,4,Musique
 Quel est le nom du groupe de rock américain connu pour des chansons comme "Smells Like Teen Spirit" et "Come as You Are"?,Nirvana,Guns N' Roses,Metallica,AC/DC,4,Musique
 En quelle année est mort Louis XVI ?,1793,1792,1790,1789,9,Histoire
+
+
+Quelle est la valeur de π (pi) arrondie à 4 décimales près ?,3.1416,3.1415,3.1414,3.1413,3,Maths
+Combien de côtés a un ennéagone ?,9,7,20,11,7,Maths
+Quelle est la racine carrée de 144 ?,12,11,14,15,2,Maths
+Quelle est la formule de l'aire d'un cercle ?,A = πr²,A = 2πr,A = πd,A = 4πr,2,Maths
+Quel est le nombre d'or, aussi connu sous le nom de phi (φ) ?,1.618,2.718,3.141,1.414,6,Maths
+Quel est le nombre de faces d'un dodécaèdre ?,12,10,8,20,2,Maths
+Quelle est la valeur de la constante d'Euler (e) arrondie à deux décimales près ?,2.71,3.14,1.41,2.50,9,Maths
+Quel est le théorème qui établit la relation entre les côtés et les angles d'un triangle ?,Théorème de Pythagore,Théorème de Thalès,Théorème de l'angle inscrit,Théorème de la médiane,3,Maths
+Quel est le résultat de la factorisation de l'expression suivante : (x+2)(x-3) ?,x^2 - x - 6,x^2 + x - 6,x^2 + x + 6,x^2 - x + 6,5,Maths
+Quel est le périmètre d'un cercle ayant un rayon de 5 unités ?,31.42,25.12,15.7,10,7,Maths
+Quelle est la valeur de la dérivée de sin(x) par rapport à x ?,cos(x),-cos(x),xcos(x),-xcos(x),3,Maths
+Quelle est la dérivée de cos(x) par rapport à x ?,-sin(x),sin(x),xsin(x),-xsin(x),3,Maths
+Combien de diagonales possède un octaèdre ?,12,16,24,32,8,Maths
+Quel est le résultat de l'intégrale de x^2 par rapport à x ?,1/3x^3 + C,2x + C,x^3 + C,-2x + C,3,Maths
+Quelle est la formule de la somme des angles intérieurs d'un polygone à n côtés ?,S = (n - 2) × 180,S = n × 180,S = (n + 2) × 180,S = n × 90,7,Maths
+Quel est le résultat de l'équation 2^x = 16 ?,x = 4,x = 2,x = 8,x = 6,2,Maths
+Quelle est la dérivée de ln(x) par rapport à x ?,1/x,1/x^2,ln(x)/x,e^x/x,3,Maths
+Combien de chiffres contient le nombre 10^100 ?,101,99,100,199,10,Maths
+Quelle est la valeur de l'intégrale de sin(x) de 0 à π ?,2,0,1,-1,4,Maths
+Quelle est la limite de (1 + 1/n)^n lorsque n tend vers l'infini ?,e,1/2,∞,0,9,Maths
+Quelle est la solution de l'équation x^3 + 2x^2 - 5x - 6 = 0 ?,x = -3,x = 2,x = -2,x = 3,5,Maths
+Quel est le résultat de la factorisation de l'expression suivante : x^3 - 8 ?,(x - 2)(x^2 + 2x + 4),(x - 2)(x^2 - 2x + 4),(x + 2)(x^2 + 2x - 4),(x + 2)(x^2 - 2x - 4),7,Maths
+Quelle est la dérivée de e^x par rapport à x ?,e^x,e^x + C,-e^x,1/e^x,2,Maths
+Quelle est la valeur de la limite de 1/x lorsque x tend vers l'infini ?,0,∞,1,-1,0,2,Maths
+Combien font 9 multiplié par 4 ?,36,32,28,40,1,Maths
+Quel est le résultat de 20 divisé par 5 ?,4,5,6,8,4,1,Maths
+Quelle est la différence entre 15 et 7 ?,8,7,11,9,8,1,Maths
+Combien font 3 puissance 4 ?,81,27,36,48,2,Maths
+Combien font 1/4 multiplié par 4/5 ?,1/5,1/10,3/10,5/20,1,Maths
+Quel est le carré de 8 ?,64,48,72,16,1,Maths
+Quelle est la valeur de x dans l'équation 3x - 7 = 8 ?,5,6,7,8,3,Maths
+Quel est le résultat de 7 divisé par 1/7 ?,49,1,77,49,343,2,Maths
+Quelle est la racine carrée de 81 ?,9,8,7,11,1,Maths
+Quelle est la somme de 1/3 et 1/4 ?,7/12,5/12,2/3,7/8,4,Maths
+Quel est le résultat de (6 + 3) * 2 ?,18,12,21,24,2,Maths
+Combien font 15% de 80 ?,12,10,9,13,4,Maths
+Quel est le résultat de 4! (factorielle de 4) ?,24,16,20,28,4,Maths
+Quelle est la valeur de x dans l'équation 2x - 5 = 15 ?,10,11,12,13,2,Maths
+Combien font 2^3 * 3^2 ?,72,48,96,144,9,Maths
+Quel est le résultat de la série 1 + 2 + 3 + ... + 10 ?,55,45,50,60,7,Maths
+Combien font 1/2 + 1/3 + 1/4 ?,11/12,7/12,5/6,3/4,9,Maths
+
+
