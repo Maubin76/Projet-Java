@@ -1,118 +1,96 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 
 public class ParamPartie extends JFrame{
-    /* 
-    private JFrame frame;
-    private String[] themes = {"Histoire","Géographie","Art","Sport","Maths","Musique","Jeux-vidéos","Cinéma"};
-    private String[] difficultes = {"Facile", "Moyen", "Difficile"};
-    private JLabel themeLabel;
-    private JLabel difficulteLabel;
-    private JLabel nombreLabel;
-    private JComboBox<String> themeComboBox;
-    private JComboBox<String> difficulteComboBox;
-    private JSpinner nombreSpinner;
-    private JButton validerButton;
-
     private String selectedTheme;
     private String selectedDifficulte;
     private int selectedNombre;
 
-    
-    */
-
-
-    
-
     public ParamPartie(){
-        /* 
-        this.frame=new JFrame("Menu déroulant");
-        this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.frame.setSize(400, 400);
-
-        // Choix du thème
-        this.themeLabel = new JLabel("Choix du thème :");
-        this.themeComboBox = new JComboBox<>(themes);
-        this.themeLabel.setBounds(50, 20, 200, 30);
-        this.themeComboBox.setBounds(50, 50, 200, 30);
-
-        // Choix de la difficulté
-        this.difficulteLabel = new JLabel("Choix de la difficulté :");
-        this.difficulteComboBox = new JComboBox<>(difficultes);
-        this.difficulteLabel.setBounds(50, 80, 200, 30);
-        this.difficulteComboBox.setBounds(50, 100, 200, 30);
-
-        // Choix du nombre de questions
-        this.nombreLabel = new JLabel("Nombre :");
-        this.nombreSpinner = new JSpinner(new SpinnerNumberModel(5, 5, 10, 1)); //SpinnerNumberModel(initial_value, min, max, step)
-        this.nombreLabel.setBounds(50, 130, 200, 30);
-        this.nombreSpinner.setBounds(50, 150, 200, 30);
-
-        // Ajout d'un gestionnaire d'événements aux menus déroulants
-        this.validerButton = new JButton("Valider");
-        this.validerButton.setBounds(100, 200, 100, 30);
-        validerButton.addActionListener(this);
-
-        frame.add(this.themeComboBox);
-        frame.add(this.themeLabel);
-        frame.add(this.difficulteComboBox);
-        frame.add(this.difficulteLabel);
-        frame.add(this.nombreSpinner);
-        frame.add(this.nombreLabel);
-        frame.add(this.validerButton);
-        frame.setLayout(null);
-        frame.setVisible(true);
-        */
         // Création de la fenêtre
-        JFrame frame = new JFrame("Choix paramêtres");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 400);
+        setTitle("Paramètres de partie"); // Définit le titre de la fenêtre
+        setDefaultCloseOperation(EXIT_ON_CLOSE); // Définit l'action de fermeture de la fenêtre
+        setSize(500, 300); // Définit la taille de la fenêtre (largeur, hauteur)
+        setResizable(true); // Autorise le redimensionnement de la fenêtre
+        setLocationRelativeTo(null); // Centre la fenêtre sur l'écran
+
+        JPanel panel = new JPanel(new GridBagLayout()); // Crée un panneau avec un gestionnaire de disposition GridBagLayout
+        GridBagConstraints constraints = new GridBagConstraints(); // Crée des contraintes pour le placement des composants dans la grille
 
         // Choix du thème
-        String[] themes = {"Histoire","Géographie","Art","Sport","Maths","Musique","Jeux-vidéos","Cinéma"};
-        JLabel themeLabel = new JLabel("Choix du thème :");
+        String[] themes = {"Histoire","Géographie","Art","Sport","Maths","Musique","Jeux-vidéos"};
+        JLabel themeLabel = new JLabel("Choix du thème : ");
+        constraints.gridx = 0; // Première colonne
+        constraints.gridy = 0; // Première ligne
+        constraints.ipady = 1; // Largeur de la case
+        constraints.ipadx = 1; // Longueur de la case
+        constraints.gridwidth = 1; // Étend pas le composant sur plusieurs colonnes
+        constraints.anchor = GridBagConstraints.CENTER; // Aligne le composant à gauche de sa case
+        constraints.insets = new Insets(5, 5, 5, 5); // Espacement entre les composants
+        panel.add(themeLabel, constraints); // Ajoute le texte au panneau
         JComboBox<String> themeComboBox = new JComboBox<>(themes);
-        themeLabel.setBounds(50, 20, 200, 30);
-        themeComboBox.setBounds(50, 50, 200, 30);
+        constraints.gridx = 1;
+        panel.add(themeComboBox, constraints); // Ajoute le texte au panneau
 
         // Choix de la difficulté
         String[] difficultes = {"Facile", "Moyen", "Difficile"};
         JLabel difficulteLabel = new JLabel("Choix de la difficulté :");
+        constraints.gridy = 1;
+        constraints.gridx = 0;
+        panel.add(difficulteLabel, constraints); // Ajoute le texte au panneau
         JComboBox<String> difficulteComboBox = new JComboBox<>(difficultes);
-        difficulteLabel.setBounds(50, 80, 200, 30);
-        difficulteComboBox.setBounds(50, 100, 200, 30);
+        constraints.gridx = 1;
+        panel.add(difficulteComboBox, constraints);
 
         // Choix du nombre de questions
         JLabel nombreLabel = new JLabel("Nombre de questions :");
-        JSpinner nombreSpinner = new JSpinner(new SpinnerNumberModel(5, 5, 10, 1)); //SpinnerNumberModel(initial_value, min, max, step)
-        nombreLabel.setBounds(50, 130, 200, 30);
-        nombreSpinner.setBounds(50, 150, 200, 30);
-        
+        constraints.gridy = 2;
+        constraints.gridx = 0;
+        panel.add(nombreLabel, constraints);
+        JSpinner nombreSpinner = new JSpinner(new SpinnerNumberModel(5, 5, 10, 1)); 
+        constraints.gridx = 1;
+        panel.add(nombreSpinner, constraints);
 
         // Ajout d'un gestionnaire d'événements aux menus déroulants
         JButton validerButton = new JButton("Valider");
-        validerButton.setBounds(100, 200, 100, 30);
+        constraints.gridy = 3;
+        constraints.gridx = 0;
+        panel.add(validerButton, constraints);
         validerButton.addActionListener(new ActionListener() { 
             public void actionPerformed(ActionEvent e) {
-                String selectedTheme = (String) themeComboBox.getSelectedItem();
-                String selectedDifficulte = (String) difficulteComboBox.getSelectedItem();
-                int selectedNombre = (int) nombreSpinner.getValue();
+                ParamPartie.this.selectedTheme = (String) themeComboBox.getSelectedItem();
+                ParamPartie.this.selectedDifficulte = (String) difficulteComboBox.getSelectedItem();
+                ParamPartie.this.selectedNombre = (int) nombreSpinner.getValue();
+                dispose();
             }
         });
 
-        // Ajout des composants à la fenêtre
-        frame.add(themeComboBox);
-        frame.add(themeLabel);
-        frame.add(difficulteComboBox);
-        frame.add(difficulteLabel);
-        frame.add(nombreSpinner);
-        frame.add(nombreLabel);
-        frame.add(validerButton);
-        frame.setLayout(null);
-        frame.setVisible(true);
+        JButton retourButton = new JButton("Retour");
+        constraints.gridy = 3;
+        constraints.gridx = 0;
+        panel.add(retourButton, constraints);
+        retourButton.addActionListener(new ActionListener() { 
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });   
+
+        add(panel); // Ajoute le panneau
+        setVisible(true); // Rend la fenêtre visible     
     }
 
-    public static void main(String[] args) {
-        new ParamPartie();
-    }
+    // Getters et setters
+    public String getSelectedTheme() {
+        return selectedTheme;}
+    public void setSelectedTheme(String selectedTheme) {
+        this.selectedTheme = selectedTheme;}
+    public String getSelectedDifficulte() {
+        return selectedDifficulte;}
+    public void setSelectedDifficulte(String selectedDifficulte) {
+        this.selectedDifficulte = selectedDifficulte;}
+    public int getSelectedNombre() {
+        return selectedNombre;}
+    public void setSelectedNombre(int selectedNombre) {
+        this.selectedNombre = selectedNombre;}
 }

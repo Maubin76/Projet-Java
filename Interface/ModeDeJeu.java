@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class ModeDeJeu extends JFrame {
     
@@ -41,10 +40,17 @@ public class ModeDeJeu extends JFrame {
         setVisible(true); // Rend la fenêtre visible
 
         // Lancement de la fenêtre qui gère l'administration
-        adminButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'S'inscrire'
+        adminButton.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Administrer'
         @Override
             public void actionPerformed(ActionEvent e){
                 new ModeAdmin(); // Lance le constructeur de la classe Enregistrement
+            }
+        });
+
+        jeuSolo.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Jouer en solo'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                new PartieSolo();
             }
         });
     }

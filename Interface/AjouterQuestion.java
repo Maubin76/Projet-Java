@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 public class AjouterQuestion extends JFrame{
     
     public AjouterQuestion(){
-        String[] themes = {"Histoire","Géographie","Maths","Jeux-vidéos","Art","Sport"};
+        String[] themes = {"Histoire","Géographie","Maths","Jeux-vidéos","Art","Sport","Musique"};
 
         // Paramètres de la fenêtre
         setTitle("Ajout de questions"); // Définit le titre de la fenêtre
@@ -18,7 +18,6 @@ public class AjouterQuestion extends JFrame{
         JPanel panel = new JPanel(new GridBagLayout()); // Crée un panneau avec un gestionnaire de disposition GridBagLayout
         GridBagConstraints constraints = new GridBagConstraints(); // Crée des contraintes pour le placement des composants dans la grille
 
-        // Ligne qui traite le bannisement d'un joueur 
         JLabel enonce = new JLabel("Enoncé"); // Texte de banissement
         constraints.gridx = 0; // Première colonne
         constraints.gridy = 0; // Première ligne
