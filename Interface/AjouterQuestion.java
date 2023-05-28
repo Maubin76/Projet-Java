@@ -2,7 +2,6 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.FileNotFoundException;
-import java.io.*;
 
 public class AjouterQuestion extends JFrame{
     
