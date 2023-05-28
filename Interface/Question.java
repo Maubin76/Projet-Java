@@ -11,7 +11,7 @@ public class Question {
     private String niveau;
     private ArrayList<String[]> tableauQuestions = new ArrayList<>(); // Création du tableau qui va servir à désérialiser le fichier contenant les logs
 
-    public Question(String enonce, String p1, String p2, String p3, String p4, String niveau, String theme){
+    public Question(String enonce, String p1, String p2, String p3, String p4, String niveau, String theme) throws FileNotFoundException{
         this.enonce = enonce;
         this.p1 = p1;
         this.p2 = p2;
@@ -20,17 +20,18 @@ public class Question {
         this.theme = theme;
         this.niveau = niveau;
 
-        // Désérialisation des questions qui appartiennent au thème choisi
-        try (BufferedReader reader = new BufferedReader(new FileReader("questions.csv"))) { // Ouverture fichier qui contient les logs
-            String ligne; // Ligne du document qui est en train d'être parcourue
-            while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
-                String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
-                if (ligneTableau[6].equals(theme)){
-                    tableauQuestions.add(ligneTableau); // Ajoute une ligne au tableau de String[]
-                }
+        try (BufferedReader reader = new BufferedReader(new FileReader("questions.csv"))) {
+            String ligne; // Déplacer la déclaration de la variable 'ligne' ici
+            ligne = reader.readLine(); // Lire la première ligne du fichier
+            while (ligne != null) {
+                String[] ligneTableau = ligne.split(",");
+                tableauQuestions.add(ligneTableau);
+                ligne = reader.readLine(); // Lire la ligne suivante
             }
-        } catch (IOException e1) {
-            e1.printStackTrace();
+        } catch (FileNotFoundException e) {
+            throw e;
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

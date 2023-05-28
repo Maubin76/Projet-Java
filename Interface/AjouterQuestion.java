@@ -1,18 +1,13 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.FileNotFoundException;
+import java.io.*;
 
 public class AjouterQuestion extends JFrame{
-    private String th;
-    private String en;
-    private String p1;
-    private String p2;
-    private String p3;
-    private String p4;
-    private String nv;
     
     public AjouterQuestion(){
-        String[] themes = {"Histoire","Géographie","Maths","Jeux-vidéos","Art"};
+        String[] themes = {"Histoire","Géographie","Maths","Jeux-vidéos","Art","Sport"};
 
         // Paramètres de la fenêtre
         setTitle("Ajout de questions"); // Définit le titre de la fenêtre
@@ -106,15 +101,6 @@ public class AjouterQuestion extends JFrame{
         add(panel); // Ajoute le panneau
         setVisible(true); // Rend la fenêtre visible
 
-        this.en = enonceField.getText();
-        this.p1 = prop1Field.getText();
-        this.p2 = prop2Field.getText();
-        this.p3 = prop3Field.getText();
-        this.p4 = prop4Field.getText();
-        Integer selectedNiveau = (Integer) niveauBox.getSelectedItem();
-        this.nv = String.valueOf(selectedNiveau);
-        this.th = (String) themeBox.getSelectedItem();
-
         // Retour au menu précédent (l'administration)
         retour.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Retour'
         @Override
@@ -126,18 +112,37 @@ public class AjouterQuestion extends JFrame{
         // Ajout du gestionnaire d'événements pour le bouton de soumission de question
         // Objectif : ajouter la question et ses propositions dans la base de données
         soumettreQuestion.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Retour'
+        private String th;
+        private String en;
+        private String p1;
+        private String p2;
+        private String p3;
+        private String p4;
+        private String nv;
         @Override
             public void actionPerformed(ActionEvent e){
-                Question Q = new Question(en, p1, p2, p3, p4, nv, th);
-                if (Q.valide()){
-                    Q.soumettre();
-                }
-                else {
-
+                Question Q;
+                en = enonceField.getText();
+                p1 = prop1Field.getText();
+                p2 = prop2Field.getText();
+                p3 = prop3Field.getText();
+                p4 = prop4Field.getText();
+                Integer selectedNiveau = (Integer) niveauBox.getSelectedItem();
+                nv = String.valueOf(selectedNiveau);
+                th = (String) themeBox.getSelectedItem();
+                try {
+                    Q = new Question(en, p1, p2, p3, p4, nv, th);
+                    if (Q.valide()){
+                        Q.soumettre();
+                        JOptionPane.showMessageDialog(AjouterQuestion.this, "Question ajoutée");
+                    }
+                    else {
+                        JOptionPane.showMessageDialog(AjouterQuestion.this, "Erreur lors de l'ajout");
+                    }
+                } catch (FileNotFoundException e1) {
+                    e1.printStackTrace();
                 }
             }
         });
     }
 }
-
-// Il faut : mettre les messages d'erreur 
