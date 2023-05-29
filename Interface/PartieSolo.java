@@ -235,3 +235,4 @@ public class PartieSolo extends JFrame {
         }
     }
 }
+ 

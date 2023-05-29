@@ -93,4 +93,4 @@ public class ParamPartie extends JFrame{
         return selectedNombre;}
     public void setSelectedNombre(int selectedNombre) {
         this.selectedNombre = selectedNombre;}
-}
+} 
