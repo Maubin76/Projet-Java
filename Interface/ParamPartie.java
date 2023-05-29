@@ -55,14 +55,14 @@ public class ParamPartie extends JFrame{
         // Ajout d'un gestionnaire d'événements aux menus déroulants
         JButton validerButton = new JButton("Valider");
         constraints.gridy = 3;
-        constraints.gridx = 0;
+        constraints.gridx = 1;
         panel.add(validerButton, constraints);
         validerButton.addActionListener(new ActionListener() { 
             public void actionPerformed(ActionEvent e) {
                 ParamPartie.this.selectedTheme = (String) themeComboBox.getSelectedItem();
                 ParamPartie.this.selectedDifficulte = (String) difficulteComboBox.getSelectedItem();
                 ParamPartie.this.selectedNombre = (int) nombreSpinner.getValue();
-                dispose();
+                new PartieSolo(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre);
             }
         });
 
