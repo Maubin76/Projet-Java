@@ -2,11 +2,22 @@ import java.io.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
+/**
+ * Classe représentant une fenêtre de gestion de compte utilisateur (par un administrateur).
+ * Elle permet de bannir, débannir et supprimer des comptes d'utilisateurs.
+ */
 public class GestionCompte extends JFrame{
 
     private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau qui sert à désérialiser le fichier connexion.csv contenant les logs
     private String identifiant; // Identifiant de l'utilisateur dont on cherche à gérer le compte
 
+    /**
+     * Constructeur de la classe GestionCompte.
+     * Initialise la fenêtre de gestion de compte en récupérant les données des utilisateurs.
+     *
+     * @param id Le champ de texte contenant l'identifiant de l'utilisateur.
+     * @throws IOException Si une erreur se produit lors de la lecture du fichier de connexion.
+     */
     public GestionCompte(JTextField id) throws IOException{
         identifiant = id.getText(); // Affectation de l'identifiant à l'attribut
 
@@ -20,7 +31,10 @@ public class GestionCompte extends JFrame{
         }
     }
 
-    // Méthode qui permet de bannir un utilisateur
+    /**
+     * Méthode permettant de bannir un compte utilisateur.
+     * Le compte est marqué comme banni (à l'aide d'un booléen) dans le tableau de logs et le fichier de connexion est mis à jour.
+     */
     public void banCompte(){
         boolean dejaBanni = false; // Booléen qui sert à savoir si le joueur était déja banni
         for (int i = 0; i<tableauLogs.size(); i++){ // Parcours du tableau ligne par ligne
@@ -42,7 +56,10 @@ public class GestionCompte extends JFrame{
             JOptionPane.showMessageDialog(GestionCompte.this, identifiant + " est déja banni");}
     }
 
-    // Méthode qui permet de débannir un utilisateur
+    /**
+     * Méthode permettant de débannir un compte utilisateur.
+     * Le compte est marqué comme non banni dans le tableau de logs et le fichier de connexion est mis à jour.
+     */
     public void debanCompte(){
         boolean dejaDebanni = false; // Booléen qui sert à savoir si le joueur était déja débanni
         for (int i = 0; i<tableauLogs.size(); i++){ // Parcours du tableau ligne par ligne
@@ -55,7 +72,7 @@ public class GestionCompte extends JFrame{
                 dejaDebanni = true;
             }
         }
-        serialisation(); // Sérialisation du tableau modifié dans le fichier connexion.csv
+        serialisation(); // Sérialisation du tableau modifié dans le fichier "connexion.csv"
 
         // Gestion du pop-up en fonction de si le joueur était déjà débanni ou non
         if (!dejaDebanni) {
@@ -64,7 +81,10 @@ public class GestionCompte extends JFrame{
             JOptionPane.showMessageDialog(GestionCompte.this, identifiant + " n'est pas banni");}
     }
 
-    // Méthode qui permet de supprimer un compte 
+    /**
+     * Méthode permettant de supprimer un compte utilisateur.
+     * Le compte est supprimé du tableau de logs et le fichier de connexion est mis à jour.
+     */
     public void suppCompte(){
         for (int i = 0; i<tableauLogs.size(); i++){  // Parcours du tableau ligne par ligne
             String[] ligne = tableauLogs.get(i); // Récupération de la ligne en cours de parcours
@@ -76,7 +96,10 @@ public class GestionCompte extends JFrame{
         serialisation(); // Sérialisation du tableau modifié dans le fichier connexion.csv
     }
 
-    // Méthode de sérialisation du tableau dans le fichier connexion.csv contenant les logs
+    /**
+     * Méthode de sérialisation du tableau de logs dans le fichier "connexion.csv".
+     * Les modifications apportées au tableau de logs sont enregistrées dans le fichier de connexion.
+     */
     public void serialisation(){
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("connexion.csv"))) { // Ouverture du fichier connexion.csv
             for (String[] ligneTableau : tableauLogs) { // Parcours du tableau ligne pas ligne
