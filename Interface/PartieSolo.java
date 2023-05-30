@@ -19,6 +19,7 @@ public class PartieSolo extends JFrame {
     private JPanel panel;
     private int secondesRestantes;
     private Timer questionTimer; // Déclarer questionTimer en tant que membre de classe
+    private int scoreMax = 0;
 
     public PartieSolo(String theme, String difficulte, int nbQuestions) {
         this.theme = theme;
@@ -99,7 +100,7 @@ public class PartieSolo extends JFrame {
 
             GridBagConstraints constraints = new GridBagConstraints();
 
-            JLabel scoreLabel = new JLabel("Score : " + score + "/" + questionsRepondues);
+            JLabel scoreLabel = new JLabel("Score : " + score + "/" + scoreMax);
             constraints.gridx = 0;
             constraints.gridy = 0;
             constraints.ipady = 1;
@@ -199,16 +200,27 @@ public class PartieSolo extends JFrame {
             validerButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if (prop1Box.isSelected() && ligne[indices[0]].equals(ligne[1])) {
-                        score++;
-                    } else if (prop2Box.isSelected() && ligne[indices[1]].equals(ligne[1])) {
-                        score++;
-                    } else if (prop3Box.isSelected() && ligne[indices[2]].equals(ligne[1])) {
-                        score++;
-                    } else if (prop4Box.isSelected() && ligne[indices[3]].equals(ligne[1])) {
-                        score++;
+                    int ajoutScore;
+                    if (difficulte.equals("Facile")){
+                        ajoutScore = Integer.parseInt(ligne[5]);
                     }
-            
+                    else if (difficulte.equals("Moyen")){
+                        ajoutScore = Integer.parseInt(ligne[5]) - 3;
+                    }
+                    else{
+                        ajoutScore = Integer.parseInt(ligne[5]) - 3*2;
+                    }
+                    if (prop1Box.isSelected() && ligne[indices[0]].equals(ligne[1])) {
+                        score = score + ajoutScore;
+                    } else if (prop2Box.isSelected() && ligne[indices[1]].equals(ligne[1])) {
+                        score = score + ajoutScore;
+                    } else if (prop3Box.isSelected() && ligne[indices[2]].equals(ligne[1])) {
+                        score = score + ajoutScore;
+                    } else if (prop4Box.isSelected() && ligne[indices[3]].equals(ligne[1])) {
+                        score = score + ajoutScore;
+                    }
+
+                    scoreMax = scoreMax + ajoutScore;
                     questionsRepondues++;
             
                     // Arrêter le Timer actuel

@@ -7,7 +7,7 @@ public class ParamPartie extends JFrame{
     private String selectedDifficulte;
     private int selectedNombre;
 
-    public ParamPartie(){
+    public ParamPartie(boolean solo){
         // Création de la fenêtre
         setTitle("Paramètres de partie"); // Définit le titre de la fenêtre
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Définit l'action de fermeture de la fenêtre
@@ -62,7 +62,8 @@ public class ParamPartie extends JFrame{
                 ParamPartie.this.selectedTheme = (String) themeComboBox.getSelectedItem();
                 ParamPartie.this.selectedDifficulte = (String) difficulteComboBox.getSelectedItem();
                 ParamPartie.this.selectedNombre = (int) nombreSpinner.getValue();
-                new PartieSolo(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre);
+                if (solo) new PartieSolo(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre);
+                else new PartieMulti(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre);
             }
         });
 

@@ -50,7 +50,14 @@ public class ModeDeJeu extends JFrame {
         jeuSolo.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Jouer en solo'
         @Override
             public void actionPerformed(ActionEvent e){
-                new ParamPartie();
+                new ParamPartie(true);
+            }
+        });
+
+        jeuVersus.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Jouer en solo'
+        @Override
+            public void actionPerformed(ActionEvent e){
+                new ParamPartie(false);
             }
         });
     }
