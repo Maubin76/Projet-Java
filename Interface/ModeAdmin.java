@@ -3,10 +3,17 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 
+/**
+ * Classe ModeAdmin qui représente la fenêtre d'administration de l'application.
+ * Cette classe étend JFrame pour afficher une interface graphique.
+ */
 public class ModeAdmin extends JFrame{
     
+    /**
+     * Constructeur de la classe ModeAdmin.
+     * Initialise la fenêtre et les composants nécessaires pour l'administration.
+     */
     public ModeAdmin() {
-
         // Paramètres de la fenêtre
         setTitle("Administration"); // Définit le titre de la fenêtre
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Définit l'action de fermeture de la fenêtre
