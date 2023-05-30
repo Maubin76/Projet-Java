@@ -3,11 +3,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * La classe Connexion représente une fenêtre de connexion avec des champs pour le nom d'utilisateur et le mot de passe.
+ * Elle permet de vérifier les informations de connexion et de lancer la prochaine fenêtre du jeu.
+ */
 public class Connexion extends JFrame {
     private JTextField usernameField; // Champ de texte pour le nom d'utilisateur
     private JPasswordField passwordField; // Champ de texte pour le mot de passe
     private Utilisateur personne1; 
 
+    /**
+     * Constructeur de la classe Connexion.
+     * Initialise la fenêtre de connexion avec tous les composants nécessaires.
+     */
     public Connexion() {
         // Configuration de la fenêtre
         setTitle("Connexion"); // Définit le titre de la fenêtre
@@ -89,8 +97,14 @@ public class Connexion extends JFrame {
             }
         });
     }
-
-    // Vérifie la validité des informations saisies : compte existant, compte banni
+    
+    /**
+     * Vérifie la validité des informations saisies en comparant avec un fichier de logs.
+     *
+     * @param nomUtilisateur Le nom d'utilisateur saisi.
+     * @param motDePasse     Le mot de passe saisi.
+     * @return true si les informations sont valides, false sinon.
+     */
     private boolean verifierIdentifiants(String nomUtilisateur, String motDePasse) { // Vérifie dans connexion.csv si la combinaison identifiant/mdp est valide
         try (BufferedReader reader = new BufferedReader(new FileReader("connexion.csv"))) { // Ouvre le fichier de logs
             String ligne;
@@ -117,7 +131,11 @@ public class Connexion extends JFrame {
         return false; // Identifiants invalides
     }
 
-    // Getter qui renvoie le compte actuellement connecté
+    /**
+     * Retourne le compte actuellement connecté.
+     *
+     * @return Le compte de l'utilisateur connecté.
+     */
     public Utilisateur getPersonne1() {
         return personne1;
     }
