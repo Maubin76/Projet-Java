@@ -3,8 +3,15 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.io.FileNotFoundException;
 
+/**
+ * Classe représentant une fenêtre pour ajouter une question avec ses options de réponse,
+ * ainsi que sadifficulté et son thème.
+ */
 public class AjouterQuestion extends JFrame{
-    
+    /**
+     * Constructeur de la classe AjouterQuestion.
+     * Crée et configure la fenêtre graphique pour l'ajout de question.
+     */
     public AjouterQuestion(){
         String[] themes = {"Histoire","Géographie","Maths","Jeux-vidéos","Art","Sport","Musique"};
 
