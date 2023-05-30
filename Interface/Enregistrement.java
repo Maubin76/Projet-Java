@@ -4,11 +4,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Classe représentant la fenêtre d'inscription.
+ */
 public class Enregistrement extends JFrame{
 
     private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau qui va servir à désérialiser le fichier contenant les logs
     private String identifiant; // Identifiant du compte en cours de création
 
+    /**
+     * Constructeur de la classe Enregistrement.
+     * Initialise et configure la fenêtre d'inscription.
+     */
     public Enregistrement() {
 
         dispose();
@@ -140,8 +147,12 @@ public class Enregistrement extends JFrame{
             }
         });
     }
-
-    // Méthode qui vérifie si un identifiant est déjà existant ou pas
+    
+    /**
+     * Vérifie si un identifiant existe déjà.
+     *
+     * @return true si l'identifiant existe, false sinon.
+     */
     public boolean identifiantExistant(){
         for (String[] ligneTableau : tableauLogs){
             if (ligneTableau[0].equals(identifiant)){
