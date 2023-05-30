@@ -2,8 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * La classe ModeDeJeu représente une fenêtre permettant de choisir le mode de jeu de la partie (Solo ou Multi).
+ * Elle hérite de la classe JFrame de Swing.
+ */
 public class ModeDeJeu extends JFrame {
-    
+    /**
+     * Constructeur de la classe ModeDeJeu.
+     *
+     * @param personne1 l'objet Utilisateur représentant le joueur connecté
+     */
     public ModeDeJeu(Utilisateur personne1){
         
         // Paramètres de la fenêtre
