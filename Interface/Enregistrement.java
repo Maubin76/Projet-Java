@@ -17,6 +17,7 @@ public class Enregistrement extends JFrame{
      * chaine de caractère privée correspondant à l'identifiant du compte en cours de création.
      */
     private String identifiant; 
+    
     /**
      * Constructeur de la classe Enregistrement.
      * Initialise et configure la fenêtre d'inscription.
