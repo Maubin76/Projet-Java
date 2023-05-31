@@ -4,6 +4,10 @@ Quelle est la capitale des États-Unis?,Washington,New York,Las Vegas,Boston,2,G
 Quelle est la capitale de l'Australie?,Canberra,Sydney,Melbourne,Brisbane,2,Géographie
 Quelle est la capitale de la Suède?,Stockholm,Oslo,Helsinki,Copenhague,Stockholm,4,Géographie
 Quelle est la capitale du Canade ?,Ottawa,Toronto,Calgary,Montreal,3,Géographie
+Quelle est la capitale de l'Égypte?,Le Caire,Alexandrie,Gizeh,Louxor,2,Géographie
+Quelle est la capitale de l'Inde ?,New Delhi,Mumbai,Kolkata,Bombay,4,Géographie
+Quelle est la capitale du Maroc ?,Rabat,Casablanca,Marrakech,Marocco,4,Géographie
+Quelle est la capitale de la Suisse ?,Berne,Zurich,Genèves,Bâle,4,Géographie
 Quelle est la plus grande île du monde?,Groenland,Madagascar,Japon,Nouvelle-Zélande,1,Géographie
 Quel est le plus long fleuve du monde?,Amazone,Nil,Congo,Mississippi,4,Géographie
 Quelle est la plus haute montagne du monde?,Mont Everest,Kilimandjaro,Mont Blanc,Matchu Picchu,1,Géographie
@@ -14,10 +18,27 @@ Quelle est la plus grande chaîne de montagnes du monde?,Himalaya,Andes,Alaska,A
 Quel est le plus grand lac d'Afrique?,Victoria,Tanganyika,Malawi,Turkana,10,Géographie
 Quelle est la plus grande île de la Méditerranée?,Sicile,Sardaigne,Créte,Chypre,4,Géographie
 Quelle est la plus haute cascade du monde?,Angel,Victoria,Iguazu,Niagara,10,Géographie
+Quel est le pays le plus peuplé d'Afrique ?,Nigeria,Égypte,Éthiopie,Afrique du Sud,8,Géographie
+Dans quel pays se trouve la Grande Muraille ?,Chine,Allemagne,Corée du Sud,Russie,1,Géographie
+Quelle est la plus grande ville du Canada ?,Toronto,Vancouver,Montréal,Ottawa,7,Géographie
+Dans quel pays se trouve la ville de Dubrovnik, surnommée "la perle de l'Adriatique" ?,Croatie,Slovaquie,Slovénie,Ukraine,10,Géographie
+Quelle est la plus haute montagne d'Amérique du Nord ?,Mont McKinley,Mont Rainier,Mont McDonald,Mont Saint Elias,7,Géographie
+Dans quel pays se trouve la ville de Louxor ?,Égypte,Grèce,Turquie,Liban,7,Géographie
+Dans quel pays se trouve la ville de Petra, célèbre pour ses monuments taillés dans la roche ?,Jordanie,Égypte,Israël,Turquie,7,Géographie
+Dans quel pays se trouve le Taj Mahal ?,Inde,Bangladesh,Népal,Pakistan,4,Géographie
 Quel est le pays le plus peuplé du monde?,Chine,Inde,États-Unis,Russie,1,Géographie
 Quel pays ne se situe pas à la fois en Asie et en Europe?,Ukraine,Russie,Géorgie,Turquie,7,Géographie
 Dans quel pays se trouve la ville de Cuzco, ancienne capitale de l'empire inca?,Pérou,Équateur,Colombie,Bolivie,8,Géographie
 Quel pays est traversé par le fleuve Amazone?,Brésil,Argentine,Colombie,Équateur,2,Géographie
+Quel pays est souvent considéré comme le berceau de la civilisation moderne?,Mésopotamie,Égypte,Grèce,Chine,5,Géographie
+Dans quel pays se trouve la cité perdue des Incas, Machu Picchu?,Pérou,Bolivie,Colombie,Équateur,7,Géographie
+Quelle est la plus longue rivière d'Europe?,Volga,Danube,Thames,Po,10,Géographie
+Dans quel pays se trouve la ville de Pompéi, ensevelie par l'éruption du Vésuve en 79 après J.-C.?,Italie,Grèce,Turquie,Égypte,3,Géographie
+Quel est le plus grand pays d'Amérique du Sud?,Brésil,Argentine,Chili,Colombie,3,Géographie
+Dans quel pays se trouve le Machu Picchu?,Pérou,Bolivie,Colombie,Équateur,6,Géographie
+Quelle est la plus haute montagne d'Afrique?,Mont Kilimandjaro,Mont Kenya,Massif de l'Atlas,Mont Ruwenzori,4,Géographie
+
+Quel événement a marqué la fin de la guerre froide?,La chute du mur de Berlin,L'assassinat de John F. Kennedy,La Révolution française,La guerre de Sécession,La chute du mur de Berlin,1,Histoire
 Quel événement a marqué le début de la Première Guerre mondiale ?,Assassinat de l'archiduc François-Ferdinand,Incendie du Reichstag,Attaque de Pearl Harbor,Bataille de Stalingrad,4,Histoire
 Dans quelle ville a eu lieu la Révolution française ?,Paris,Versailles,Lille,Lutèce,3,Histoire
 Quel empereur romain a construit le Colisée ?,Vespasien,Auguste,Néron,Caligula,10,Histoire
@@ -33,16 +54,18 @@ Qui était le roi de France pendant la Révolution française ?,Louis XVI,Charle
 Quel pays a colonisé l'Inde pendant plusieurs siècles ?,Grande-Bretagne,Espagne,Portugal,France,3,Histoire
 Quel était le nom du navire sur lequel Christophe Colomb a entrepris son premier voyage vers le Nouveau Monde ?,Santa Maria,Endeavour,Nina,Mayflower,2,Histoire
 Quelle était la capitale de l'Empire inca ?,Cusco,Lima,Machu Picchu,Bogota,7,Histoire
+Quelle était la capitale de l'Empire ottoman ?,Istanbul,Constantinople,Ankara,Le Caire,3,Histoire
+Quelle était la capitale de l'Empire romain ?,Rome,Athènes,Alexandrie,Lutèce,1,Histoire
 Quel pays a lancé les premières explorations maritimes à grande échelle au 15e siècle ?,Portugal,Espagne,Angleterre,France,8,Histoire
 Quel était le nom du dictateur allemand pendant la Seconde Guerre mondiale ?,Hitler,Mussolini,Staline,Lenine,1,Histoire
-Quelle était la capitale de l'Empire ottoman ?,Istanbul,Constantinople,Ankara,Le Caire,3,Histoire
 Quelle bataille a marqué la fin de Napoléon Bonaparte ?,Bataille de Waterloo,Bataille de Leipzig,Bataille d'Austerlitz,Bataille de Trafalgar,7,Histoire
 Quel pays a été le premier à envoyer un homme dans l'espace ?,L'Union soviétique,Les États-Unis,L'Allemagne,Le Royaume-Uni,6,Histoire
 Qui a découvert l'Amérique ?,Christophe Colomb,Marco Polo,Vasco de Gama,Amerigo Vespucci,1,Histoire
-Quelle était la capitale de l'Empire romain ?,Rome,Athènes,Alexandrie,Lutèce,1,Histoire
 Quelle est la période connue sous le nom de "Guerre froide" ?,1947-1991,1914-1918,1939-1945,1789-1799,1,Histoire
 Quel empire a conquis une grande partie de l'Europe, de l'Asie et de l'Afrique au 13e siècle ?,L'Empire mongol,L'Empire byzantin,L'Empire ottoman,L'Empire romain,9,Histoire
 Quel événement a marqué le début de la Seconde Guerre mondiale ?,L'invasion de la Pologne par l'Allemagne,L'attaque de Pearl Harbor,La ligne Maginot,La Révolution russe,2,Histoire
+En quelle année est mort Louis XVI ?,1793,1792,1790,1789,9,Histoire
+
 Qui a peint "La Joconde" ?,da Vinci,Michel-Ange,Raphael,Picasso,1,Art
 Quel mouvement artistique a été caractérisé par des formes géométriques et des couleurs vives ?,Le cubisme,Le surréalisme,L'impressionnisme,Le réalisme,1,Art
 Quel sculpteur a créé la statue de David ?,Michel-Ange,Donatello,Rodin,Bernini,8,Art
@@ -68,6 +91,7 @@ Quel mouvement artistique est associé à Jackson Pollock et Mark Rothko ?,L'exp
 Quel artiste est connu pour ses sculptures en acier inoxydable ?,Jeff Koons,Anish Kapoor,Damien Hirst,Yayoi Kusama,10,Art
 Quel mouvement artistique est associé à Andy Warhol et Roy Lichtenstein ?,Le pop art,L'impressionnisme,Le surréalisme,Le cubisme,9,Art
 Quel artiste est connu pour ses peintures de fleurs et de nature morte ?,Géographiergia O'Keeffe,Frida Kahlo,Yoko Ono,artemisia Gentileschi,8,Art
+
 Quel est le personnage principal de la série de jeux vidéo "The Legend of Zelda"?,Link,Mario,Zelda,Ganon,1,Jeux-vidéos
 Dans quel jeu vidéo peut-on retrouver les personnages Ryu et Ken?,Street Fighter,Mortal Kombat,Tekken,Super Smash Bros,4,Jeux-vidéos
 Quel est le nom du hérisson bleu emblématique de Sega?,Sonic,Lucario,Yoshi,Mario,1,Jeux-vidéos
@@ -102,6 +126,7 @@ Quel est le nom du protagoniste dans le jeu vidéo "Red Dead Redemption 2"?,arth
 Quel est le nom du monde virtuel dans le jeu vidéo "World of Warcraft"?,Azeroth,Midgar,Tamriel,Pandora,5,Jeux-vidéos
 Quelle est la capacité de stockage maximale de la console de jeu Xbox Series X?,1 To,500 Go,2 To,512 Go,7,Jeux-vidéos
 Quel est le nom du personnage principal dans le jeu vidéo "BioShock"?,Jack,Booker DeWitt,Elizabeth,Sander Cohen,Jack,10,Jeux-vidéos
+
 Quel pays a remporté le plus grand nombre de Coupes du Monde de football?,Brésil,Allemagne,Italie,Argentine,2,Sport
 Quel pays a remporté la Coupe du Monde de football 2018?,France,Brésil,Allemagne,Italie,1,Sport
 Quel joueur de basketball est souvent surnommé "King James"?,LeBron James,Kobe Bryant,Michael Jordan,Stephen Curry,1,Sport
@@ -120,6 +145,7 @@ Quel est le nom du joueur de basketball qui détient le record du plus grand nom
 Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'été de 2021?,États-Unis,Chine,Japon,Australie,9,Sport
 Dans quel sport le terme "grand chelem" désigne-t-il le fait de remporter les quatre tournois majeurs la même année?,Tennis,Golf,Rugby,Cricket,7,Sport
 Quel est le nom du célèbre athlète jamaïcain surnommé "Lightning Bolt"?,Usain Bolt,Carl Lewis,Michael Johnson,Mo Farah,1,Sport
+
 Quel groupe de rock britannique est connu pour des chansons comme "Stairway to Heaven" et "Kashmir"?,Led Zeppelin,The Beatles,Queen,The Rolling Stones,5,Musique
 Quelle artiste pop est surnommée "Queen of Pop"?,Madonna,Beyoncé,Taylor Swift,Rihanna,3,Musique
 Quelle est l'année de sortie de l'album "Thriller" de Michael Jackson?,1982,1984,1986,1988,1982,10,Musique
@@ -137,7 +163,7 @@ Quel compositeur russe est connu pour ses ballets "Le Lac des cygnes", "La Belle
 Quel est le nom du groupe de rock britannique formé par Mick Jagger et Keith Richards?,The Rolling Stones,The Beatles,Queen,U2,4,Musique
 Quelle chanteuse américaine est connue pour son album "Back to Black" et des chansons comme "Rehab" et "Valerie"?,Amy Winehouse,Adele,Taylor Swift,Beyoncé,4,Musique
 Quel est le nom du groupe de rock américain connu pour des chansons comme "Smells Like Teen Spirit" et "Come as You Are"?,Nirvana,Guns N' Roses,Metallica,AC/DC,4,Musique
-En quelle année est mort Louis XVI ?,1793,1792,1790,1789,9,Histoire
+
 Quelle est la valeur de π (pi) arrondie à 4 décimales près ?,3.1416,3.1415,3.1414,3.1413,3,Maths
 Combien de côtés a un ennéagone ?,9,7,20,11,7,Maths
 Quelle est la racine carrée de 144 ?,12,11,14,15,2,Maths
@@ -179,4 +205,3 @@ Quelle est la valeur de x dans l'équation 2x - 5 = 15 ?,10,11,12,13,2,Maths
 Combien font 2^3 * 3^2 ?,72,48,96,144,9,Maths
 Quel est le résultat de la série 1 + 2 + 3 + ... + 10 ?,55,45,50,60,7,Maths
 Combien font 1/2 + 1/3 + 1/4 ?,11/12,7/12,5/6,3/4,9,Maths
-
