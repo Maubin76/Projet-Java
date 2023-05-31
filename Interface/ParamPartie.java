@@ -5,8 +5,20 @@ import java.awt.event.*;
 import java.io.IOException;
 
 public class ParamPartie extends JFrame{
+    /**
+     * Chaine de caractère privée indiquand le thème sélectionné pour la partie.
+     * Peut prendre sa valeur parmi {"Histoire","Géographie","Art","Sport","Maths","Musique","Jeux-vidéos"}.
+     */
     private String selectedTheme;
+    /**
+     * Chaine de caractère privée indiquand le niveau de difficulté sélectionné pour la partie.
+     * Peut prendre sa valeur parmi {"Facile","Moyen","Difficile"}.
+     */
     private String selectedDifficulte;
+    /**
+     * Entier privé indiquand le nombre de questions sélectionné pour la partie.
+     * Peut prendre une valeur entre 5 et 10.
+     */
     private int selectedNombre;
     private String identifiant;
 
@@ -94,17 +106,25 @@ public class ParamPartie extends JFrame{
         setVisible(true); // Rend la fenêtre visible     
     }
 
-    // Getters et setters
+    /**
+     * Getter de l'attribut selectedTheme.
+     *
+     * @return Le thème qui a été sélectionné.
+     */
     public String getSelectedTheme() {
         return selectedTheme;}
-    public void setSelectedTheme(String selectedTheme) {
-        this.selectedTheme = selectedTheme;}
+    /**
+     * Getter de l'attribut selectedDifficulte.
+     *
+     * @return Le niveau de difficulté qui a été sélectionné.
+     */
     public String getSelectedDifficulte() {
         return selectedDifficulte;}
-    public void setSelectedDifficulte(String selectedDifficulte) {
-        this.selectedDifficulte = selectedDifficulte;}
+    /**
+     * Getter de l'attribut selectedNombre.
+     *
+     * @return Le nombre de question qui a été sélectionné.
+     */
     public int getSelectedNombre() {
         return selectedNombre;}
-    public void setSelectedNombre(int selectedNombre) {
-        this.selectedNombre = selectedNombre;}
 } 
