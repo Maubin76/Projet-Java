@@ -2,7 +2,7 @@ Quelle est la capitale de la France?,Paris,Lyon,Marseille,Lille,1,Géographie
 Quelle est la capitale de l'Espagne?,Madrid,Barcelone,Séville,Valence,2,Géographie
 Quelle est la capitale des États-Unis?,Washington,New York,Las Vegas,Boston,2,Géographie
 Quelle est la capitale de l'Australie?,Canberra,Sydney,Melbourne,Brisbane,2,Géographie
-Quelle est la capitale de la Suède?,Stockholm,Oslo,Helsinki,Copenhague,Stockholm,4,Géographie
+Quelle est la capitale de la Suède?,Stockholm,Oslo,Helsinki,Copenhague,4,Géographie
 Quelle est la capitale du Canade ?,Ottawa,Toronto,Calgary,Montreal,3,Géographie
 Quelle est la capitale de l'Égypte?,Le Caire,Alexandrie,Gizeh,Louxor,2,Géographie
 Quelle est la capitale de l'Inde ?,New Delhi,Mumbai,Kolkata,Bombay,4,Géographie
@@ -21,24 +21,24 @@ Quelle est la plus haute cascade du monde?,Angel,Victoria,Iguazu,Niagara,10,Géo
 Quel est le pays le plus peuplé d'Afrique ?,Nigeria,Égypte,Éthiopie,Afrique du Sud,8,Géographie
 Dans quel pays se trouve la Grande Muraille ?,Chine,Allemagne,Corée du Sud,Russie,1,Géographie
 Quelle est la plus grande ville du Canada ?,Toronto,Vancouver,Montréal,Ottawa,7,Géographie
-Dans quel pays se trouve la ville de Dubrovnik, surnommée "la perle de l'Adriatique" ?,Croatie,Slovaquie,Slovénie,Ukraine,10,Géographie
+Dans quel pays se trouve la ville de Dubrovnik (surnommée "la perle de l'Adriatique") ?,Croatie,Slovaquie,Slovénie,Ukraine,10,Géographie
 Quelle est la plus haute montagne d'Amérique du Nord ?,Mont McKinley,Mont Rainier,Mont McDonald,Mont Saint Elias,7,Géographie
 Dans quel pays se trouve la ville de Louxor ?,Égypte,Grèce,Turquie,Liban,7,Géographie
-Dans quel pays se trouve la ville de Petra, célèbre pour ses monuments taillés dans la roche ?,Jordanie,Égypte,Israël,Turquie,7,Géographie
+Dans quel pays se trouve la ville de Petra (célèbre pour ses monuments taillés dans la roche) ?,Jordanie,Égypte,Israël,Turquie,7,Géographie
 Dans quel pays se trouve le Taj Mahal ?,Inde,Bangladesh,Népal,Pakistan,4,Géographie
-Quel est le pays le plus peuplé du monde?,Chine,Inde,États-Unis,Russie,1,Géographie
-Quel pays ne se situe pas à la fois en Asie et en Europe?,Ukraine,Russie,Géorgie,Turquie,7,Géographie
-Dans quel pays se trouve la ville de Cuzco, ancienne capitale de l'empire inca?,Pérou,Équateur,Colombie,Bolivie,8,Géographie
-Quel pays est traversé par le fleuve Amazone?,Brésil,Argentine,Colombie,Équateur,2,Géographie
+Quel est le pays le plus peuplé du monde ?,Chine,Inde,États-Unis,Russie,1,Géographie
+Quel pays ne se situe pas à la fois en Asie et en Europe ?,Ukraine,Russie,Géorgie,Turquie,7,Géographie
+Dans quel pays se trouve la ville de Cuzco (ancienne capitale de l'empire inca) ?,Pérou,Équateur,Colombie,Bolivie,8,Géographie
+Quel pays est traversé par le fleuve Amazone ?,Brésil,Argentine,Colombie,Équateur,2,Géographie
 Quel pays est souvent considéré comme le berceau de la civilisation moderne?,Mésopotamie,Égypte,Grèce,Chine,5,Géographie
-Dans quel pays se trouve la cité perdue des Incas, Machu Picchu?,Pérou,Bolivie,Colombie,Équateur,7,Géographie
-Quelle est la plus longue rivière d'Europe?,Volga,Danube,Thames,Po,10,Géographie
-Dans quel pays se trouve la ville de Pompéi, ensevelie par l'éruption du Vésuve en 79 après J.-C.?,Italie,Grèce,Turquie,Égypte,3,Géographie
-Quel est le plus grand pays d'Amérique du Sud?,Brésil,Argentine,Chili,Colombie,3,Géographie
-Dans quel pays se trouve le Machu Picchu?,Pérou,Bolivie,Colombie,Équateur,6,Géographie
-Quelle est la plus haute montagne d'Afrique?,Mont Kilimandjaro,Mont Kenya,Massif de l'Atlas,Mont Ruwenzori,4,Géographie
+Dans quel pays se trouve la cité perdue des Incas : Machu Picchu?,Pérou,Bolivie,Colombie,Équateur,7,Géographie
+Quelle est la plus longue rivière d'Europe ?,Volga,Danube,Thames,Po,10,Géographie
+Dans quel pays se trouve la ville de Pompéi (ensevelie par l'éruption du Vésuve en 79 après J.-C.) ?,Italie,Grèce,Turquie,Égypte,3,Géographie
+Quel est le plus grand pays d'Amérique du Sud ?,Brésil,Argentine,Chili,Colombie,3,Géographie
+Dans quel pays se trouve le Machu Picchu ?,Pérou,Bolivie,Colombie,Équateur,6,Géographie
+Quelle est la plus haute montagne d'Afrique ?,Mont Kilimandjaro,Mont Kenya,Massif de l'Atlas,Mont Ruwenzori,4,Géographie
 
-Quel événement a marqué la fin de la guerre froide?,La chute du mur de Berlin,L'assassinat de John F. Kennedy,La Révolution française,La guerre de Sécession,La chute du mur de Berlin,1,Histoire
+Quel événement a marqué la fin de la guerre froide?,La chute du mur de Berlin,L'assassinat de John F. Kennedy,La Révolution française,La guerre de Sécession,1,Histoire
 Quel événement a marqué le début de la Première Guerre mondiale ?,Assassinat de l'archiduc François-Ferdinand,Incendie du Reichstag,Attaque de Pearl Harbor,Bataille de Stalingrad,4,Histoire
 Dans quelle ville a eu lieu la Révolution française ?,Paris,Versailles,Lille,Lutèce,3,Histoire
 Quel empereur romain a construit le Colisée ?,Vespasien,Auguste,Néron,Caligula,10,Histoire
@@ -62,7 +62,7 @@ Quelle bataille a marqué la fin de Napoléon Bonaparte ?,Bataille de Waterloo,B
 Quel pays a été le premier à envoyer un homme dans l'espace ?,L'Union soviétique,Les États-Unis,L'Allemagne,Le Royaume-Uni,6,Histoire
 Qui a découvert l'Amérique ?,Christophe Colomb,Marco Polo,Vasco de Gama,Amerigo Vespucci,1,Histoire
 Quelle est la période connue sous le nom de "Guerre froide" ?,1947-1991,1914-1918,1939-1945,1789-1799,1,Histoire
-Quel empire a conquis une grande partie de l'Europe, de l'Asie et de l'Afrique au 13e siècle ?,L'Empire mongol,L'Empire byzantin,L'Empire ottoman,L'Empire romain,9,Histoire
+Quel empire a conquis une grande partie de l'Europe; de l'Asie et de l'Afrique au 13e siècle ?,L'Empire mongol,L'Empire byzantin,L'Empire ottoman,L'Empire romain,9,Histoire
 Quel événement a marqué le début de la Seconde Guerre mondiale ?,L'invasion de la Pologne par l'Allemagne,L'attaque de Pearl Harbor,La ligne Maginot,La Révolution russe,2,Histoire
 En quelle année est mort Louis XVI ?,1793,1792,1790,1789,9,Histoire
 
@@ -97,12 +97,12 @@ Dans quel jeu vidéo peut-on retrouver les personnages Ryu et Ken?,Street Fighte
 Quel est le nom du hérisson bleu emblématique de Sega?,Sonic,Lucario,Yoshi,Mario,1,Jeux-vidéos
 Quelle console de jeu vidéo est produite par Sony?,PlayStation,Xbox,Switch,Wii,2,Jeux-vidéos
 Quel jeu vidéo est sorti en premier : "Call of Duty" ou "Battlefield"?,Call of Duty,Battlefield,Les deux sont sortis en même temps,42,2,Jeux-vidéos
-Quelle est la date de sortie initiale du jeu vidéo "Minecraft"?,2009,2010,2011,2012,2009,7,Jeux-vidéos
-Quel est le nom de l'entreprise qui a développé le jeu vidéo "Fortnite"?,Epic Games,Ubisoft,Activision,Blizzard,Epic Games,3,Jeux-vidéos
+Quelle est la date de sortie initiale du jeu vidéo "Minecraft"?,2009,2010,2011,2012,7,Jeux-vidéos
+Quel est le nom de l'entreprise qui a développé le jeu vidéo "Fortnite"?,Epic Games,Ubisoft,Activision,Blizzard,3,Jeux-vidéos
 Quelle est la première console de jeu vidéo domestique sortie sur le marché?,Magnavox Odyssey,Atari 2600,Super Nintendo Entertainment System (SNES),Nintendo 64,10,Jeux-vidéos
 Quelle est la devise de la série de jeux vidéo "Assassin's Creed"?,Rien n'est vrai. Tout est permis,La paix par la force,Pour la Horde!,Le pouvoir réside dans les poings,9,Jeux-vidéos
 Quel est le nom de l'androïde protagoniste du jeu vidéo "Detroit: Become Human"?,Connor,Adam,Jensen,Markus,8,Jeux-vidéos
-Dans quel jeu vidéo peut-on incarner le personnage de Geralt de Riv?,The Witcher,Final Fantasy VII,Dark Souls,World of Warcraft,The Witcher,4,Jeux-vidéos
+Dans quel jeu vidéo peut-on incarner le personnage de Geralt de Riv?,The Witcher,Final Fantasy VII,Dark Souls,World of Warcraft,4,Jeux-vidéos
 Quel est le nom du protagoniste du jeu vidéo "Half-Life"?,Gordon Freeman,John Marston,Ezio Auditore,Master Chief,10,Jeux-vidéos
 Quel est le jeu vidéo le plus vendu de tous les temps?,Minecraft,Tetris,Grand Theft Auto V,Call of Duty: Modern Warfare,7,Jeux-vidéos
 Quelle est la capacité maximale de stockage de la console de jeu PlayStation 5?,825 Go,500 Go,1 To,2 To,7,Jeux-vidéos
@@ -125,14 +125,14 @@ Quel est le nom de l'antagoniste principal dans la série de jeux vidéo "Final 
 Quel est le nom du protagoniste dans le jeu vidéo "Red Dead Redemption 2"?,arthur Morgan,John Marston,Dutch van der Linde,Micah Bell,7,Jeux-vidéos
 Quel est le nom du monde virtuel dans le jeu vidéo "World of Warcraft"?,Azeroth,Midgar,Tamriel,Pandora,5,Jeux-vidéos
 Quelle est la capacité de stockage maximale de la console de jeu Xbox Series X?,1 To,500 Go,2 To,512 Go,7,Jeux-vidéos
-Quel est le nom du personnage principal dans le jeu vidéo "BioShock"?,Jack,Booker DeWitt,Elizabeth,Sander Cohen,Jack,10,Jeux-vidéos
+Quel est le nom du personnage principal dans le jeu vidéo "BioShock"?,Jack,Booker DeWitt,Elizabeth,Sander Cohen,10,Jeux-vidéos
 
 Quel pays a remporté le plus grand nombre de Coupes du Monde de football?,Brésil,Allemagne,Italie,Argentine,2,Sport
 Quel pays a remporté la Coupe du Monde de football 2018?,France,Brésil,Allemagne,Italie,1,Sport
 Quel joueur de basketball est souvent surnommé "King James"?,LeBron James,Kobe Bryant,Michael Jordan,Stephen Curry,1,Sport
 Quel est le nom du joueur de tennis suisse qui a remporté 20 titres du Grand Chelem?,Roger Federer,Rafael Nadal,Novak Djokovic,Andy Murray,4,Sport
 Dans quel sport peut-on marquer un "touchdown"?,Football américain,Basketball,Rugby,Tennis,2,Sport
-Quelle équipe de basketball de la NBA a remporté le plus de championnats?,Boston Celtics,Los Angeles Lakers,Chicago Bulls,Golden State Warriors,Boston Celtics,8,Sport
+Quelle équipe de basketball de la NBA a remporté le plus de championnats?,Boston Celtics,Los Angeles Lakers,Chicago Bulls,Golden State Warriors,8,Sport
 Quelle est la distance (en kilomètres) d'un marathon?,42,37,45,50 kilomètres,5,Sport
 Quel joueur de football a remporté le Ballon d'Or en 2020?,Messi,Ronaldo,Neymar,Mbappé,3,Sport
 Quel est le nom du tournoi de tennis qui se déroule à Wimbledon?,The Championships,Big Open,UK Open,The ChampionsCup,9,Sport
@@ -148,11 +148,11 @@ Quel est le nom du célèbre athlète jamaïcain surnommé "Lightning Bolt"?,Usa
 
 Quel groupe de rock britannique est connu pour des chansons comme "Stairway to Heaven" et "Kashmir"?,Led Zeppelin,The Beatles,Queen,The Rolling Stones,5,Musique
 Quelle artiste pop est surnommée "Queen of Pop"?,Madonna,Beyoncé,Taylor Swift,Rihanna,3,Musique
-Quelle est l'année de sortie de l'album "Thriller" de Michael Jackson?,1982,1984,1986,1988,1982,10,Musique
+Quelle est l'année de sortie de l'album "Thriller" de Michael Jackson?,1982,1984,1986,1988,10,Musique
 Quel est le nom du célèbre groupe de rap américain formé par Dr. Dre et Ice Cube?,N.W.A,Wu-Tang Clan,Public Enemy,OutKast,6,Musique
 Quelle chanteur a remporté le prix Nobel de littérature en 2016?,Bob Dylan,Leonard Cohen,Paul McCartney,Johnny Cash,7,Musique
 Quel est le nom du groupe de rock canadien connu pour des titres comme "Tom Sawyer" et "Limelight"?,Rush,AC/DC,The Who,Pink Floyd,8,Musique
-Quel compositeur autrichien est connu pour ses symphonies, dont la 5e symphonie "La Destinée"?,Beethoven,Mozart,Bach,Schubert,1,Musique
+Quel compositeur autrichien est connu pour ses symphonies d(ont la 5e symphonie "La Destinée")?,Beethoven,Mozart,Bach,Schubert,1,Musique
 Quel est le nom du groupe de musique électronique français connu pour des chansons comme "One More Time" et "Get Lucky"?,Daft Punk,Justice,Air,Phoenix,2,Musique
 Quelle chanteuse est connue pour son album "21" et des chansons comme "Rolling in the Deep" et "Someone Like You"?,Adele,Taylor Swift,Beyoncé,Rihanna,7,Musique
 Quel est le nom du groupe de rock américain connu pour des chansons comme "Sweet Child o' Mine" et "November Rain"?,Guns N' Roses,Metallica,Nirvana,AC/DC,10,Musique
