@@ -303,7 +303,7 @@ public class PartieSolo extends JFrame {
     }
 
     public int meilleurScore(){
-        try (BufferedReader reader = new BufferedReader(new FileReader("score.csv"))) { // Ouverture fichier qui contient les logs
+        try (BufferedReader reader = new BufferedReader(new FileReader("scores.csv"))) { // Ouverture fichier qui contient les logs
             String ligne; // Ligne du document qui est en train d'être parcourue
             while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
                 String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
