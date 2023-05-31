@@ -159,7 +159,7 @@ Quel est le nom du groupe de rock américain connu pour des chansons comme "Swee
 Quel est le nom du groupe de rock britannique connu pour des chansons comme "Bohemian Rhapsody" et "We Will Rock You"?,Queen,The Beatles,The Rolling Stones,U2,2,Musique
 Quelle est la nationalité du célèbre guitariste espagnol Carlos Santana?,Mexicaine,Américaine,Brésilienne,Espagnole,3,Musique
 Quel est le nom de la célèbre chanteuse de soul américaine surnommée "The Queen of Soul"?,Aretha Franklin,Ella Fitzgerald,Nina Simone,Tina Turner,8,Musique
-Quel compositeur russe est connu pour ses ballets "Le Lac des cygnes"; "La Belle au bois dormant" et "Casse-Noisette"?,Tchaïkovski,Rachmaninoff,Stravinsky,Chostakovitch,7,Musique
+Quel compositeur russe est connu pour ses ballets "Le Lac des cygnes" ainsi que "La Belle au bois dormant" et "Casse-Noisette"?,Tchaïkovski,Rachmaninoff,Stravinsky,Chostakovitch,7,Musique
 Quel est le nom du groupe de rock britannique formé par Mick Jagger et Keith Richards?,The Rolling Stones,The Beatles,Queen,U2,4,Musique
 Quelle chanteuse américaine est connue pour son album "Back to Black" et des chansons comme "Rehab" et "Valerie"?,Amy Winehouse,Adele,Taylor Swift,Beyoncé,4,Musique
 Quel est le nom du groupe de rock américain connu pour des chansons comme "Smells Like Teen Spirit" et "Come as You Are"?,Nirvana,Guns N' Roses,Metallica,AC/DC,4,Musique
@@ -204,4 +204,208 @@ Quel est le résultat de 4! (factorielle de 4) ?,24,16,20,28,4,Maths
 Quelle est la valeur de x dans l'équation 2x - 5 = 15 ?,10,11,12,13,2,Maths
 Combien font 2^3 * 3^2 ?,72,48,96,144,9,Maths
 Quel est le résultat de la série 1 + 2 + 3 + ... + 10 ?,55,45,50,60,7,Maths
+Quel sport est associé à Lionel Messi?,Football,Tennis,Basketball,Golf,1,Sport
+Quel est le joueur de basket-ball le plus titré de tous les temps?,Bill Russell,Michael Jordan,LeBron James,Kobe Bryant,6,Sport
+Dans quel pays est né le jeu de cricket?,Angleterre,Inde,Australie,Afrique du Sud,2,Sport
+Quel pays a remporté la Coupe du Monde de rugby en 2019?,Afrique du Sud,Angleterre,Nouvelle-Zélande,Australie,5,Sport
+Dans quel sport le terme "strike" est-il utilisé?,Bowling,Baseball,Tennis de table,Boxe,1,Sport
+Quelle équipe a remporté le Super Bowl en 2020?,Kansas City Chiefs,San Francisco 49ers,New England Patriots,Seattle Seahawks,7,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'été?,États-Unis,Chine,Russie,Grande-Bretagne,9,Sport
+Dans quel pays se déroule le Tour de France chaque année?,France,Italie,Espagne,Allemagne,1,Sport
+Quelle est la plus haute division de football en Espagne?,La Liga,Segunda Division,Premier Division,Serie A,3,Sport
+Quel joueur de tennis a remporté le plus de titres du Grand Chelem?,Roger Federer,Rafael Nadal,Novak Djokovic,Pete Sampras,6,Sport
+Quelle est la longueur réglementaire d'un terrain de football?,100-110 mètres,90-100 mètres,110-120 mètres,80-90 mètres,4,Sport
+Dans quel sport les termes "birdie" et "eagle" sont-ils utilisés?,Golf,Tennis,Basketball,Rugby,3,Sport
+Quelle équipe a remporté le plus de titres de la Ligue des Champions de l'UEFA?,Real Madrid,Barcelone,Bayern Munich,Liverpool,7,Sport
+Dans quel pays est né le judo?,Japon,Chine,Corée du Sud,Vietnam,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2020?,Lionel Messi,Cristiano Ronaldo,Neymar,Kylian Mbappé,6,Sport
+Quelle est la durée d'un match de basket-ball de la NBA?,48 minutes,40 minutes,60 minutes,30 minutes,4,Sport
+Dans quel sport le terme "deuce" est-il utilisé?,Tennis,Badminton,Volleyball,Hockey sur glace,3,Sport
+Quel pays a remporté la Coupe du Monde de football en 2018?,France,Croatie,Brésil,Allemagne,8,Sport
+Quelle équipe a remporté le Championnat d'Europe de football en 2020?,Italie,Angleterre,France,Portugal,7,Sport
+Dans quel sport le terme "stumped" est-il utilisé?,Cricket,Rugby,Baseball,Hockey sur gazon,3,Sport
+Quelle est la hauteur réglementaire d'un panier de basket-ball?,3,05 mètres,2,74 mètres,3 mètres,3,35 mètres,4,Sport
+Dans quel pays est né le jeu de rugby?,Angleterre,Australie,Nouvelle-Zélande,Écosse,2,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'hiver?,Norvège,États-Unis,Allemagne,Russie,9,Sport
+Dans quel pays se déroulent les Internationaux de France de tennis?,France,États-Unis,Australie,Royaume-Uni,5,Sport
+Quelle est la plus haute division de football en Angleterre?,Premier League,Championship,League One,Serie A,4,Sport
+Quel joueur de tennis a remporté le plus de titres en simple à Wimbledon?,Roger Federer,Rafael Nadal,Novak Djokovic,Pete Sampras,6,Sport
+Dans quel sport le terme "triple-double" est-il utilisé?,Basketball,Hockey sur glace,Football américain,Baseball,4,Sport
+Quelle équipe a remporté le plus de titres de la Coupe du Monde de la FIFA?,Brésil,Allemagne,Italie,Argentine,7,Sport
+Dans quel pays est né le karaté?,Japon,Chine,Corée du Sud,Thaïlande,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2019?,Lionel Messi,Cristiano Ronaldo,Neymar,Kylian Mbappé,6,Sport
+Quelle est la durée réglementaire d'un match de hockey sur glace?,60 minutes,90 minutes,45 minutes,120 minutes,5,Sport
+Dans quel sport le terme "love" est-il utilisé?,Tennis,Cricket,Volleyball,Golf,2,Sport
+Quel pays a remporté la Coupe du Monde de rugby en 2015?,Nouvelle-Zélande,Australie,Afrique du Sud,Angleterre,8,Sport
+Quelle équipe a remporté le plus de titres de la Ligue des Champions de l'UEFA?,Real Madrid,Barcelone,Bayern Munich,Liverpool,7,Sport
+Dans quel pays est né le taekwondo?,Corée du Sud,Chine,Japon,Vietnam,3,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2018?,Luka Modric,Cristiano Ronaldo,Neymar,Lionel Messi,6,Sport
+Quelle est la durée réglementaire d'un match de handball?,60 minutes,90 minutes,45 minutes,120 minutes,4,Sport
+Dans quel sport le terme "ace" est-il utilisé?,Tennis,Golf,Bowling,Boxe,2,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques?,États-Unis,Chine,Russie,Grande-Bretagne,9,Sport
+Quelle équipe a remporté la Coupe du Monde de football en 2014?,Allemagne,Argentine,Brésil,Italie,8,Sport
+Dans quel sport le terme "double fault" est-il utilisé?,Tennis,Baseball,Football américain,Badminton,3,Sport
+Quel pays a remporté le Tournoi des Six Nations de rugby en 2020?,Angleterre,France,Irlande,Pays de Galles,7,Sport
+Dans quel pays est né le jeu de golf?,Écosse,Angleterre,Irlande,États-Unis,2,Sport
+Quel est le joueur de basket-ball le plus grand de tous les temps?,Gheorghe Muresan,Yao Ming,Shaquille O'Neal,Kareem Abdul-Jabbar,5,Sport
+Dans quel sport le terme "free kick" est-il utilisé?,Football,Athlétisme,Hockey sur glace,Basketball,3,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques de 2016?,États-Unis,Chine,Grande-Bretagne,Russie,9,Sport
+Dans quel pays se déroulent les Internationaux des États-Unis de tennis?,États-Unis,France,Australie,Royaume-Uni,5,Sport
+Quelle est la plus haute division de football en Allemagne?,Bundesliga,2. Bundesliga,3. Liga,Serie A,4,Sport
+Quel joueur de tennis a remporté le plus de titres du Grand Chelem en simple?,Roger Federer,Rafael Nadal,Novak Djokovic,Pete Sampras,6,Sport
+Dans quel sport le terme "knockout" est-il utilisé?,Boxe,MMA,Tennis,Golf,3,Sport
+Quel pays a remporté la Coupe du Monde de football en 2010?,Espagne,Pays-Bas,Allemagne,Argentine,8,Sport
+Quelle équipe a remporté le Championnat d'Europe de football en 2016?,Portugal,France,Allemagne,Espagne,7,Sport
+Dans quel pays est né le jeu de badminton?,Angleterre,Inde,Chine,Indonésie,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2017?,Cristiano Ronaldo,Lionel Messi,Neymar,Kylian Mbappé,6,Sport
+Quelle est la durée réglementaire d'un match de rugby à XV?,80 minutes,90 minutes,70 minutes,100 minutes,4,Sport
+Dans quel sport le terme "fault" est-il utilisé?,Tennis,Volleyball,Hockey sur glace,Boxe,2,Sport
+Quel pays a remporté la Coupe du Monde de rugby en 2011?,Nouvelle-Zélande,Australie,Afrique du Sud,France,8,Sport
+Quelle équipe a remporté le plus de titres de la Ligue des Champions de l'UEFA?,Real Madrid,Barcelone,Bayern Munich,AC Milan,7,Sport
+Dans quel pays est né le sport du Muay Thai?,Thaïlande,Chine,Japon,Corée du Sud,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2016?,Cristiano Ronaldo,Lionel Messi,Neymar,Gareth Bale,6,Sport
+Quelle est la durée réglementaire d'un match de volleyball?,60 minutes,90 minutes,45 minutes,120 minutes,3,Sport
+Dans quel sport le terme "bogey" est-il utilisé?,Golf,Tennis,Basketball,Rugby,3,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'hiver 2018?,Norvège,Allemagne,Canada,États-Unis,9,Sport
+Dans quel pays se déroulent les Internationaux de tennis d'Australie?,Australie,États-Unis,France,Royaume-Uni,5,Sport
+Quelle est la plus haute division de football en Italie?,Serie A,Serie B,Serie C,Premier League,4,Sport
+Quel joueur de tennis a remporté le plus de titres en simple à l'US Open?,Roger Federer,Rafael Nadal,Novak Djokovic,Pete Sampras,6,Sport
+Dans quel sport le terme "slam dunk" est-il utilisé?,Basketball,Volleyball,Tennis,Hockey sur glace,3,Sport
+Quelle équipe a remporté le plus de titres de la Copa América?,Uruguay,Argentine,Brésil,Chili,7,Sport
+Dans quel pays est né le sport du Jiu-Jitsu brésilien?,Brésil,Japon,Chine,Thaïlande,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2015?,Lionel Messi,Cristiano Ronaldo,Neymar,Andrés Iniesta,6,Sport
+Quelle est la durée réglementaire d'un match de basket-ball universitaire aux États-Unis?,40 minutes,60 minutes,30 minutes,50 minutes,4,Sport
+Dans quel sport le terme "let" est-il utilisé?,Tennis,Tennis de table,Golf,Badminton,2,Sport
+Quel pays a remporté la Coupe du Monde de rugby en 2007?,Afrique du Sud,Angleterre,Nouvelle-Zélande,Australie,8,Sport
+Quelle équipe a remporté le plus de titres de la Ligue des Champions de l'UEFA?,Real Madrid,Barcelone,Bayern Munich,Liverpool,7,Sport
+Dans quel pays est né le jeu d'échecs?,Inde,Chine,Grèce,Iran,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2014?,Cristiano Ronaldo,Lionel Messi,Neymar,Manuel Neuer,6,Sport
+Quelle est la durée réglementaire d'un match de football américain de la NFL?,60 minutes,90 minutes,45 minutes,120 minutes,5,Sport
+Dans quel sport le terme "forehand" est-il utilisé?,Tennis,Golf,Basketball,Rugby,2,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques de 2012?,États-Unis,Chine,Russie,Grande-Bretagne,9,Sport
+Quelle équipe a remporté la Coupe du Monde de football en 2006?,Italie,France,Brésil,Allemagne,8,Sport
+Dans quel sport le terme "home run" est-il utilisé?,Baseball,Cricket,Rugby,Tennis,3,Sport
+Quel pays a remporté le Tournoi des Six Nations de rugby en 2021?,Pays de Galles,Angleterre,Irlande,Écosse,7,Sport
+Dans quel pays est né le jeu de basketball?,États-Unis,Canada,France,Australie,2,Sport
+Quel est le joueur de basket-ball le plus petit de tous les temps à jouer en NBA?,Tyrone "Muggsy" Bogues,Allen Iverson,Spud Webb,Chris Paul,5,Sport
+Dans quel sport le terme "penalty" est-il utilisé?,Football,Hockey sur glace,Handball,Basketball,3,Sport
+Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'hiver?,Norvège,États-Unis,Allemagne,Russie,9,Sport
+Dans quel pays se déroulent les Internationaux de tennis de Wimbledon?,Royaume-Uni,États-Unis,Australie,France,5,Sport
+Quelle est la plus haute division de football en Espagne?,La Liga,Segunda Division,Premier Division,Serie A,4,Sport
+Quel joueur de tennis a remporté le plus de titres du Grand Chelem en simple chez les femmes?,Serena Williams,Steffi Graf,Margaret Court,Naomi Osaka,6,Sport
+Dans quel sport le terme "offside" est-il utilisé?,Football,Hockey sur glace,Handball,Tennis,3,Sport
+Quel pays a remporté la Coupe du Monde de rugby en 2003?,Angleterre,Australie,Nouvelle-Zélande,Afrique du Sud,8,Sport
+Quelle équipe a remporté le plus de titres de la Ligue des Champions de l'UEFA?,Real Madrid,Barcelone,Bayern Munich,Liverpool,7,Sport
+Dans quel pays est né le kung-fu?,Chine,Japon,Thaïlande,Corée du Sud,2,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2013?,Cristiano Ronaldo,Lionel Messi,Neymar,Franck Ribéry,6,Sport
+Quelle est la durée réglementaire d'un match de handball?,60 minutes,90 minutes,45 minutes,120 minutes,4,Sport
+Dans quel sport le terme "fore" est-il utilisé?,Golf,Tennis,Basketball,Hockey sur glace,2,Sport
+Quel pays a remporté la Coupe du Monde de rugby en 1999?,Australie,France,Nouvelle-Zélande,Afrique du Sud,8,Sport
+Quelle équipe a remporté le plus de titres de la Ligue des Champions de l'UEFA?,Real Madrid,Barcelone,Bayern Munich,AC Milan,7,Sport
+Dans quel pays est né le sport du taekwondo?,Corée du Sud,Chine,Japon,Vietnam,3,Sport
+Quel joueur de football a remporté le Ballon d'Or en 2012?,Lionel Messi,Cristiano Ronaldo,Andrés Iniesta,Xavi Hernández,6,Sport
+
+
+Quel groupe de rock britannique a enregistré l'album "Stairway to Heaven"?,Led Zeppelin,Queen,The Rolling Stones,Pink Floyd,7,Musique
+Quel est l'instrument principal de la pianiste et compositrice Clara Schumann?,Piano,Violon,Flûte,Harpe,5,Musique
+Dans quel pays est né le compositeur Ludwig van Beethoven?,Allemagne,Autriche,France,Russie,2,Musique
+Quelle chanteuse est connue pour son tube "Like a Virgin"?,Madonna,Beyoncé,Rihanna,Taylor Swift,4,Musique
+Dans quel genre musical le chanteur Bob Marley est-il principalement connu?,Reggae,Rock,Rap,Jazz,3,Musique
+Quel est le nom complet du rappeur Eminem?,Marshall Bruce Mathers III,Dwayne Michael Carter Jr.,Calvin Cordozar Broadus Jr.,Shawn Corey Carter,6,Musique
+Quel compositeur a écrit la Symphonie n°9, également connue sous le nom de "Symphonie du Nouveau Monde"?,Antonín Dvořák,Ludwig van Beethoven,Johann Sebastian Bach,Wolfgang Amadeus Mozart,6,Musique
+Quelle chanteuse a interprété la chanson "Rolling in the Deep"?,Adele,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Dans quel pays est né le compositeur Frédéric Chopin?,Pologne,France,Allemagne,Russie,2,Musique
+Quel est le groupe de rock américain connu pour les chansons "Sweet Child O' Mine" et "November Rain"?,Guns N' Roses,Nirvana,AC/DC,Queen,7,Musique
+Quel est l'instrument principal du musicien Yo-Yo Ma?,Violoncelle,Piano,Flûte,Guitare,4,Musique
+Dans quel pays est né le chanteur et compositeur John Lennon?,Angleterre,États-Unis,Australie,Canada,2,Musique
+Quel groupe de musique a enregistré la chanson "Bohemian Rhapsody"?,Queen,The Beatles,The Rolling Stones,ABBA,8,Musique
+Quel est le genre musical principalement associé au chanteur Elvis Presley?,Rock 'n' Roll,Country,Rap,Pop,4,Musique
+Dans quel pays est né le compositeur Wolfgang Amadeus Mozart?,Autriche,Allemagne,Italie,France,2,Musique
+Quelle chanteuse a interprété la chanson "Hello"?,Adele,Taylor Swift,Beyoncé,Rihanna,5,Musique
+Quel compositeur a écrit la Symphonie n°5, également connue sous le nom de "Symphonie du Destin"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quel groupe de musique a enregistré la chanson "Imagine"?,The Beatles,Queen,Nirvana,Coldplay,7,Musique
+Quel est l'instrument principal du musicien Charlie Parker?,Saxophone,Clarinet,Trompette,Guitare,4,Musique
+Quelle chanteuse est connue pour son album "Lemonade"?,Beyoncé,Madonna,Rihanna,Taylor Swift,5,Musique
+Dans quel genre musical le groupe ABBA est-il principalement connu?,Pop,Disco,Rock,Rap,3,Musique
+Quel est le nom complet du chanteur et compositeur Freddie Mercury?,Farrokh Bulsara,Elton John,Stefani Germanotta,Robert Zimmerman,6,Musique
+Dans quel pays est né le compositeur Johann Sebastian Bach?,Allemagne,Autriche,France,Russie,2,Musique
+Quelle chanteuse a interprété la chanson "Single Ladies (Put a Ring on It)"?,Beyoncé,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Quel groupe de rock britannique a enregistré l'album "The Dark Side of the Moon"?,Pink Floyd,The Beatles,Led Zeppelin,The Rolling Stones,7,Musique
+Quel est l'instrument principal du musicien Jimi Hendrix?,Guitare,Batterie,Basse,Clavier,4,Musique
+Dans quel pays est né le compositeur Franz Schubert?,Autriche,Allemagne,Italie,France,2,Musique
+Quelle chanteuse est connue pour son album "Reputation"?,Taylor Swift,Adele,Beyoncé,Rihanna,5,Musique
+Dans quel genre musical le chanteur Michael Jackson est-il principalement connu?,Pop,R&B,Rock,Country,3,Musique
+Quel est le nom complet du chanteur et compositeur Stevie Wonder?,Stevland Hardaway Judkins,Elton John,Calvin Cordozar Broadus Jr.,Robert Zimmerman,6,Musique
+Quel compositeur a écrit la Symphonie n°40 en sol mineur?,Wolfgang Amadeus Mozart,Ludwig van Beethoven,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Wrecking Ball"?,Miley Cyrus,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Quel groupe de musique a enregistré la chanson "Hotel California"?,The Eagles,The Rolling Stones,AC/DC,Queen,7,Musique
+Quel est l'instrument principal du musicien Louis Armstrong?,Trompette,Saxophone,Clarinette,Guitare,4,Musique
+Dans quel pays est né le compositeur Johann Strauss II?,Autriche,Allemagne,Italie,France,2,Musique
+Quelle chanteuse est connue pour son album "Born This Way"?,Lady Gaga,Beyoncé,Madonna,Rihanna,5,Musique
+Dans quel genre musical le groupe The Beatles est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
+Quel est le nom complet de la chanteuse et compositrice Lady Gaga?,Stefani Germanotta,Beyoncé Knowles,Adele Laurie Blue Adkins,Taylor Alison Swift,6,Musique
+Quel compositeur a écrit la Symphonie n°9 en ré mineur, également connue sous le nom de "Symphonie du Choral"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Umbrella"?,Rihanna,Taylor Swift,Beyoncé,Madonna,5,Musique
+Quel groupe de musique a enregistré la chanson "Smells Like Teen Spirit"?,Nirvana,Queen,AC/DC,The Beatles,7,Musique
+Quel est l'instrument principal du musicien Miles Davis?,Trompette,Saxophone,Clarinette,Guitare,4,Musique
+Dans quel pays est né le compositeur Franz Joseph Haydn?,Autriche,Allemagne,Italie,France,2,Musique
+Quelle chanteuse est connue pour son album "1989"?,Taylor Swift,Adele,Beyoncé,Rihanna,5,Musique
+Dans quel genre musical le groupe Queen est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
+Quel est le nom complet de la chanteuse et compositrice Adele?,Adele Laurie Blue Adkins,Beyoncé Knowles,Stefani Germanotta,Taylor Alison Swift,6,Musique
+Quel compositeur a écrit la Symphonie n°6, également connue sous le nom de "Symphonie pastorale"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Crazy in Love"?,Beyoncé,Taylor Swift,Katy Perry,Rihanna,5,Musique
+Quel groupe de musique a enregistré la chanson "Hey Jude"?,The Beatles,Queen,Nirvana,Coldplay,7,Musique
+Quel est l'instrument principal du musicien Johann Sebastian Bach?,Orgue,Piano,Violon,Guitare,4,Musique
+Dans quel pays est né le compositeur Frédéric François Chopin?,Pologne,France,Allemagne,Russie,2,Musique
+Quelle chanteuse est connue pour son album "Good Girl Gone Bad"?,Rihanna,Taylor Swift,Beyoncé,Madonna,5,Musique
+Dans quel genre musical le chanteur Frank Sinatra est-il principalement connu?,Jazz,Pop,Rock,Rap,3,Musique
+Quel est le nom complet du chanteur et compositeur Elton John?,Reginald Kenneth Dwight,Farrokh Bulsara,Stefani Germanotta,Robert Zimmerman,6,Musique
+Quel compositeur a écrit la Symphonie n°7 en la majeur?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Someone Like You"?,Adele,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Quel groupe de rock britannique a enregistré l'album "Abbey Road"?,The Beatles,Queen,Led Zeppelin,The Rolling Stones,7,Musique
+Quel est l'instrument principal du musicien Antonio Vivaldi?,Violon,Piano,Flûte,Guitare,4,Musique
+Dans quel pays est né le compositeur Giuseppe Verdi?,Italie,Allemagne,Autriche,France,2,Musique
+Quelle chanteuse est connue pour son album "Teenage Dream"?,Katy Perry,Beyoncé,Madonna,Rihanna,5,Musique
+Dans quel genre musical le groupe AC/DC est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
+Quel est le nom complet de la chanteuse et compositrice Taylor Swift?,Taylor Alison Swift,Beyoncé Knowles,Adele Laurie Blue Adkins,Stefani Germanotta,6,Musique
+Quel compositeur a écrit la Symphonie n°3, également connue sous le nom de "Symphonie héroïque"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Vogue"?,Madonna,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Quel groupe de musique a enregistré la chanson "Boys Don't Cry"?,The Cure,The Rolling Stones,AC/DC,Queen,7,Musique
+Quel est l'instrument principal du musicien Django Reinhardt?,Guitare,Violon,Saxophone,Clarinette,4,Musique
+Dans quel pays est né le compositeur Pyotr Ilyich Tchaikovsky?,Russie,Allemagne,Italie,France,2,Musique
+Quelle chanteuse est connue pour son album "Blackout"?,Britney Spears,Beyoncé,Madonna,Rihanna,5,Musique
+Dans quel genre musical le chanteur Frank Zappa est-il principalement connu?,Rock,Pop,Jazz,Rap,3,Musique
+Quel est le nom complet du chanteur et compositeur Bob Marley?,Robert Nesta Marley,Farrokh Bulsara,Stefani Germanotta,Reginald Kenneth Dwight,6,Musique
+Quel compositeur a écrit la Symphonie n°4 en mi mineur, également connue sous le nom de "Symphonie tragique"?,Johannes Brahms,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Bad Romance"?,Lady Gaga,Taylor Swift,Katy Perry,Rihanna,5,Musique
+Quel groupe de musique a enregistré la chanson "Come Together"?,The Beatles,Queen,Nirvana,Coldplay,7,Musique
+Quel est l'instrument principal du musicien Johann Pachelbel?,Orgue,Piano,Violon,Guitare,4,Musique
+Dans quel pays est né le compositeur Claude Debussy?,France,Allemagne,Italie,Autriche,2,Musique
+Quelle chanteuse est connue pour son album "The Fame"?,Lady Gaga,Beyoncé,Madonna,Rihanna,5,Musique
+Dans quel genre musical le groupe Coldplay est-il principalement connu?,Pop,Rock,Rap,Jazz,3,Musique
+Quel est le nom complet de la chanteuse et compositrice Rihanna?,Robyn Rihanna Fenty,Beyoncé Knowles,Adele Laurie Blue Adkins,Taylor Alison Swift,6,Musique
+Quel compositeur a écrit la Symphonie n°8 en sol majeur, également connue sous le nom de "Symphonie des Mille"?,Gustav Mahler,Ludwig van Beethoven,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "I Will Always Love You"?,Whitney Houston,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Quel groupe de rock britannique a enregistré l'album "Sgt. Pepper's Lonely Hearts Club Band"?,The Beatles,Queen,Led Zeppelin,The Rolling Stones,7,Musique
+Quel est l'instrument principal du musicienBob Dylan?,Guitare,Harmonica,Piano,Batterie,4,Musique
+Dans quel pays est né le compositeur Igor Stravinsky?,Russie,Allemagne,France,Italie,2,Musique
+Quelle chanteuse est connue pour son album "21"?,Adele,Beyoncé,Madonna,Rihanna,5,Musique
+Dans quel genre musical le groupe Nirvana est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
+Quel est le nom complet de la chanteuse et compositrice Katy Perry?,Katheryn Elizabeth Hudson,Beyoncé Knowles,Adele Laurie Blue Adkins,Taylor Alison Swift,6,Musique
+Quel compositeur a écrit la Symphonie n°9 en ré mineur, également connue sous le nom de "Symphonie du Nouveau Monde"?,Antonín Dvořák,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,6,Musique
+Quelle chanteuse a interprété la chanson "Rolling in the Deep"?,Adele,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
+Quel groupe de musique a enregistré la chanson "Stairway to Heaven"?,Led Zeppelin,The Rolling Stones,AC/DC,Queen,7,Musique
+Quel est l'instrument principal du musicien Ray Charles?,Piano,Voix,Trompette,Guitare,4,Musique
+Dans quel pays est né le compositeur Frédéric Chopin?,Pologne,France,Allemagne,Russie,2,Musique
+Quelle chanteuse est connue pour son album "Like a Prayer"?,Madonna,Beyoncé,Taylor Swift,Rihanna,5,Musique
+Dans quel genre musical le chanteur Louis Armstrong est-il principalement connu?,Jazz,Pop,Rock,Rap,3,Musique
+Quel est le nom complet du chanteur et compositeur David Bowie?,David Robert Jones,Farrokh Bulsara,Stefani Germanotta,Reginald Kenneth Dwight,6,Musique
+Quel compositeur a écrit la Symphonie n°5 en ut mineur, également connue sous le nom de "Symphonie du Destin"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
+Quelle chanteuse a interprété la chanson "Poker Face"?,Lady Gaga,Taylor Swift,Katy Perry,Rihanna,5,Musique
+Quel groupe de rock britannique a enregistré l'album "Exile on Main St."?,The Rolling Stones,The Beatles,Led Zeppelin,Queen,7,Musique
+Quel est l'instrument principal du musicien Johann Strauss II?,Violon,Flûte,Piano,Guitare,4,Musique
+Dans quel pays est né le compositeur Richard Wagner?,Allemagne,Autriche,France,Italie,2,Musique
+Quelle chanteuse est connue pour son album "The Immaculate Collection"?,Madonna,Beyoncé,Taylor Swift,Rihanna,5,Musique
+
+
 Combien font 1/2 + 1/3 + 1/4 ?,11/12,7/12,5/6,3/4,9,Maths
