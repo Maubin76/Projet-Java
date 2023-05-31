@@ -10,7 +10,13 @@ import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Classe représentant une partie solo.
+ */
 public class PartieSolo extends JFrame {
+    /**
+     *
+     */
     private String theme; // Thème de la partie
     private String difficulte; // Difficulté de la partie
     private int nbQuestions; // Nombre de questions dans la partie
