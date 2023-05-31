@@ -120,9 +120,9 @@ public class PartieMulti extends JFrame {
             panel.add(scoreBALabel, constraints);
 
             JLabel gagnantLabel;
-            if (gagnant.equals("A")) gagnantLabel = new JLabel("L'équipe A gagne !");
-            else if (gagnant.equals("B")) gagnantLabel = new JLabel("L'équipe B gagne !");
-            else gagnantLabel = new JLabel("Egalité");
+            if (gagnant==null) gagnantLabel = new JLabel("Egalité");
+            else if (gagnant.equals("A")) gagnantLabel = new JLabel("L'équipe A gagne !");
+            else gagnantLabel = new JLabel("L'équipe B gagne !");
             constraints.gridy = 0;
             panel.add(gagnantLabel, constraints);
 
