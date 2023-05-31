@@ -4,12 +4,34 @@ import java.awt.*; // Importe les classes nécessaires pour la gestion de la fen
 import java.awt.event.*; // Importe les classes nécessaires pour la gestion des événements
 import java.io.IOException; // Importe la classe IOException pour la gestion des exceptions liées à l'entrée/sortie
 
+/**
+ * Cette classe représente une fenêtre de paramètres de partie.
+ * Elle permet de choisir le thème, la difficulté et le nombre de questions pour une partie.
+ */
 public class ParamPartie extends JFrame{
-    private String selectedTheme; // Variable privée pour stocker le thème sélectionné pour la partie
-    private String selectedDifficulte; // Variable privée pour stocker la difficulté sélectionnée pour la partie
-    private int selectedNombre; // Variable privée pour stocker le nombre de questions sélectionné pour la partie
-    private String identifiant; // Variable privée pour stocker l'identifiant de l'utilisateur connecté
+    /**
+     * Chaine de caractère privée indiquant le thème sélectionné pour la partie.
+     */
+    private String selectedTheme; 
+    /**
+     * Chaine de caractère privée indiquant le niveau de difficulté sélectionné pour la partie.
+     */
+    private String selectedDifficulte; 
+    /**
+     * Entier privé indiquant le nombre de qesions sélectionné pour la partie.
+     */
+    private int selectedNombre; 
+    /**
+     * Chaine de caractère privée indiquant l'identifiant de l'utilisateur connecté.
+     */
+    private String identifiant; 
 
+    /**
+     * Constructeur de la classe ParamPartie.
+     *
+     * @param solo      Indique si le mode de jeu est en solo ou multijoueur
+     * @param id        L'identifiant de l'utilisateur connecté
+     */
     public ParamPartie(boolean solo, String id){
         identifiant = id; // Affecte l'identifiant de l'utilisateur connecté à la variable correspondante
         
@@ -90,15 +112,22 @@ public class ParamPartie extends JFrame{
         setVisible(true); // Rend la fenêtre visible
     }
 
-    public String getSelectedTheme() {
-        return selectedTheme; // Retourne le thème sélectionné
-    }
-
-    public String getSelectedDifficulte() {
-        return selectedDifficulte; // Retourne la difficulté sélectionnée
-    }
-
-    public int getSelectedNombre() {
-        return selectedNombre; // Retourne le nombre de questions sélectionné
-    }
+    /**
+     * Getter de l'attibut selectedTheme.
+     *
+     * @return Le thème sélectionné.
+     */
+    public String getSelectedTheme() {return selectedTheme;}
+    /**
+     * Getter de l'attibut selectedDifficulte.
+     *
+     * @return La difficulé sélectionné.
+     */
+    public String getSelectedDifficulte() {return selectedDifficulte;}
+    /**
+     * Getter de l'attibut selectedNombre.
+     *
+     * @return Le nombre de questions sélectionné sélectionné.
+     */
+    public int getSelectedNombre() {return selectedNombre;}
 }
