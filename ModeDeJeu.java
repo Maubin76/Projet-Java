@@ -10,6 +10,9 @@ import java.io.IOException;
  * Elle hérite de la classe JFrame de Swing.
  */
 public class ModeDeJeu extends JFrame {
+    /**
+     * Chaine de caractère privée correspondant à l'identifiant de la personne connectée.
+     */
     private String identifiant;
 
     /**
@@ -81,6 +84,11 @@ public class ModeDeJeu extends JFrame {
         });
     }
 
+    /**
+     * Méthode permettant de récupérer le meilleur score d'un joueur à partir d'un fichier de scores (scores.csv).
+     *
+     * @return Le meilleur score du joueur, ou 0 s'il n'y a pas de score trouvé.
+     */
     public int affectationMeilleurScore(){
         try (BufferedReader reader = new BufferedReader(new FileReader("scores.csv"))) { // Ouverture fichier qui contient les logs
             String ligne; // Ligne du document qui est en train d'être parcourue
