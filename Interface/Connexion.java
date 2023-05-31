@@ -8,8 +8,17 @@ import java.awt.event.*;
  * Elle permet de vérifier les informations de connexion et de lancer la prochaine fenêtre du jeu.
  */
 public class Connexion extends JFrame {
-    private JTextField usernameField; // Champ de texte pour le nom d'utilisateur
-    private JPasswordField passwordField; // Champ de texte pour le mot de passe
+    /**
+     * Champ de texte privé permettant d'inscrire le nom d'utilisateur.
+     */
+    private JTextField usernameField; 
+    /**
+     * Champ de texte privé permettant d'inscrire le mot de passe de l'utilisateur.
+     */
+    private JPasswordField passwordField; 
+    /**
+     * Utilisateur privé, correspondant au "compte" avec lequel on se connecte.
+     */
     private Utilisateur personne1; 
 
     /**

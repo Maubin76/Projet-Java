@@ -8,10 +8,16 @@ import java.awt.event.*;
  * Classe représentant la fenêtre d'inscription.
  */
 public class Enregistrement extends JFrame{
-
-    private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau qui va servir à désérialiser le fichier contenant les logs
-    private String identifiant; // Identifiant du compte en cours de création
-
+    /**
+     * Tableau privé de chaines de caractère.
+     * Création du tableau qui va servir à désérialiser le fichier contenant les logs
+     */
+    private ArrayList<String[]> tableauLogs = new ArrayList<>(); 
+    /**
+     * chaine de caractère privée correspondant à l'identifiant du compte en cours de création.
+     */
+    private String identifiant; 
+    
     /**
      * Constructeur de la classe Enregistrement.
      * Initialise et configure la fenêtre d'inscription.
