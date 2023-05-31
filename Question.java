@@ -121,34 +121,53 @@ public class Question {
         }
     }
 
-
-    // Getters et setters pour tous les attributs de la classe
-    public String getTheme() {
-        return theme;}
-    public void setTheme(String theme) {
-        this.theme = theme;}
-    public String getEnonce() {
-        return enonce;}
-    public void setEnonce(String enonce) {
-        this.enonce = enonce;}
-    public String getP1() {
-        return p1;}
-    public void setP1(String p1) {
-        this.p1 = p1;}
-    public String getP2() {
-        return p2;}
-    public void setP2(String p2) {
-        this.p2 = p2;}
-    public String getP3() {
-        return p3;}
-    public void setP3(String p3) {
-        this.p3 = p3;}
-    public String getP4() {
-        return p4;}
-    public void setP4(String p4) {
-        this.p4 = p4;}
-    public String getNiveau() {
-        return niveau;}
-    public void setNiveau(String niveau) {
-        this.niveau = niveau;}
+    /**
+     * Getter de l'attribut theme.
+     *
+     * @return Le thème de la question.
+     */
+    public String getTheme() {return theme;}
+    public void setTheme(String theme) {this.theme = theme;}
+    /**
+     * Getter de l'attribut ennoce.
+     *
+     * @return L'ennoncé de la question.
+     */
+    public String getEnonce() {return enonce;}
+    public void setEnonce(String enonce) {this.enonce = enonce;}
+    /**
+     * Getter de l'attribut p1.
+     *
+     * @return La première proposition (et bonne réponse) de la question.
+     */
+    public String getP1() {return p1;}
+    public void setP1(String p1) {this.p1 = p1;}
+    /**
+     * Getter de l'attribut p2.
+     *
+     * @return La deuxième proposition de la question.
+     */
+    public String getP2() {return p2;}
+    public void setP2(String p2) {this.p2 = p2;}
+    /**
+     * Getter de l'attribut p3.
+     *
+     * @return La troisième proposition de la question.
+     */
+    public String getP3() {return p3;}
+    public void setP3(String p3) {this.p3 = p3;}
+    /**
+     * Getter de l'attribut p4.
+     *
+     * @return La quatrième proposition de la question.
+     */
+    public String getP4() {return p4;}
+    public void setP4(String p4) {this.p4 = p4;}
+    /**
+     * Getter de l'attribut niveau.
+     *
+     * @return Le niveau de difficulté de la question.
+     */
+    public String getNiveau() {return niveau;}
+    public void setNiveau(String niveau) {this.niveau = niveau;}
 }
