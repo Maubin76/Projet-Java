@@ -15,22 +15,69 @@ import java.io.IOException;
  */
 public class PartieSolo extends JFrame {
     /**
-     *
+     * Chaine de caractères privée correspondant au thème de la partie.
      */
-    private String theme; // Thème de la partie
-    private String difficulte; // Difficulté de la partie
-    private int nbQuestions; // Nombre de questions dans la partie
-    private ArrayList<String[]> tableauQuestions = new ArrayList<>(); // Liste de questions
-    private int questionsRepondues = 0; // Nombre de questions déjà répondues
-    private int score = 0; // Score de la partie
-    private Random random = new Random(); // Générateur de nombres aléatoires
-    private String[] ligne; // Ligne de données actuelle
-    private JPanel panel; // Panel pour l'affichage des questions
-    private int secondesRestantes; // Temps restant pour répondre à une question
-    private Timer questionTimer; // Timer pour la question en cours
-    private int scoreMax = 0; // Score maximum possible
-    private String identifiant; // Identifiant du joueur
+    private String theme; 
+    /**
+     * Chaine de caractères privée correspondant au niveau de difficulté de la partie.
+     */
+    private String difficulte; 
+    /**
+     * Entier privé correspondant au nombre de questions de la partie.
+     */
+    private int nbQuestions; 
+    /**
+     * Tableau dynamique pivé de tableaux statiques de chaines de caractères.
+     * Correspond à la liste des questions de la partie, ainsi que toutes leurs caractéristiques.
+     */
+    private ArrayList<String[]> tableauQuestions = new ArrayList<>(); 
+    /**
+     * Entier privé correspondant au nombre de questions déjà répondues.
+     */
+    private int questionsRepondues = 0; 
+    /**
+     * Entier privé correspondant au score rélisé.
+     */
+    private int score = 0; 
+    /**
+     * Générateur de nombres aléatoires
+     */
+    private Random random = new Random(); 
+    /**
+     * Tableau statique privé de chaines de caractères permettant de stocker une ligne de question.
+     */
+    private String[] ligne; 
+    /**
+     * Panneau principal de l'interface
+     */
+    private JPanel panel; 
+    /**
+     * Entier privé correspondant au nombre de secondes restantes pour répondre à la question.
+     */
+    private int secondesRestantes; 
+    /**
+     * Timer pour le compte à rebours.
+     */
+    private Timer questionTimer; 
+    /**
+     * Entier privé correspondant au score maximal atteignable si toutes les questions sont répondues avec succés.
+     */
+    private int scoreMax = 0; 
+    /**
+     * Chaine de caractere privée correspondant à l'identifiant du joueur connecté.
+     */
+    private String identifiant; 
 
+    /**
+     * Constructeur de la classe PartieSolo.
+     *
+     * @param theme       Thème de la partie.
+     * @param difficulte  Niveau de difficulté de la partie.
+     * @param nbQuestions Nombre de questions dans la partie.
+     * @param id          Identifiant du joueur.
+     * @throws UnsupportedAudioFileException En cas d'erreur lors de la lecture du fichier audio.
+     * @throws IOException                   En cas d'erreur d'entrée/sortie lors de la lecture du fichier.
+     */
     public PartieSolo(String theme, String difficulte, int nbQuestions, String id) throws UnsupportedAudioFileException, IOException {
         this.identifiant = id;
         this.theme = theme;
@@ -69,6 +116,12 @@ public class PartieSolo extends JFrame {
         setVisible(true); // Rendre la fenêtre visible
     }
 
+    /**
+     * Vérifie si une question correspond aux critères de thème et de difficulté.
+     *
+     * @param question  La question à vérifier.
+     * @return true si la question correspond aux critères, false sinon.
+     */
     public boolean bonneQuestion(String[] question) {
         if (question.length >= 7 && question[6].equals(this.theme)) { // Vérifie si la question a au moins 7 éléments et si le thème correspond
             switch (difficulte) { // Vérifie la difficulté choisie
@@ -94,6 +147,12 @@ public class PartieSolo extends JFrame {
         return false; // La question ne correspond pas aux critères, elle est invalide
     }
 
+    /**
+     * Pose la question suivante.
+     *
+     * @throws UnsupportedAudioFileException En cas d'erreur lors de la lecture du fichier audio.
+     * @throws IOException                   En cas d'erreur d'entrée/sortie lors de la lecture du fichier.
+     */
     public void poserQuestionSuivante() throws UnsupportedAudioFileException, IOException {
         if (questionsRepondues < nbQuestions && !tableauQuestions.isEmpty()) { // Vérifie s'il reste des questions à poser et si la liste de questions n'est pas vide
             panel.removeAll(); // Supprime tous les composants du panel
@@ -181,7 +240,12 @@ public class PartieSolo extends JFrame {
         }
     }
 
-
+    /**
+     * Affiche une question.
+     *
+     * @param ligne La ligne de données de la question.
+     * @param k     Le numéro de la question.
+     */
     public void poseQuestion(String[] ligne, int k) {
         GridBagConstraints constraints = new GridBagConstraints(); // Définit les contraintes pour la disposition des composants dans le panel
         secondesRestantes = 20; // Initialise le nombre de secondes restantes pour répondre à la question
@@ -289,7 +353,12 @@ public class PartieSolo extends JFrame {
         panel.repaint(); // Redessine le panel
     }
    
-
+    /**
+     * Met à jour le compte à rebours de la question.
+     *
+     * @param compteAReboursLabel Le label du compte à rebours.
+     * @param questionTimer      Le timer de la question.
+     */
     private void mettreAJourCompteARebours(JLabel compteAReboursLabel, Timer questionTimer) {
         secondesRestantes--; // Décrémente le compteur des secondes restantes
     
@@ -312,6 +381,11 @@ public class PartieSolo extends JFrame {
         }
     }
     
+    /**
+     * Calcule le meilleur score.
+     *
+     * @return Le meilleur score.
+     */
     public int meilleurScore() {
         try (BufferedReader reader = new BufferedReader(new FileReader("scores.csv"))) { // Ouverture du fichier qui contient les logs
             String ligne; // Ligne du document qui est en train d'être parcourue
@@ -327,6 +401,23 @@ public class PartieSolo extends JFrame {
         return 0; // Retourne 0 si aucun meilleur score n'a été trouvé pour l'identifiant
     }
     
+    /**
+     * Met à jour le meilleur score du joueur dans le fichier "scores.csv".
+     * 
+     * La méthode effectue une désérialisation du fichier, puis parcourt les scores existants.
+     * Si l'identifiant du joueur correspond à une ligne existante et que son nouveau score est supérieur à l'ancien score,
+     * le score est mis à jour dans le tableau des scores.
+     * Ensuite, une nouvelle ligne contenant l'identifiant du joueur et son score est ajoutée au tableau des scores
+     * si le joueur n'avait pas de score enregistré auparavant.
+     * 
+     * Après la mise à jour du tableau des scores, la méthode effectue une sérialisation pour écrire les scores
+     * dans le fichier "scores.csv".
+     * Chaque ligne du tableau des scores est convertie en une ligne de texte avec des virgules comme séparateurs,
+     * puis écrite dans le fichier. Enfin, la méthode ferme la fenêtre d'inscription pour retourner à l'écran de connexion.
+     * 
+     * En cas d'erreur d'entrée/sortie lors de la lecture ou de l'écriture du fichier, une exception est lancée
+     * et l'erreur est affichée.
+     */
     public void changementMeilleurScore() {
         // Désérialisation
         ArrayList<String[]> tableauScores = new ArrayList<>(); // Crée une liste pour stocker les scores
