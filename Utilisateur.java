@@ -58,62 +58,47 @@ public class Utilisateur implements Serializable {
      *
      * @return L'identifiant de l'utilisateur.
      */
-    public String getId() {
-        return id; // Renvoie l'identifiant de l'utilisateur
-    }
-
+    public String getId() {return id;}
     /**
      * Setter de l'attribut id.
+     *
+     * @param id. Chaine de caractère indiquant le nouvel identifiant de l'utilisateur.
      */
-    public void setId(String id) {
-        this.id = id; // Définit l'identifiant de l'utilisateur avec la valeur passée en paramètre
-    }
-
+    public void setId(String id) {this.id = id;}
     /**
      * Getter de l'attribut mdp.
      *
      * @return Le mot de passe de l'utilisateur.
      */
-    public String getMdp() {
-        return mdp; // Renvoie le mot de passe de l'utilisateur
-    }
-
+    public String getMdp() {return mdp;}
     /**
      * Setter de l'attribut mdp.
+     *
+     * @param mdp. Chaine de caractère indiquant le nouveau mot de passe de l'utilisateur.
      */
-    public void setMdp(String mdp) {
-        this.mdp = mdp; // Définit le mot de passe de l'utilisateur avec la valeur passée en paramètre
-    }
-
+    public void setMdp(String mdp) {this.mdp = mdp;}
     /**
      * Getter de l'attribut admin.
      *
      * @return Le statut d'admin de l'utilisateur.
      */
-    public boolean isAdmin() {
-        return admin; // Renvoie true si l'utilisateur est un administrateur, false sinon
-    }
-
+    public boolean isAdmin() {return admin;}
     /**
      * Setter de l'attribut admin.
+     *
+     * @param admin. Booléen indiquant le nouveau statur de l'utilisateur (joueur si admin=false, administrateur sinon).
      */
-    public void setAdmin(boolean admin) {
-        this.admin = admin; // Définit le statut d'administrateur de l'utilisateur avec la valeur passée en paramètre
-    }
-
+    public void setAdmin(boolean admin) {this.admin = admin;}
     /**
      * Getter de l'attribut banni.
      *
      * @return Le statut banni de l'utilisateur.
      */
-    public boolean isBanni() {
-        return banni; // Renvoie true si l'utilisateur est banni, false sinon
-    }
-
+    public boolean isBanni() {return banni;}
     /**
      * Setter de l'attribut banni.
+     *
+     * @param banni. Booléen indiquant le nouveau statut banni de l'utilisateur (ban si banni=true, unban sinonS).
      */
-    public void setBanni(boolean banni) {
-        this.banni = banni; // Définit le statut de banni de l'utilisateur avec la valeur passée en paramètre
-    }
+    public void setBanni(boolean banni) {this.banni = banni;}
 }
