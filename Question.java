@@ -127,60 +127,34 @@ public class Question {
         }
     }
 
+
     // Getters et setters pour tous les attributs de la classe
     public String getTheme() {
-        return theme;
-    }
-
+        return theme;}
     public void setTheme(String theme) {
-        this.theme = theme;
-    }
-
+        this.theme = theme;}
     public String getEnonce() {
-        return enonce;
-    }
-
+        return enonce;}
     public void setEnonce(String enonce) {
-        this.enonce = enonce;
-    }
-
+        this.enonce = enonce;}
     public String getP1() {
-        return p1;
-    }
-
+        return p1;}
     public void setP1(String p1) {
-        this.p1 = p1;
-    }
-
+        this.p1 = p1;}
     public String getP2() {
-        return p2;
-    }
-
+        return p2;}
     public void setP2(String p2) {
-        this.p2 = p2;
-    }
-
+        this.p2 = p2;}
     public String getP3() {
-        return p3;
-    }
-
+        return p3;}
     public void setP3(String p3) {
-        this.p3 = p3;
-    }
-
+        this.p3 = p3;}
     public String getP4() {
-        return p4;
-    }
-
+        return p4;}
     public void setP4(String p4) {
-        this.p4 = p4;
-    }
-
+        this.p4 = p4;}
     public String getNiveau() {
-        return niveau;
-    }
-
+        return niveau;}
     public void setNiveau(String niveau) {
-        this.niveau = niveau;
-    }
+        this.niveau = niveau;}
 }
