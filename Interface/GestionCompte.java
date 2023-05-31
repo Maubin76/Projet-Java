@@ -7,10 +7,16 @@ import javax.swing.*;
  * Elle permet de bannir, débannir et supprimer des comptes d'utilisateurs.
  */
 public class GestionCompte extends JFrame{
-
-    private ArrayList<String[]> tableauLogs = new ArrayList<>(); // Création du tableau qui sert à désérialiser le fichier connexion.csv contenant les logs
-    private String identifiant; // Identifiant de l'utilisateur dont on cherche à gérer le compte
-
+    /**
+     * Tableau privé de chaines de caractères.
+     * Création du tableau qui sert à désérialiser le fichier connexion.csv contenant les logs
+     */
+    private ArrayList<String[]> tableauLogs = new ArrayList<>(); 
+    /**
+     * Chaine de caractère privée correspondant à l'identifiant de l'utilisatur dont on veut gérer le compte.
+     */
+    private String identifiant; 
+    
     /**
      * Constructeur de la classe GestionCompte.
      * Initialise la fenêtre de gestion de compte en récupérant les données des utilisateurs.
