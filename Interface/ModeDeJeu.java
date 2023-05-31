@@ -1,18 +1,24 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * La classe ModeDeJeu représente une fenêtre permettant de choisir le mode de jeu de la partie (Solo ou Multi).
  * Elle hérite de la classe JFrame de Swing.
  */
 public class ModeDeJeu extends JFrame {
+    private String identifiant;
+
     /**
      * Constructeur de la classe ModeDeJeu.
      *
      * @param personne1 l'objet Utilisateur représentant le joueur connecté
      */
     public ModeDeJeu(Utilisateur personne1){
+        identifiant = personne1.getId();
         
         // Paramètres de la fenêtre
         setTitle("Choix du mode"); // Définit le titre de la fenêtre
@@ -44,6 +50,11 @@ public class ModeDeJeu extends JFrame {
             panel.add(adminButton, constraints); // Ajoute le bouton au panneau
         }
 
+        int meilleurScore = affectationMeilleurScore();
+        JLabel meilleurScoreLabel = new JLabel("Votre meilleur score est : " + meilleurScore);
+        constraints.gridy = 3;
+        panel.add(meilleurScoreLabel, constraints);
+
         add(panel); // Ajoute le panneau
         setVisible(true); // Rend la fenêtre visible
 
@@ -58,15 +69,30 @@ public class ModeDeJeu extends JFrame {
         jeuSolo.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Jouer en solo'
         @Override
             public void actionPerformed(ActionEvent e){
-                new ParamPartie(true);
+                new ParamPartie(true, identifiant);
             }
         });
 
         jeuVersus.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Jouer en solo'
         @Override
             public void actionPerformed(ActionEvent e){
-                new ParamPartie(false);
+                new ParamPartie(false, identifiant);
             }
         });
+    }
+
+    public int affectationMeilleurScore(){
+        try (BufferedReader reader = new BufferedReader(new FileReader("scores.csv"))) { // Ouverture fichier qui contient les logs
+            String ligne; // Ligne du document qui est en train d'être parcourue
+            while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
+                String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
+                if (ligneTableau[0].equals(this.identifiant)){
+                    return Integer.parseInt(ligneTableau[1]);
+                }
+            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return 0;
     }
 }

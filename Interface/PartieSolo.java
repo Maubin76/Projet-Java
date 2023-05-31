@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
+import javax.sound.sampled.*;
+import java.io.File;
+import java.io.IOException;
 
 public class PartieSolo extends JFrame {
     private String theme;
@@ -18,10 +21,12 @@ public class PartieSolo extends JFrame {
     private String[] ligne;
     private JPanel panel;
     private int secondesRestantes;
-    private Timer questionTimer; // Déclarer questionTimer en tant que membre de classe
+    private Timer questionTimer;
     private int scoreMax = 0;
+    private String identifiant;
 
-    public PartieSolo(String theme, String difficulte, int nbQuestions) {
+    public PartieSolo(String theme, String difficulte, int nbQuestions, String id) throws UnsupportedAudioFileException, IOException {
+        this.identifiant = id;
         this.theme = theme;
         this.difficulte = difficulte;
         this.nbQuestions = nbQuestions;
@@ -83,7 +88,7 @@ public class PartieSolo extends JFrame {
         return false;
     }
 
-    public void poserQuestionSuivante() {
+    public void poserQuestionSuivante() throws UnsupportedAudioFileException, IOException {
         if (questionsRepondues < nbQuestions && !tableauQuestions.isEmpty()) {
             panel.removeAll();
             panel.revalidate();
@@ -94,11 +99,16 @@ public class PartieSolo extends JFrame {
             tableauQuestions.remove(indexAleatoire);
             poseQuestion(ligne, questionsRepondues);
         } else {
+
             panel.removeAll();
             panel.revalidate();
             panel.repaint();
 
             GridBagConstraints constraints = new GridBagConstraints();
+
+            if (score>meilleurScore()){
+                changementMeilleurScore();
+            }
 
             JLabel scoreLabel = new JLabel("Score : " + score + "/" + scoreMax);
             constraints.gridx = 0;
@@ -124,7 +134,15 @@ public class PartieSolo extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     dispose();
-                    new PartieSolo(theme, difficulte, nbQuestions);
+                    try {
+                        new PartieSolo(theme, difficulte, nbQuestions, identifiant);
+                    } catch (UnsupportedAudioFileException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    } catch (IOException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                 }
             });
 
@@ -137,12 +155,29 @@ public class PartieSolo extends JFrame {
 
             panel.revalidate();
             panel.repaint();
+
+            AudioInputStream audio;
+            if (score==0) {
+                audio = AudioSystem.getAudioInputStream(new File("PasOuf.wav"));}
+            else {
+                audio = AudioSystem.getAudioInputStream(new File("Victoire.wav"));}
+            try {
+                Clip clip = AudioSystem.getClip();
+                clip.open(audio);
+                clip.start();
+
+            } catch (LineUnavailableException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
     }
 
     public void poseQuestion(String[] ligne, int k) {
         GridBagConstraints constraints = new GridBagConstraints();
         secondesRestantes = 20;
+
+        ButtonGroup buttonGroup = new ButtonGroup();
 
         JLabel compteAReboursLabel = new JLabel("Temps restant : " + secondesRestantes + " secondes");
         constraints.gridx = 1;
@@ -169,19 +204,23 @@ public class PartieSolo extends JFrame {
 
         Integer[] indices = {1, 2, 3, 4};
         Collections.shuffle(Arrays.asList(indices));
-        JCheckBox prop1Box = new JCheckBox(ligne[indices[0]]);
+        JRadioButton prop1Box = new JRadioButton(ligne[indices[0]]);
         constraints.gridy = 2;
         constraints.gridx = 0;
         panel.add(prop1Box, constraints);
-        JCheckBox prop2Box = new JCheckBox(ligne[indices[1]]);
+        buttonGroup.add(prop1Box);
+        JRadioButton prop2Box = new JRadioButton(ligne[indices[1]]);
         constraints.gridx = 1;
         panel.add(prop2Box, constraints);
-        JCheckBox prop3Box = new JCheckBox(ligne[indices[2]]);
+        buttonGroup.add(prop2Box);
+        JRadioButton prop3Box = new JRadioButton(ligne[indices[2]]);
         constraints.gridx = 2;
         panel.add(prop3Box, constraints);
-        JCheckBox prop4Box = new JCheckBox(ligne[indices[3]]);
+        buttonGroup.add(prop3Box);
+        JRadioButton prop4Box = new JRadioButton(ligne[indices[3]]);
         constraints.gridx = 3;
         panel.add(prop4Box, constraints);
+        buttonGroup.add(prop4Box);
 
         JButton validerButton = new JButton("Valider");
         constraints.gridy = 3;
@@ -226,7 +265,15 @@ public class PartieSolo extends JFrame {
                     // Arrêter le Timer actuel
                     questionTimer.stop();
             
-                    poserQuestionSuivante();
+                    try {
+                        poserQuestionSuivante();
+                    } catch (UnsupportedAudioFileException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    } catch (IOException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                 }
             });
 
@@ -243,7 +290,62 @@ public class PartieSolo extends JFrame {
             compteAReboursLabel.setText("Temps écoulé !");
             questionTimer.stop();
             questionsRepondues++;
-            poserQuestionSuivante();
+            try {
+                poserQuestionSuivante();
+            } catch (UnsupportedAudioFileException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public int meilleurScore(){
+        try (BufferedReader reader = new BufferedReader(new FileReader("score.csv"))) { // Ouverture fichier qui contient les logs
+            String ligne; // Ligne du document qui est en train d'être parcourue
+            while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
+                String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
+                if (ligneTableau[0].equals(this.identifiant)){
+                    return Integer.parseInt(ligneTableau[1]);
+                }
+            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return 0;
+    }
+
+    public void changementMeilleurScore(){
+        // Désérialisation
+        ArrayList<String[]> tableauScores = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader("scores.csv"))) { // Ouverture fichier qui contient les scores
+            String ligne; // Ligne du document qui est en train d'être parcourue
+            while ((ligne = reader.readLine()) != null) { // Balayage du document ligne par ligne jusqu'à la fin
+                String[] ligneTableau = ligne.split(","); // Séparation de la ligne en cases avec le caractère ','
+                if (ligneTableau[0].equals(identifiant) && score>Integer.parseInt(ligneTableau[1])){
+                    ligneTableau[1]=String.valueOf(score);
+                }
+                tableauScores.add(ligneTableau); // Ajoute une ligne au tableau de String[]
+            }
+            String[] nouvelleLigne = {identifiant,String.valueOf(score)};
+            tableauScores.add(nouvelleLigne); // Ajoute une nouvelle ligne dans le cas où l'utilisateur n'avait pas de score enregistré auparavant
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
+        // Sérialisation
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("scores.csv"))) {
+            for (String[] ligneTableau : tableauScores) {
+                String ligne = String.join(",", ligneTableau); // Convertit le tableau en une ligne de texte avec des virgules comme séparateurs
+                writer.write(ligne); // Ecris la ligne dans le document
+                writer.newLine(); // Retour à la ligne
+            }
+            writer.flush(); // Force l'écriture des données dans le fichier
+            dispose(); // Ferme la fenêtre d'inscription pour retourner à l'écran de connexion
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 }

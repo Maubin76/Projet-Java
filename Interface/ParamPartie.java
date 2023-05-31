@@ -1,13 +1,17 @@
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 
 public class ParamPartie extends JFrame{
     private String selectedTheme;
     private String selectedDifficulte;
     private int selectedNombre;
+    private String identifiant;
 
-    public ParamPartie(boolean solo){
+    public ParamPartie(boolean solo, String id){
+        identifiant = id;
         // Création de la fenêtre
         setTitle("Paramètres de partie"); // Définit le titre de la fenêtre
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Définit l'action de fermeture de la fenêtre
@@ -62,7 +66,16 @@ public class ParamPartie extends JFrame{
                 ParamPartie.this.selectedTheme = (String) themeComboBox.getSelectedItem();
                 ParamPartie.this.selectedDifficulte = (String) difficulteComboBox.getSelectedItem();
                 ParamPartie.this.selectedNombre = (int) nombreSpinner.getValue();
-                if (solo) new PartieSolo(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre);
+                if (solo)
+                    try {
+                        new PartieSolo(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre, identifiant);
+                    } catch (UnsupportedAudioFileException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    } catch (IOException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                 else new PartieMulti(ParamPartie.this.selectedTheme, ParamPartie.this.selectedDifficulte, ParamPartie.this.selectedNombre);
             }
         });

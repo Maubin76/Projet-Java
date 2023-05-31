@@ -159,6 +159,8 @@ public class PartieMulti extends JFrame {
         GridBagConstraints constraints = new GridBagConstraints();
         secondesRestantes = 20;
 
+        ButtonGroup buttonGroup = new ButtonGroup();
+
         JLabel compteAReboursLabel = new JLabel("Temps restant : " + secondesRestantes + " secondes");
         constraints.gridx = 1;
         constraints.gridy = 0;
@@ -188,19 +190,23 @@ public class PartieMulti extends JFrame {
 
         Integer[] indices = {1, 2, 3, 4};
         Collections.shuffle(Arrays.asList(indices));
-        JCheckBox prop1Box = new JCheckBox(ligne[indices[0]]);
+        JRadioButton prop1Box = new JRadioButton(ligne[indices[0]]);
         constraints.gridy = 3;
         constraints.gridx = 0;
         panel.add(prop1Box, constraints);
-        JCheckBox prop2Box = new JCheckBox(ligne[indices[1]]);
+        buttonGroup.add(prop1Box);
+        JRadioButton prop2Box = new JRadioButton(ligne[indices[1]]);
         constraints.gridx = 1;
         panel.add(prop2Box, constraints);
-        JCheckBox prop3Box = new JCheckBox(ligne[indices[2]]);
+        buttonGroup.add(prop2Box);
+        JRadioButton prop3Box = new JRadioButton(ligne[indices[2]]);
         constraints.gridx = 2;
         panel.add(prop3Box, constraints);
-        JCheckBox prop4Box = new JCheckBox(ligne[indices[3]]);
+        buttonGroup.add(prop3Box);
+        JRadioButton prop4Box = new JRadioButton(ligne[indices[3]]);
         constraints.gridx = 3;
         panel.add(prop4Box, constraints);
+        buttonGroup.add(prop4Box);
 
         JButton validerButton = new JButton("Valider");
         constraints.gridy = 4;
