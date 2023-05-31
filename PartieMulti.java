@@ -19,7 +19,6 @@ public class PartieMulti extends JFrame {
     private JPanel panel; // Panneau principal de l'interface
     private int secondesRestantes; // Nombre de secondes restantes pour répondre à la question
     private Timer questionTimer; // Timer pour le compte à rebours
-    private int[] scoreMax = new int[2]; // Tableau pour stocker les scores maximums des deux équipes
 
     public PartieMulti(String theme, String difficulte, int nbQuestions) {
         this.theme = theme;
@@ -105,7 +104,7 @@ public class PartieMulti extends JFrame {
             else if (score[0] > score[1]) gagnant = "A";
             else gagnant = null;
 
-            JLabel scoreALabel = new JLabel("Score équipe A : " + score[0] + "/" + scoreMax[0]); // Afficher le score de l'équipe A
+            JLabel scoreALabel = new JLabel("Score équipe A : " + score[0]); // Afficher le score de l'équipe A
             constraints.gridx = 0;
             constraints.gridy = 1;
             constraints.ipady = 1;
@@ -115,7 +114,7 @@ public class PartieMulti extends JFrame {
             constraints.insets = new Insets(5, 5, 5, 5);
             panel.add(scoreALabel, constraints);
 
-            JLabel scoreBALabel = new JLabel("Score équipe B : " + score[1] + "/" + scoreMax[1]); // Afficher le score de l'équipe B
+            JLabel scoreBALabel = new JLabel("Score équipe B : " + score[1]); // Afficher le score de l'équipe B
             constraints.gridy = 2;
             panel.add(scoreBALabel, constraints);
 
@@ -259,6 +258,7 @@ public class PartieMulti extends JFrame {
                         score[1] += ajoutScore;
                     }
                 }
+
 
                 questionTimer.stop(); // Arrêter le compte à rebours
                 questionsRepondues++; // Augmenter le nombre de questions répondues
