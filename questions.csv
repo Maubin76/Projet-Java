@@ -62,7 +62,7 @@ Quelle bataille a marqué la fin de Napoléon Bonaparte ?,Bataille de Waterloo,B
 Quel pays a été le premier à envoyer un homme dans l'espace ?,L'Union soviétique,Les États-Unis,L'Allemagne,Le Royaume-Uni,6,Histoire
 Qui a découvert l'Amérique ?,Christophe Colomb,Marco Polo,Vasco de Gama,Amerigo Vespucci,1,Histoire
 Quelle est la période connue sous le nom de "Guerre froide" ?,1947-1991,1914-1918,1939-1945,1789-1799,1,Histoire
-Quel empire a conquis une grande partie de l'Europe; de l'Asie et de l'Afrique au 13e siècle ?,L'Empire mongol,L'Empire byzantin,L'Empire ottoman,L'Empire romain,9,Histoire
+Quel empire a conquis une grande partie de l'Europe ainsi que de l'Asie et de l'Afrique au 13e siècle ?,L'Empire mongol,L'Empire byzantin,L'Empire ottoman,L'Empire romain,9,Histoire
 Quel événement a marqué le début de la Seconde Guerre mondiale ?,L'invasion de la Pologne par l'Allemagne,L'attaque de Pearl Harbor,La ligne Maginot,La Révolution russe,2,Histoire
 En quelle année est mort Louis XVI ?,1793,1792,1790,1789,9,Histoire
 
@@ -168,7 +168,7 @@ Quelle est la valeur de π (pi) arrondie à 4 décimales près ?,3.1416,3.1415,3
 Combien de côtés a un ennéagone ?,9,7,20,11,7,Maths
 Quelle est la racine carrée de 144 ?,12,11,14,15,2,Maths
 Quelle est la formule de l'aire d'un cercle ?,A = πr²,A = 2πr,A = πd,A = 4πr,2,Maths
-Quel est le nombre d'or, aussi connu sous le nom de phi (φ) ?,1.618,2.718,3.141,1.414,6,Maths
+Quel est le nombre d'or (aussi connu sous le nom de phi (φ)) ?,1.618,2.718,3.141,1.414,6,Maths
 Quel est le nombre de faces d'un dodécaèdre ?,12,10,8,20,2,Maths
 Quelle est la valeur de la constante d'Euler (e) arrondie à deux décimales près ?,2.71,3.14,1.41,2.50,9,Maths
 Quel est le théorème qui établit la relation entre les côtés et les angles d'un triangle ?,Théorème de Pythagore,Théorème de Thalès,Théorème de l'angle inscrit,Théorème de la médiane,3,Maths
@@ -187,15 +187,15 @@ Quelle est la limite de (1 + 1/n)^n lorsque n tend vers l'infini ?,e,1/2,∞,0,9
 Quelle est la solution de l'équation x^3 + 2x^2 - 5x - 6 = 0 ?,x = -3,x = 2,x = -2,x = 3,5,Maths
 Quel est le résultat de la factorisation de l'expression suivante : x^3 - 8 ?,(x - 2)(x^2 + 2x + 4),(x - 2)(x^2 - 2x + 4),(x + 2)(x^2 + 2x - 4),(x + 2)(x^2 - 2x - 4),7,Maths
 Quelle est la dérivée de e^x par rapport à x ?,e^x,e^x + C,-e^x,1/e^x,2,Maths
-Quelle est la valeur de la limite de 1/x lorsque x tend vers l'infini ?,0,∞,1,-1,0,2,Maths
+Quelle est la valeur de la limite de 1/x lorsque x tend vers l'infini ?,0,∞,1,-1,2,Maths
 Combien font 9 multiplié par 4 ?,36,32,28,40,1,Maths
-Quel est le résultat de 20 divisé par 5 ?,4,5,6,8,4,1,Maths
-Quelle est la différence entre 15 et 7 ?,8,7,11,9,8,1,Maths
+Quel est le résultat de 20 divisé par 5 ?,4,5,6,8,1,Maths
+Quelle est la différence entre 15 et 7 ?,8,7,11,9,1,Maths
 Combien font 3 puissance 4 ?,81,27,36,48,2,Maths
 Combien font 1/4 multiplié par 4/5 ?,1/5,1/10,3/10,5/20,1,Maths
 Quel est le carré de 8 ?,64,48,72,16,1,Maths
 Quelle est la valeur de x dans l'équation 3x - 7 = 8 ?,5,6,7,8,3,Maths
-Quel est le résultat de 7 divisé par 1/7 ?,49,1,77,49,343,2,Maths
+Quel est le résultat de 7 divisé par 1/7 ?,49,1,77,343,2,Maths
 Quelle est la racine carrée de 81 ?,9,8,7,11,1,Maths
 Quelle est la somme de 1/3 et 1/4 ?,7/12,5/12,2/3,7/8,4,Maths
 Quel est le résultat de (6 + 3) * 2 ?,18,12,21,24,2,Maths
@@ -224,7 +224,7 @@ Dans quel sport le terme "deuce" est-il utilisé?,Tennis,Badminton,Volleyball,Ho
 Quel pays a remporté la Coupe du Monde de football en 2018?,France,Croatie,Brésil,Allemagne,8,Sport
 Quelle équipe a remporté le Championnat d'Europe de football en 2020?,Italie,Angleterre,France,Portugal,7,Sport
 Dans quel sport le terme "stumped" est-il utilisé?,Cricket,Rugby,Baseball,Hockey sur gazon,3,Sport
-Quelle est la hauteur réglementaire d'un panier de basket-ball?,3,05 mètres,2,74 mètres,3 mètres,3,35 mètres,4,Sport
+Quelle est la hauteur réglementaire d'un panier de basket-ball?,3.05 mètres,2.74 mètres,3 mètres,3.35 mètres,4,Sport
 Dans quel pays est né le jeu de rugby?,Angleterre,Australie,Nouvelle-Zélande,Écosse,2,Sport
 Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'hiver?,Norvège,États-Unis,Allemagne,Russie,9,Sport
 Dans quel pays se déroulent les Internationaux de France de tennis?,France,États-Unis,Australie,Royaume-Uni,5,Sport
@@ -312,7 +312,6 @@ Dans quel pays est né le compositeur Ludwig van Beethoven?,Allemagne,Autriche,F
 Quelle chanteuse est connue pour son tube "Like a Virgin"?,Madonna,Beyoncé,Rihanna,Taylor Swift,4,Musique
 Dans quel genre musical le chanteur Bob Marley est-il principalement connu?,Reggae,Rock,Rap,Jazz,3,Musique
 Quel est le nom complet du rappeur Eminem?,Marshall Bruce Mathers III,Dwayne Michael Carter Jr.,Calvin Cordozar Broadus Jr.,Shawn Corey Carter,6,Musique
-Quel compositeur a écrit la Symphonie n°9, également connue sous le nom de "Symphonie du Nouveau Monde"?,Antonín Dvořák,Ludwig van Beethoven,Johann Sebastian Bach,Wolfgang Amadeus Mozart,6,Musique
 Quelle chanteuse a interprété la chanson "Rolling in the Deep"?,Adele,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
 Dans quel pays est né le compositeur Frédéric Chopin?,Pologne,France,Allemagne,Russie,2,Musique
 Quel est le groupe de rock américain connu pour les chansons "Sweet Child O' Mine" et "November Rain"?,Guns N' Roses,Nirvana,AC/DC,Queen,7,Musique
@@ -322,7 +321,6 @@ Quel groupe de musique a enregistré la chanson "Bohemian Rhapsody"?,Queen,The B
 Quel est le genre musical principalement associé au chanteur Elvis Presley?,Rock 'n' Roll,Country,Rap,Pop,4,Musique
 Dans quel pays est né le compositeur Wolfgang Amadeus Mozart?,Autriche,Allemagne,Italie,France,2,Musique
 Quelle chanteuse a interprété la chanson "Hello"?,Adele,Taylor Swift,Beyoncé,Rihanna,5,Musique
-Quel compositeur a écrit la Symphonie n°5, également connue sous le nom de "Symphonie du Destin"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quel groupe de musique a enregistré la chanson "Imagine"?,The Beatles,Queen,Nirvana,Coldplay,7,Musique
 Quel est l'instrument principal du musicien Charlie Parker?,Saxophone,Clarinet,Trompette,Guitare,4,Musique
 Quelle chanteuse est connue pour son album "Lemonade"?,Beyoncé,Madonna,Rihanna,Taylor Swift,5,Musique
@@ -344,7 +342,6 @@ Dans quel pays est né le compositeur Johann Strauss II?,Autriche,Allemagne,Ital
 Quelle chanteuse est connue pour son album "Born This Way"?,Lady Gaga,Beyoncé,Madonna,Rihanna,5,Musique
 Dans quel genre musical le groupe The Beatles est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
 Quel est le nom complet de la chanteuse et compositrice Lady Gaga?,Stefani Germanotta,Beyoncé Knowles,Adele Laurie Blue Adkins,Taylor Alison Swift,6,Musique
-Quel compositeur a écrit la Symphonie n°9 en ré mineur, également connue sous le nom de "Symphonie du Choral"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quelle chanteuse a interprété la chanson "Umbrella"?,Rihanna,Taylor Swift,Beyoncé,Madonna,5,Musique
 Quel groupe de musique a enregistré la chanson "Smells Like Teen Spirit"?,Nirvana,Queen,AC/DC,The Beatles,7,Musique
 Quel est l'instrument principal du musicien Miles Davis?,Trompette,Saxophone,Clarinette,Guitare,4,Musique
@@ -352,7 +349,6 @@ Dans quel pays est né le compositeur Franz Joseph Haydn?,Autriche,Allemagne,Ita
 Quelle chanteuse est connue pour son album "1989"?,Taylor Swift,Adele,Beyoncé,Rihanna,5,Musique
 Dans quel genre musical le groupe Queen est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
 Quel est le nom complet de la chanteuse et compositrice Adele?,Adele Laurie Blue Adkins,Beyoncé Knowles,Stefani Germanotta,Taylor Alison Swift,6,Musique
-Quel compositeur a écrit la Symphonie n°6, également connue sous le nom de "Symphonie pastorale"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quelle chanteuse a interprété la chanson "Crazy in Love"?,Beyoncé,Taylor Swift,Katy Perry,Rihanna,5,Musique
 Quel groupe de musique a enregistré la chanson "Hey Jude"?,The Beatles,Queen,Nirvana,Coldplay,7,Musique
 Quel est l'instrument principal du musicien Johann Sebastian Bach?,Orgue,Piano,Violon,Guitare,4,Musique
@@ -368,7 +364,6 @@ Dans quel pays est né le compositeur Giuseppe Verdi?,Italie,Allemagne,Autriche,
 Quelle chanteuse est connue pour son album "Teenage Dream"?,Katy Perry,Beyoncé,Madonna,Rihanna,5,Musique
 Dans quel genre musical le groupe AC/DC est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
 Quel est le nom complet de la chanteuse et compositrice Taylor Swift?,Taylor Alison Swift,Beyoncé Knowles,Adele Laurie Blue Adkins,Stefani Germanotta,6,Musique
-Quel compositeur a écrit la Symphonie n°3, également connue sous le nom de "Symphonie héroïque"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quelle chanteuse a interprété la chanson "Vogue"?,Madonna,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
 Quel groupe de musique a enregistré la chanson "Boys Don't Cry"?,The Cure,The Rolling Stones,AC/DC,Queen,7,Musique
 Quel est l'instrument principal du musicien Django Reinhardt?,Guitare,Violon,Saxophone,Clarinette,4,Musique
@@ -376,7 +371,6 @@ Dans quel pays est né le compositeur Pyotr Ilyich Tchaikovsky?,Russie,Allemagne
 Quelle chanteuse est connue pour son album "Blackout"?,Britney Spears,Beyoncé,Madonna,Rihanna,5,Musique
 Dans quel genre musical le chanteur Frank Zappa est-il principalement connu?,Rock,Pop,Jazz,Rap,3,Musique
 Quel est le nom complet du chanteur et compositeur Bob Marley?,Robert Nesta Marley,Farrokh Bulsara,Stefani Germanotta,Reginald Kenneth Dwight,6,Musique
-Quel compositeur a écrit la Symphonie n°4 en mi mineur, également connue sous le nom de "Symphonie tragique"?,Johannes Brahms,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quelle chanteuse a interprété la chanson "Bad Romance"?,Lady Gaga,Taylor Swift,Katy Perry,Rihanna,5,Musique
 Quel groupe de musique a enregistré la chanson "Come Together"?,The Beatles,Queen,Nirvana,Coldplay,7,Musique
 Quel est l'instrument principal du musicien Johann Pachelbel?,Orgue,Piano,Violon,Guitare,4,Musique
@@ -384,7 +378,6 @@ Dans quel pays est né le compositeur Claude Debussy?,France,Allemagne,Italie,Au
 Quelle chanteuse est connue pour son album "The Fame"?,Lady Gaga,Beyoncé,Madonna,Rihanna,5,Musique
 Dans quel genre musical le groupe Coldplay est-il principalement connu?,Pop,Rock,Rap,Jazz,3,Musique
 Quel est le nom complet de la chanteuse et compositrice Rihanna?,Robyn Rihanna Fenty,Beyoncé Knowles,Adele Laurie Blue Adkins,Taylor Alison Swift,6,Musique
-Quel compositeur a écrit la Symphonie n°8 en sol majeur, également connue sous le nom de "Symphonie des Mille"?,Gustav Mahler,Ludwig van Beethoven,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quelle chanteuse a interprété la chanson "I Will Always Love You"?,Whitney Houston,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
 Quel groupe de rock britannique a enregistré l'album "Sgt. Pepper's Lonely Hearts Club Band"?,The Beatles,Queen,Led Zeppelin,The Rolling Stones,7,Musique
 Quel est l'instrument principal du musicienBob Dylan?,Guitare,Harmonica,Piano,Batterie,4,Musique
@@ -392,7 +385,6 @@ Dans quel pays est né le compositeur Igor Stravinsky?,Russie,Allemagne,France,I
 Quelle chanteuse est connue pour son album "21"?,Adele,Beyoncé,Madonna,Rihanna,5,Musique
 Dans quel genre musical le groupe Nirvana est-il principalement connu?,Rock,Pop,Rap,Jazz,3,Musique
 Quel est le nom complet de la chanteuse et compositrice Katy Perry?,Katheryn Elizabeth Hudson,Beyoncé Knowles,Adele Laurie Blue Adkins,Taylor Alison Swift,6,Musique
-Quel compositeur a écrit la Symphonie n°9 en ré mineur, également connue sous le nom de "Symphonie du Nouveau Monde"?,Antonín Dvořák,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,6,Musique
 Quelle chanteuse a interprété la chanson "Rolling in the Deep"?,Adele,Taylor Swift,Katy Perry,Lady Gaga,5,Musique
 Quel groupe de musique a enregistré la chanson "Stairway to Heaven"?,Led Zeppelin,The Rolling Stones,AC/DC,Queen,7,Musique
 Quel est l'instrument principal du musicien Ray Charles?,Piano,Voix,Trompette,Guitare,4,Musique
@@ -400,7 +392,6 @@ Dans quel pays est né le compositeur Frédéric Chopin?,Pologne,France,Allemagn
 Quelle chanteuse est connue pour son album "Like a Prayer"?,Madonna,Beyoncé,Taylor Swift,Rihanna,5,Musique
 Dans quel genre musical le chanteur Louis Armstrong est-il principalement connu?,Jazz,Pop,Rock,Rap,3,Musique
 Quel est le nom complet du chanteur et compositeur David Bowie?,David Robert Jones,Farrokh Bulsara,Stefani Germanotta,Reginald Kenneth Dwight,6,Musique
-Quel compositeur a écrit la Symphonie n°5 en ut mineur, également connue sous le nom de "Symphonie du Destin"?,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonín Dvořák,6,Musique
 Quelle chanteuse a interprété la chanson "Poker Face"?,Lady Gaga,Taylor Swift,Katy Perry,Rihanna,5,Musique
 Quel groupe de rock britannique a enregistré l'album "Exile on Main St."?,The Rolling Stones,The Beatles,Led Zeppelin,Queen,7,Musique
 Quel est l'instrument principal du musicien Johann Strauss II?,Violon,Flûte,Piano,Guitare,4,Musique
