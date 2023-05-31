@@ -7,19 +7,70 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
+/**
+ * Classe représentant une partie multijoueur.
+ * Cette classe hérite de la classe `JFrame`.
+ */
 public class PartieMulti extends JFrame {
+    /**
+     * Chaine de caractères privée correspondant au thème de la partie.
+     */
     private String theme;
+    /**
+     * Chaine de caractères privée correspondant au niveau de difficulté de la partie.
+     */
     private String difficulte;
+    /**
+     * Entier privé correspondant au nombre de questions de la partie.
+     */
     private int nbQuestions;
-    private ArrayList<String[]> tableauQuestions = new ArrayList<>(); // Liste pour stocker les questions
-    private int questionsRepondues = 0; // Nombre de questions déjà répondues
+    /**
+     * Tableau dynamique pivé de tableaux statiques de chaines de caractères.
+     * Correspond à la liste des questions de la partie, ainsi que toutes leurs caractéristiques.
+     */
+    private ArrayList<String[]> tableauQuestions = new ArrayList<>();
+    /**
+     * Entier privé correspondant au nombre de questions déjà répondues.
+     */
+    private int questionsRepondues = 0; 
+    /**
+     * Tableau statique privé d'entiers, correspondant aux scores des 2 équipes.
+     * Le tableau a donc 2 cases (1 par équipe).
+     */
     private int[] score = new int[2]; // Tableau pour stocker les scores des deux équipes
-    private Random random = new Random(); // Générateur de nombres aléatoires
-    private String[] ligne; // Tableau pour stocker une ligne de question
-    private JPanel panel; // Panneau principal de l'interface
-    private int secondesRestantes; // Nombre de secondes restantes pour répondre à la question
-    private Timer questionTimer; // Timer pour le compte à rebours
+    /**
+     * Générateur de nombres aléatoires
+     */
+    private Random random = new Random();
+    /**
+     * Tableau statique privé de chaines de caractères permettant de stocker une ligne de question.
+     */
+    private String[] ligne; 
+    /**
+     * Panneau principal de l'interface
+     */
+    private JPanel panel;
+    /**
+     * Entier privé correspondant au nombre de secondes restantes pour répondre à la question.
+     */
+    private int secondesRestantes; 
+    /**
+     * Timer pour le compte à rebours.
+     */
+    private Timer questionTimer; 
+    /**
+     * Tableau statique privé d'entiers permettant de stocke les scores maximum des 2 équipes.
+     * Le tableau possède donc 2 cases (1 par équipe).
+     */
+    private int[] scoreMax = new int[2]; // Tableau pour stocker les scores maximums des deux équipes
 
+    /**
+     * Constructeur de la classe `PartieMulti`.
+     *
+     * @param theme         Le thème de la partie.
+     * @param difficulte    La difficulté de la partie.
+     * @param nbQuestions   Le nombre de questions dans la partie.
+     */
     public PartieMulti(String theme, String difficulte, int nbQuestions) {
         this.theme = theme;
         this.difficulte = difficulte;
@@ -57,6 +108,12 @@ public class PartieMulti extends JFrame {
         setVisible(true); // Rendre la fenêtre visible
     }
 
+    /**
+     * Vérifie si une question est valide.
+     * 
+     * @param question      Le tableau représentant la question.
+     * @return `true` si la question est valide, `false` sinon.
+     */
     public boolean bonneQuestion(String[] question) {
         if (question.length >= 7 && question[6].equals(this.theme)) {
             switch (difficulte) {
@@ -82,6 +139,11 @@ public class PartieMulti extends JFrame {
         return false;
     }
 
+    /**
+     * Pose la question suivante à une équipe donnée.
+     * 
+     * @param equipe    L'équipe pour laquelle poser la question.
+     */
     public void poserQuestionSuivante(String equipe) {
         if (questionsRepondues < nbQuestions && !tableauQuestions.isEmpty()) {
             panel.removeAll(); // Supprimer les composants du panneau
@@ -154,6 +216,13 @@ public class PartieMulti extends JFrame {
         }
     }
 
+    /**
+     * Pose une question sur le panneau.
+     *
+     * @param ligne     Le tableau représentant la question.
+     * @param k         Le numéro de la question.
+     * @param equipe    L'équipe pour laquelle poser la question.
+     */
     public void poseQuestion(String[] ligne, int k, String equipe) {
         GridBagConstraints constraints = new GridBagConstraints();
         secondesRestantes = 20; // Définir le nombre de secondes restantes pour répondre à la question
@@ -271,6 +340,13 @@ public class PartieMulti extends JFrame {
         panel.repaint();
     }
 
+    /**
+     * Met à jour le compte à rebours du temps restant pour répondre à la question.
+     *
+     * @param compteAReboursLabel   Le label affichant le compte à rebours.
+     * @param questionTimer         Le timer pour le compte à rebours.
+     * @param equipe                L'équipe qui doit jouer.
+     */
     public void mettreAJourCompteARebours(JLabel compteAReboursLabel, Timer questionTimer, String equipe) {
         secondesRestantes--; // Réduire le nombre de secondes restantes
         compteAReboursLabel.setText("Temps restant : " + secondesRestantes + " secondes"); // Mettre à jour l'affichage du compte à rebours
