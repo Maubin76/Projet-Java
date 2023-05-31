@@ -19,7 +19,7 @@ public class Utilisateur implements Serializable {
      */
     private boolean admin; 
     /**
-     * Bouléen privé indiquant si l'utilisateur (true si oui, false sinon).
+     * Booléen privé indiquant si l'utilisateur (true si oui, false sinon).
      */
     private boolean banni;
 
