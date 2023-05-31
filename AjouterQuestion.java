@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 
 /**
  * Classe représentant une fenêtre pour ajouter une question avec ses options de réponse,
- * ainsi que sadifficulté et son thème.
+ * ainsi que sa difficulté et son thème.
  */
 public class AjouterQuestion extends JFrame{
     /**
@@ -25,7 +25,7 @@ public class AjouterQuestion extends JFrame{
         JPanel panel = new JPanel(new GridBagLayout()); // Crée un panneau avec un gestionnaire de disposition GridBagLayout
         GridBagConstraints constraints = new GridBagConstraints(); // Crée des contraintes pour le placement des composants dans la grille
 
-        JLabel enonce = new JLabel("Enoncé"); // Texte de banissement
+        JLabel enonce = new JLabel("Enoncé");
         constraints.gridx = 0; // Première colonne
         constraints.gridy = 0; // Première ligne
         constraints.ipady = 1; // Largeur de la case
@@ -82,7 +82,7 @@ public class AjouterQuestion extends JFrame{
 
         Integer[] tabNiveau = {1,2,3,4,5,6,7,8,9,10}; // Tableau d'entiers qui stocke les niveaux des questions
         JComboBox<Integer> niveauBox = new JComboBox<>(tabNiveau); // Menu déroulant
-        constraints.gridx = 1; // Deuxième colonne 
+        constraints.gridx = 1; // Deuxième colonne
         panel.add(niveauBox, constraints); // Ajoute le menu déroulant au tableau
 
         JLabel them = new JLabel("Choix du thème :"); // Composant qui demande de choisir le thème
@@ -107,8 +107,8 @@ public class AjouterQuestion extends JFrame{
         setVisible(true); // Rend la fenêtre visible
 
         // Retour au menu précédent (l'administration)
-        retour.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Retour'
-        @Override
+        retour.addActionListener(new ActionListener() { // Déclenche à l'appui du bouton 'Retour'
+            @Override
             public void actionPerformed(ActionEvent e){
                 dispose(); // Ferme la page pour revenir à la précédente
             }
@@ -116,33 +116,33 @@ public class AjouterQuestion extends JFrame{
 
         // Ajout du gestionnaire d'événements pour le bouton de soumission de question
         // Objectif : ajouter la question et ses propositions dans la base de données
-        soumettreQuestion.addActionListener(new ActionListener() { // Déclenche à l'appuie du bouton 'Retour'
-        private String th;
-        private String en;
-        private String p1;
-        private String p2;
-        private String p3;
-        private String p4;
-        private String nv;
-        @Override
+        soumettreQuestion.addActionListener(new ActionListener() { // Déclenche à l'appui du bouton 'Ajouter'
+            private String th; // Variable pour stocker le thème
+            private String en; // Variable pour stocker l'énoncé
+            private String p1; // Variable pour stocker la proposition 1
+            private String p2; // Variable pour stocker la proposition 2
+            private String p3; // Variable pour stocker la proposition 3
+            private String p4; // Variable pour stocker la proposition 4
+            private String nv; // Variable pour stocker le niveau
+            @Override
             public void actionPerformed(ActionEvent e){
-                Question Q;
-                en = enonceField.getText();
-                p1 = prop1Field.getText();
-                p2 = prop2Field.getText();
-                p3 = prop3Field.getText();
-                p4 = prop4Field.getText();
-                Integer selectedNiveau = (Integer) niveauBox.getSelectedItem();
-                nv = String.valueOf(selectedNiveau);
-                th = (String) themeBox.getSelectedItem();
+                Question Q; // Déclaration de la variable de type Question
+                en = enonceField.getText(); // Récupère le texte saisi dans le champ d'énoncé
+                p1 = prop1Field.getText(); // Récupère le texte saisi dans le champ de la proposition 1
+                p2 = prop2Field.getText(); // Récupère le texte saisi dans le champ de la proposition 2
+                p3 = prop3Field.getText(); // Récupère le texte saisi dans le champ de la proposition 3
+                p4 = prop4Field.getText(); // Récupère le texte saisi dans le champ de la proposition 4
+                Integer selectedNiveau = (Integer) niveauBox.getSelectedItem(); // Récupère le niveau sélectionné dans le menu déroulant
+                nv = String.valueOf(selectedNiveau); // Convertit le niveau en chaîne de caractères
+                th = (String) themeBox.getSelectedItem(); // Récupère le thème sélectionné dans le menu déroulant
                 try {
-                    Q = new Question(en, p1, p2, p3, p4, nv, th);
-                    if (Q.valide()){
-                        Q.soumettre();
-                        JOptionPane.showMessageDialog(AjouterQuestion.this, "Question ajoutée");
+                    Q = new Question(en, p1, p2, p3, p4, nv, th); // Crée une nouvelle instance de la classe Question
+                    if (Q.valide()){ // Vérifie si la question est valide
+                        Q.soumettre(); // Soumet la question à la base de données
+                        JOptionPane.showMessageDialog(AjouterQuestion.this, "Question ajoutée"); // Affiche un message de succès
                     }
                     else {
-                        JOptionPane.showMessageDialog(AjouterQuestion.this, "Erreur lors de l'ajout");
+                        JOptionPane.showMessageDialog(AjouterQuestion.this, "Erreur lors de l'ajout"); // Affiche un message d'erreur
                     }
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();

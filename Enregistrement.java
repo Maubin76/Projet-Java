@@ -160,11 +160,11 @@ public class Enregistrement extends JFrame{
      * @return true si l'identifiant existe, false sinon.
      */
     public boolean identifiantExistant(){
-        for (String[] ligneTableau : tableauLogs){
-            if (ligneTableau[0].equals(identifiant)){
-                return true;
+        for (String[] ligneTableau : tableauLogs){ // Parcours le tableau qui contient les logs
+            if (ligneTableau[0].equals(identifiant)){ // Test si l'identifiant est déja dans le tableau
+                return true; // Renvoie true s'il est déjà dans le tableau
             }
         }
-        return false;
+        return false; // Renvoie false sinon
     }
 }

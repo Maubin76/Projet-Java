@@ -6,6 +6,7 @@ import java.awt.event.*;
 /**
  * La classe Connexion représente une fenêtre de connexion avec des champs pour le nom d'utilisateur et le mot de passe.
  * Elle permet de vérifier les informations de connexion et de lancer la prochaine fenêtre du jeu.
+ * 
  */
 public class Connexion extends JFrame {
     /**
