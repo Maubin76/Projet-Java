@@ -127,13 +127,23 @@ public class Question {
      * @return Le thème de la question.
      */
     public String getTheme() {return theme;}
+    /**
+     * Setter de l'attribut theme.
+     *
+     * @param theme. Chaine de caractère indiquant le nouveau theme de la question.
+     */
     public void setTheme(String theme) {this.theme = theme;}
     /**
      * Getter de l'attribut ennoce.
      *
-     * @return L'ennoncé de la question.
+     * @return Lénoncé de la question.
      */
     public String getEnonce() {return enonce;}
+    /**
+     * Setter de l'attribut enonce.
+     *
+     * @param enonce. Chaine de caractère indiquant le nouvel énoncé de la question.
+     */
     public void setEnonce(String enonce) {this.enonce = enonce;}
     /**
      * Getter de l'attribut p1.
@@ -141,6 +151,11 @@ public class Question {
      * @return La première proposition (et bonne réponse) de la question.
      */
     public String getP1() {return p1;}
+    /**
+     * Setter de l'attribut p1.
+     *
+     * @param p1. Chaine de caractère indiquant la nouvelle première proposition (et bonne réponse) de la question.
+     */
     public void setP1(String p1) {this.p1 = p1;}
     /**
      * Getter de l'attribut p2.
@@ -148,6 +163,11 @@ public class Question {
      * @return La deuxième proposition de la question.
      */
     public String getP2() {return p2;}
+    /**
+     * Setter de l'attribut p2.
+     *
+     * @param p2. Chaine de caractère indiquant la nouvelle deuxième proposition de la question.
+     */
     public void setP2(String p2) {this.p2 = p2;}
     /**
      * Getter de l'attribut p3.
@@ -155,6 +175,11 @@ public class Question {
      * @return La troisième proposition de la question.
      */
     public String getP3() {return p3;}
+    /**
+     * Setter de l'attribut p3.
+     *
+     * @param p3. Chaine de caractère indiquant la nouvelle troisième proposition de la question.
+     */
     public void setP3(String p3) {this.p3 = p3;}
     /**
      * Getter de l'attribut p4.
@@ -162,6 +187,11 @@ public class Question {
      * @return La quatrième proposition de la question.
      */
     public String getP4() {return p4;}
+    /**
+     * Setter de l'attribut p4.
+     *
+     * @param p4. Chaine de caractère indiquant la nouvelle quatrième proposition de la question.
+     */
     public void setP4(String p4) {this.p4 = p4;}
     /**
      * Getter de l'attribut niveau.
@@ -169,5 +199,10 @@ public class Question {
      * @return Le niveau de difficulté de la question.
      */
     public String getNiveau() {return niveau;}
+    /**
+     * Setter de l'attribut niveau.
+     *
+     * @param niveau. Chaine de caractère indiquant le nouveau niveau de difficulté de la question.
+     */
     public void setNiveau(String niveau) {this.niveau = niveau;}
 }
